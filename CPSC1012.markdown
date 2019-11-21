@@ -4,12 +4,12 @@ title: CPSC1012
 permalink: /cpsc1012/
 ---
 
-CPSC1012 - Programming Fundamentals
-
 <h2>Main Topics</h2>
 
 
 - [Arrays](./CPSC1012_Arrays.markdown)
+
+
 
 
 <h2>Miscellanea</h2>
