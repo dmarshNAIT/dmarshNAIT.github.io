@@ -9,7 +9,5 @@ CPSC1012 - Programming Fundamentals
 
 
 
-[HTML Link](./arrays.html)
-
 - [Arrays](./CPSC1012_Arrays.markdown)
 
