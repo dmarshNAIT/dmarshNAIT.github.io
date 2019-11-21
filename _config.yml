@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dana Marsh's GitHub
-email: dmarsh@nait.ca
+title: Dana Marsh
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the main page for Dana Marsh's GitHub site. All views here do not reflect my current or past employers, and the content here does not replace the official course material for any of my classes.
+  The views here do not reflect my current or previous employers, and this content is not to be considered course material for any of my classes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  dmarshNAIT
 
 # Build settings
-#theme: jekyll-theme-architect
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -50,5 +49,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-theme: jekyll-theme-minimal
