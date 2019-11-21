@@ -10,7 +10,7 @@ permalink: /cpsc1012/
 - [Arrays](./CPSC1012_Arrays.markdown)
 
 
-
+***
 
 <h2>Miscellanea</h2>
 <h3>To compile & run a C# Program</h3>
