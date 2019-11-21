@@ -13,13 +13,13 @@ permalink: /cpsc1012/
 ***
 
 <h2>Miscellanea</h2>
-<h3>To compile & run a C# Program</h3>
+<h4>To compile & run a C# Program</h4>
 
 Run **Developer Command Prompt** and navigate to the location of the .cs file using `cd`.
 Compile by running ```csc Payroll.cs``` (where _Payroll.cs_ is the name of your .cs file).
 This will create an executable file called _Payroll.exe_, which we can run by typing ```Payroll.exe```.
 
 
-<h3>Conditional operator</h3>
+<h4>Conditional operator</h4>
 Here is an example of how we can use the conditional operator in place of an `if` statement.
 <script src="https://gist.github.com/dmarshNAIT/d0176ca742ae6c36918dd1f951a3b3ca.js"></script>
