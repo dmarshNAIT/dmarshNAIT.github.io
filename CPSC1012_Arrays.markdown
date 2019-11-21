@@ -13,7 +13,7 @@ When we create an array, we identify the data type, and set the size:
 ```csharp
 int[] myInts = new int[5];
 ```
-This means all elements in this array will be of type `int`, and there are 5 elements.
+This means all elements in this array will be of type `int`, and there are `5` elements.
 
 We can also load data into the array manually when we create it:
 
@@ -27,14 +27,18 @@ Alternatively, we can drop the `new string[7]` part:
 string[] dayOfWeek = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" }; 
 ```
 <h2>Accessing elements in an array</h2>
-Once an array exists, we can view or modify each element by using square brackets and its index:
+Once an array exists, we can view or modify each element by using square brackets and the index of the element:
 
 ```csharp
 int[] someNumbers = new int[10];
 someNumbers[0] = 5;
 ```
 
-I just set the 0th element of the array to the value `5`.
+I just set the 0th element of the array to the value `5`. The contents of my array are now:
+
+index: | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+---|---|---|---|---|---|---|---|---|---|---
+value: | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
 
 Because we know exactly how many elements are in the array, I could loop through each element and set each value:
 
@@ -56,6 +60,7 @@ for (int index = 0; index < someNumbers.Length; index++) {
 ```
 
 <h2>Sorting arrays</h2>
+
 `Array.Sort` will sort the elements in a 1-dimensional array.
 
 ```csharp
