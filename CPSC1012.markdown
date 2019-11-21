@@ -6,4 +6,10 @@ permalink: /cpsc1012/
 
 CPSC1012 - Programming Fundamentals
 
-<script src="https://gist.github.com/dmarshNAIT/20fb9c70c9387109030a4524022accdc.js"></script>
+
+
+
+[HTML Link](./arrays.html)
+
+- [Arrays](./CPSC1012_Arrays.markdown)
+
