@@ -4,7 +4,6 @@ title: Arrays
 permalink: /cpsc1012/arrays
 ---
 
-<h1>Arrays</h1>
 <h2>Creating an array</h2>
 When we create an array, we identify the data type, and set the size:
     
