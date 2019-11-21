@@ -1,10 +1,8 @@
 ---
 layout: page
-title: CPSC1012
+title: Arrays
 permalink: /cpsc1012/arrays
 ---
-
-CPSC1012 - Programming Fundamentals
 
 <h1>Arrays</h1>
 <h2>Creating an array</h2>
