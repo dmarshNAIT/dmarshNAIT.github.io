@@ -1,4 +1,10 @@
-<table>
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+ <table>
   <thead>
     <tr>
       <th></th>
@@ -14,9 +20,9 @@
      <td align = right><strong>8:00-9:00</strong></td>
       <td> </td>
       <td> </td>
+      <td style="background-color:#00FF00">$100</td>
       <td> </td>
-      <td> </td>
-      <td style="background-color:#FF0000">CPSC 1012 - A03</td>
+      <td style="background-color:blue">CPSC 1012 - A03</td> 
     </tr>
     <tr>
      <td align = right><strong>9:00-10:00</strong></td>
@@ -116,3 +122,6 @@
     </tr>
   </tbody>
 </table>
+
+</body>
+</html>
