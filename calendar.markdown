@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-
 
  <table>
   <thead>
@@ -122,6 +117,3 @@
     </tr>
   </tbody>
 </table>
-
-</body>
-</html>
