@@ -2,7 +2,7 @@
  <table>
   <thead>
     <tr>
-      <th></th>
+      <th>time</th>
       <th>Monday</th>
       <th>Tuesday</th>
       <th>Wednesday</th>
