@@ -17,7 +17,7 @@
       <td> </td>
       <td> </td>
       <td> </td>
-      <td style="background-color:blue">CPSC 1012 - A03</td> 
+      <td style="background-color:#6495ed">CPSC 1012 - A03</td> 
     </tr>
     <tr>
      <td align = right><strong>9:00-10:00</strong></td>
@@ -32,7 +32,7 @@
       <td> </td>
       <td>CPSC 1012 - A04</td>
       <td> </td>
-      <td>CPSC 1012 - A03</td>
+      <td style="background-color:#6495ed">CPSC 1012 - A03</td> 
       <td> </td>
     </tr>
     <tr>
