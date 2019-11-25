@@ -20,7 +20,7 @@
      <td align = right><strong>8:00-9:00</strong></td>
       <td> </td>
       <td> </td>
-      <td style="background-color:#00FF00">$100</td>
+      <td> </td>
       <td> </td>
       <td style="background-color:blue">CPSC 1012 - A03</td> 
     </tr>
