@@ -4,7 +4,7 @@ title: Arrays
 permalink: /cpsc1012/arrays
 ---
 
-<h2>Creating an array</h2>
+## Creating an array
 When we create an array, we identify the data type, and set the size:
     
 ```csharp
@@ -23,7 +23,7 @@ Alternatively, we can drop the `new string[7]` part:
 ```csharp
 string[] dayOfWeek = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" }; 
 ```
-<h2>Accessing elements in an array</h2>
+## Accessing elements in an array
 Once an array exists, we can view or modify each element by using square brackets and the index of the element:
 
 ```csharp
@@ -33,9 +33,9 @@ someNumbers[0] = 5;
 
 I just set the 0th element of the array to the value `5`. The contents of my array are now:
 
-index: | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
----|---|---|---|---|---|---|---|---|---|---
-value: | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+| index: | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: |
+| value: | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Because we know exactly how many elements are in the array, I could loop through each element and set each value:
 
@@ -56,7 +56,7 @@ for (int index = 0; index < someNumbers.Length; index++) {
 }
 ```
 
-<h2>Sorting arrays</h2>
+## Sorting arrays
 
 `Array.Sort` will sort the elements in a 1-dimensional array.
 
@@ -65,7 +65,7 @@ int[] myArray = new int[5] { 6, 4, 7, 2, 8 };
 Array.Sort(myArray); // now array is: {2, 4, 6, 7, 8}
 ```
 
-<h2>Multi-dimensional arrays</h2>
+## Multi-dimensional arrays
 We are not limited to creating 1-D arrays: here is an example of creating a 3x3 (or 2-Dimensional) array.
 
 ```csharp
