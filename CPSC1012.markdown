@@ -7,7 +7,7 @@ permalink: /cpsc1012/
 ## Main Topics
 
 
-- [Arrays](./CPSC1012_Arrays.markdown)
+- [Arrays](./CPSC1012_arrays.markdown)
 
 
 ***
