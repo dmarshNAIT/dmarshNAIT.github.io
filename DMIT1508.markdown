@@ -1,0 +1,13 @@
+---
+layout: page
+title: DMIT1508
+permalink: /dmit1508/
+---
+
+## Main Topics
+
+- [Glossary](./DMIT1508_glossary.markdown)
+- [Normalization](./DMIT1508_normalization.markdown)
+
+***
+
