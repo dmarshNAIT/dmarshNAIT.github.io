@@ -4,23 +4,36 @@ title: CPSC1012
 permalink: /cpsc1012/
 ---
 
-<h2>Main Topics</h2>
+## Main Topics
 
 
+<<<<<<< HEAD
 - [Arrays](./CPSC1012_Arrays.markdown)
 - [Decision Structures](./CPSC1012_DecisionStructures.markdown)
 - [Glossary](./CPSC1012_glossary.markdown)
+=======
+- [Arrays](./CPSC1012_arrays.markdown)
+
+>>>>>>> facffe6826e65bfca21b00282156411d69c26266
 
 ***
 
-<h2>Miscellanea</h2>
+## Miscellanea
 
+<<<<<<< HEAD
 <h3>To compile & run a C# Program</h3>
+=======
+- ### To compile & run a C# Program
+>>>>>>> facffe6826e65bfca21b00282156411d69c26266
 
    Run **Developer Command Prompt** and navigate to the location of the .cs file using `cd`.
    Compile by running ```csc Payroll.cs``` (where _Payroll.cs_ is the name of your .cs file).
    This will create an executable file called _Payroll.exe_, which we can run by typing ```Payroll.exe```.
 
+<<<<<<< HEAD
+=======
+- ### Conditional operator
+>>>>>>> facffe6826e65bfca21b00282156411d69c26266
 
 
 
