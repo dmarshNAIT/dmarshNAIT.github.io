@@ -8,6 +8,7 @@ permalink: /dmit1508/
 
 - [Glossary](./DMIT1508_glossary.markdown)
 - [Normalization](./DMIT1508_normalization.markdown)
+- [DDL](./DMIT1508_DDL.markdown)
 
 ***
 
