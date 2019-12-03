@@ -26,18 +26,18 @@ AS
 SELECT …
 ```
 
-Retrieving the definition:
+#### Retrieving the definition:
 ```sql
 SP_HELPTEXT viewname
 ```
 
-Altering existing views:
+#### Altering existing views:
 ```sql
 ALTER VIEW viewname
 AS
 SELECT …
 ```
-Dropping existing views:
+#### Dropping existing views:
 
 ```sql
 DROP VIEW viewname
