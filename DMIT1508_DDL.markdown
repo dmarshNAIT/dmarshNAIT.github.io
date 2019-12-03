@@ -331,19 +331,19 @@ Consider a table with a clustered index and 3 non-clustered indices.
 - That’s a lot of overhead!
 
 Since we can only have one clustered index, how do we choose?
-By default, the clustered index is created using the PK of the table. In many instances, this is the best choice. If another column is frequently used in the ORDER BY clause, or passed to the COUNT, MIN, or MAX aggregate functions, it’s also a good candidate.
+By default, the clustered index is created using the PK of the table. In many instances, this is the best choice. If another column is frequently used in the `ORDER BY` clause, or passed to the `COUNT`, `MIN`, or `MAX` aggregate functions, it’s also a good candidate.
 Some designers create a non-clustered index for each FK. This increased overhead needs to be weighed against the improved performance of retrieving data.
 
-Syntax:
+### Syntax:
 ```sql
 CREATE [UNIQUE] [ CLUSTERED | NONCLUSTERED ] INDEX index name
 ON table name ( column name [ ASC | DESC] [, ...n] )
 ```
 
-The column name is the key for the index (one or more columns may act as the key). All indexes must have a unique name. We normally use the prefix IX when naming an index.
+The column name is the key for the index (one or more columns may act as the key). All indexes must have a unique name. We normally use the prefix `IX` when naming an index.
 
 Example:
-To create a nonclustered index associated with the Marks table using CourseID (a FK referencing the Course table) as the index key:
+To create a nonclustered index associated with the `Marks` table using `CourseID` (a FK referencing the `Course` table) as the index key:
 ```sql
 CREATE nonclustered INDEX IX_CourseId
 		ON Marks (CourseId)

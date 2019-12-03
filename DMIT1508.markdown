@@ -6,13 +6,37 @@ permalink: /dmit1508/
 
 ## Main Topics
 
-- [Glossary](./DMIT1508_glossary.markdown)
-- [Normalization](./DMIT1508_normalization.markdown)
-- [DDL](./DMIT1508_DDL.markdown)
-- Queries (in progress)
-- Views & DML (in progress)
-- Stored Procedures (in progress)
-- Triggers (in progress)
-
+- [Glossary](./glossary)
+- [Normalization](./normalization)
+- [DDL](./DDL)
+  - Creating tables
+  - Constraints
+  - Altering tables
+  - Indexes
+- [Queries](./queries)
+  - `WHERE`
+  - Search Criteria operators
+  - `UNION`
+  - Aggregate functions
+  - `HAVING`
+  - `ORDER BY`
+  - String functions
+  - Datetime functions
+  - `JOIN`s
+  - Subqueries
+  - `ANY`, `SOME`, and `ALL` operators
+- [Views](./views)
+- [DML](./DML)
+  - `INSERT`
+  - `UPDATE`
+  - `DELETE`
+- [Stored Procedures](./storedprocedures)
+  - Variables
+  - Flow control
+  - Parameters
+  - Raising errors
+  - Global variables
+- [Triggers](./triggers)
+  - Temporary tables
 
 
