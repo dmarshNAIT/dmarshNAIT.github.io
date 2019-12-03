@@ -150,7 +150,8 @@ CREATE TABLE StoreInRegion (
 ,   CONSTRAINT PK_CountryId_RegionId_StoreId  
         PRIMARY KEY CLUSTERED (CountryId, RegionId, StoreId)
 ,   CONSTRAINT FK_StoreInRegionToRegionInCountry  
-        FOREIGN KEY (CountryId, RegionId) REFERENCES RegionInCountry (CountryId, RegionId)
+        FOREIGN KEY (CountryId, RegionId) 
+	REFERENCES RegionInCountry (CountryId, RegionId)
 )
 ```
 
@@ -189,7 +190,8 @@ The expression:
 
 4. The column `PostalCode` must follow the pattern A9A 9A9:
 	```sql
-	CONSTRAINT CK_PostalCode CHECK (PostalCode LIKE '[A-Z][0-9][A-Z] [0-9][A-Z][0-9]')
+	CONSTRAINT CK_PostalCode 
+		CHECK (PostalCode LIKE '[A-Z][0-9][A-Z] [0-9][A-Z][0-9]')
 	```
 
 ### The LIKE operator
