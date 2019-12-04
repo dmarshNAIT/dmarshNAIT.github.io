@@ -8,7 +8,7 @@ permalink: /cpsc1012/
 - [Glossary](./glossary)
 
 - [Arrays](./arrays)
-- [Decision Structures](./DecisionStructures)
+- [Decision Structures](./decisionstructures)
 - [Exception Handling](./exceptions)
 - [File i/o](./fileIO)
 - [Formatting](./formatting)
