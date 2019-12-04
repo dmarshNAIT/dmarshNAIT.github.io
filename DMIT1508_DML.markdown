@@ -150,6 +150,5 @@ Examples:
 - Delete all `Payment` records that are less than the average payment amount.
     ```sql
     DELETE FROM Payment
-    WHERE Amount < (	SELECT AVG(Amount)
-                        FROM Payment)
+    WHERE Amount < (SELECT AVG(Amount) FROM Payment)
     ```

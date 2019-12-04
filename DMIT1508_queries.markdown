@@ -29,7 +29,7 @@ We can use a `WHERE` clause to return only certain records:
 ```sql
 SELECT 
     FirstName
-, 	LastName 
+,   LastName 
 FROM STUDENT
 WHERE City = 'Edmonton' 
     -- only return rows where the City column contains the value "Edmonton"

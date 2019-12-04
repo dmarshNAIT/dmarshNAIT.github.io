@@ -4,9 +4,11 @@ title: DDL
 permalink: /dmit1508/DDL
 ---
 
-## Creating Tables
+# Creating Tables
 
-Data are stored in tables, which are 2D arrays where each column records one attribute and each row records the attributes for an instance.
+Data are stored in tables, which are 2D arrays where 
+- each column records one attribute, and 
+- each row records the attributes for an instance.
 
 We use a `CREATE TABLE` statement to create a table object, which includes:
 - the name of the table
@@ -36,23 +38,37 @@ CREATE TABLE tablename (
 ) 
 ```
 
-### Verifying your table
+## Verifying your table
 
 After a table has been created, use the system stored procedure `SP_HELP` to list the table definition.
 
 To run a stored procedure:
-`EXEC procedurename [parameter1 [, parameter2 ... ]]`
+```sql
+EXEC procedurename [parameter1 [, parameter2 ... ]]
+```
 
 In this case, we'd run:
-`EXEC SP_HELP Customers`
+```sql
+EXEC SP_HELP Customers
+```
 
-### Deleting a table
+## Deleting a table
 
-To drop a table, the syntax is `DROP TABLE [[databasename.]owner.]tablename`
+To drop a table, the syntax is 
+```sql
+DROP TABLE [[databasename.]owner.]tablename
+```
 
-For example, if I have a table called `Items`, I'd execute `DROP TABLE Items` or `DROP TABLE dbo.Items`.
+For example, if I have a table called `Items`, I'd execute 
+```sql
+DROP TABLE Items
+``` 
+or 
+```sql
+DROP TABLE dbo.Items
+```
 
-## Constraints
+# Constraints
 
 Constraints are used to:
 1. Define primary keys (this is defined by the *primary key constraint*).
@@ -69,11 +85,14 @@ Each constraint must have a unique name within the database, and will use a pref
 - **CK_** for check constraints
 - **DF_** for default constraints
 
-### Primary key constraints
+## Primary key constraints
 
 In a normalized db design, all tables must have the PK constraint, and any column acting as a PK must be defined as `NOT NULL`.
 
-The syntax of a PK constraint is `[CONSTRAINT constraint_name PRIMARY KEY [CLUSTERED | NONCLUSTERED]`.
+The syntax of a PK constraint is 
+```sql
+[CONSTRAINT constraint_name PRIMARY KEY [CLUSTERED | NONCLUSTERED]
+```
 
 Example:
 ```sql
@@ -94,7 +113,7 @@ CREATE TABLE Marks (
 )
 ```
 
-### Foreign key constraints
+## Foreign key constraints
 
 The FK constraint defines relationships between rows, and defines a parent-child relationship between tables. This affects:
 1. Dropping tables (e.g. cannot drop a parent table before its child)
@@ -103,14 +122,14 @@ The FK constraint defines relationships between rows, and defines a parent-child
 
 Foreign keys must have the same datatype as its associated PK.
 
-Syntax:
+### Syntax:
 ```sql
 CONSTRAINT constraint_name 
 [FOREIGN KEY (col_name)[, ... col_name16] ]
 REFERENCES table_name (ref_col[, ... ref_col16] )
 ```
 
-Example with a column-level constraint:
+### Example with a column-level constraint:
 ```sql
 CREATE TABLE RegionInCountry (
     CountryId	SMALLINT	NOT NULL    
@@ -121,7 +140,7 @@ CREATE TABLE RegionInCountry (
 )
 ```
 
-Example with a table-level constraint:
+### Example with a table-level constraint:
 ```sql
 CREATE TABLE StoreInRegion (
     CountryId	SMALLINT	NOT NULL
@@ -131,15 +150,16 @@ CREATE TABLE StoreInRegion (
 ,   CONSTRAINT PK_CountryId_RegionId_StoreId  
         PRIMARY KEY CLUSTERED (CountryId, RegionId, StoreId)
 ,   CONSTRAINT FK_StoreInRegionToRegionInCountry  
-        FOREIGN KEY (CountryId, RegionId) REFERENCES RegionInCountry (CountryId, RegionId)
+        FOREIGN KEY (CountryId, RegionId) 
+	REFERENCES RegionInCountry (CountryId, RegionId)
 )
 ```
 
-### CHECK Constraints
+## CHECK Constraints
 
 The `CHECK` constraint enables you to specify what values are acceptable (i.e. specify a domain).
 
-Syntax:
+### Syntax:
 ```sql
 CONSTRAINT constraint_name CHECK (expression)
 ```
@@ -148,46 +168,47 @@ The expression:
 - must evaluate to `TRUE` or `FALSE`
 - can be a compound boolean expression (e.g. using `AND` and/or `OR`)
 
-Examples:
+### Examples:
 1. The column `QuantitySold` must be positive:
-```sql
-CONSTRAINT CK_QuantitySold CHECK (QuantitySold > 0)
-```
+	```sql
+	CONSTRAINT CK_QuantitySold CHECK (QuantitySold > 0)
+	```
 
 2. The column `DateReceived` must be on or after the `DateOrdered`:
-```sql
-CONSTRAINT CK_DateReceived CHECK (DateReceived >= DateOrdered)
-```
+	```sql
+	CONSTRAINT CK_DateReceived CHECK (DateReceived >= DateOrdered)
+	```
 
 3. The column `CourseMark` must be between 0 and 100, inclusive:
-```sql
-CONSTRAINT CK_CourseMark CHECK (CourseMark >= 0 AND CourseMark <= 100)
-```
-or
-```sql
-CONSTRAINT CK_CourseMark CHECK (CourseMark BETWEEN 0 and 100)
-```
+	```sql
+	CONSTRAINT CK_CourseMark CHECK (CourseMark >= 0 AND CourseMark <= 100)
+	```
+	or
+	```sql
+	CONSTRAINT CK_CourseMark CHECK (CourseMark BETWEEN 0 and 100)
+	```
 
 4. The column `PostalCode` must follow the pattern A9A 9A9:
-```sql
-CONSTRAINT CK_PostalCode CHECK (PostalCode LIKE '[A-Z][0-9][A-Z] [0-9][A-Z][0-9]')
-```
+	```sql
+	CONSTRAINT CK_PostalCode 
+		CHECK (PostalCode LIKE '[A-Z][0-9][A-Z] [0-9][A-Z][0-9]')
+	```
 
-#### The LIKE operator
+### The LIKE operator
 
 The `LIKE` operator allows us to perform pattern matching on character or datetime data.
 
-Syntax: 
+#### Syntax: 
 ```sql
 column_name LIKE 'pattern'
 ```
-Example: 
+#### Example: 
 ```sql
 LastName LIKE 'A%'
 ```
 The `%` is a wildcard that means: any string of zero or more characters, so this example would match last names of any length as long as they begin with the letter A.
 
-Other useful wildcards:
+#### Other useful wildcards:
 
 Symbol | meaning
 --- | ---
@@ -196,7 +217,7 @@ Symbol | meaning
 `[]` | any single character within the specified range (`[a-f]`) or set (`[adr]`) of characters
 `[^]` | any single character *not* within the specified range (`[^a-f]`) or set (`[^adr]`) of characters
 
-### The DEFAULT constraint
+## The DEFAULT constraint
 
 The `DEFAULT` constraint lets you define a value that is assigned to a column when the user adds a row and doesn't supply a value.
 
@@ -204,24 +225,27 @@ A default constraint can be defined on any column *except*:
 - A column with the timestamp data type
 - A column with the identity property
 
-Syntax: `[CONSTRAINT constraint_name] DEFAULT constant | function | NULL`
+### Syntax: 
+```sql
+[CONSTRAINT constraint_name] DEFAULT constant | function | NULL
+```
 
-Examples:
+### Examples:
 1. Use current date as default for `DateReceived`:
-```sql
-CONSTRAINT DF_DateRecevied DEFAULT GetDate()
-```
+	```sql
+	CONSTRAINT DF_DateRecevied DEFAULT GetDate()
+	```
 2. Use `NULL` as default for `PostalCode`:
-```sql
-CONSTRAINT DF_PostalCode DEFAULT NULL
-```
+	```sql
+	CONSTRAINT DF_PostalCode DEFAULT NULL
+	```
 3. Use 5.90 as default for `HourlyRate`:
-```sql
-CONSTRAINT DF_HourlyRate DEFAULT 5.90
-```
+	```sql
+	CONSTRAINT DF_HourlyRate DEFAULT 5.90
+	```
 
-## Altering Tables
-The ALTER TABLE statement is used to:
+# Altering Tables
+The `ALTER TABLE` statement is used to:
 - Add a column to an existing table
 - Modify the datatype or null status of an existing column
 - Modify the seed and increment value of an existing identity property
@@ -234,7 +258,7 @@ The ALTER TABLE statement is used to:
 A note on adding new columns to an existing table with data: your new column must accept `NULL` or have a default constraint.
 If the table is empty, you can add a column that is `NOT NULL`.
 
-Syntax:
+## Syntax:
 ```sql
 [ WITH { CHECK | NOCHECK } ]
 {
@@ -250,59 +274,59 @@ Syntax:
 }
 ```
 
-Examples:
+### Examples:
 1. To add a `Semester` column to the `Marks` table:
-```sql
-ALTER TABLE Marks ADD Semester CHAR(1) NULL
-```
+	```sql
+	ALTER TABLE Marks ADD Semester CHAR(1) NULL
+	```
 
 2. To add the Semester column to the Marks table and make it a FK referencing the Schedule table:
-```sql
-ALTER TABLE Marks
-	ADD Semester	CHAR(1)	NULL
-		CONSTRAINT FK_MarksToSchedule REFERENCES Schedule (Semester)
-```
+	```sql
+	ALTER TABLE Marks
+		ADD Semester	CHAR(1)	NULL
+			CONSTRAINT FK_MarksToSchedule REFERENCES Schedule (Semester)
+	```
 
 3. To add a FK constraint to the existing CourseID column in the Marks table, making it reference the Courses table:
-```sql
-ALTER TABLE Marks
-	ADD CONSTRAINT FK_CourseId 
-        FOREIGN KEY (CourseId)  REFERENCES Courses (CourseId)
-```
+	```sql
+	ALTER TABLE Marks
+		ADD CONSTRAINT FK_CourseId 
+		FOREIGN KEY (CourseId)  REFERENCES Courses (CourseId)
+	```
 
 4. To add a check constraint to the existing PhoneNo column in the Students table to ensure the phone number is in the format (nnn) nnn-nnnn:
-```sql
-ALTER TABLE Students
-	ADD CONSTRAINT CK_PhoneNo
-		CHECK ( PhoneNo LIKE '([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]' )
-```
+	```sql
+	ALTER TABLE Students
+		ADD CONSTRAINT CK_PhoneNo
+			CHECK ( PhoneNo LIKE '([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]' )
+	```
 
 5. To add a default constraint to the existing OrderDate column in the Sales table to default to the current date:
-```sql
-ALTER TABLE Sales
-	ADD	CONSTRAINT DF_OrderDate 
-        DEFAULT GetDate() FOR OrderDate
-```
+	```sql
+	ALTER TABLE Sales
+		ADD	CONSTRAINT DF_OrderDate 
+		DEFAULT GetDate() FOR OrderDate
+	```
 
 6. To disable the default constraint named CK_PhoneNo in the Students table:
-```sql
-ALTER TABLE Marks
-	NOCHECK CONSTRAINT CK_PhoneNo
-```
+	```sql
+	ALTER TABLE Marks
+		NOCHECK CONSTRAINT CK_PhoneNo
+	```
 
 7. To enable the default constraint named CK_PhoneNo in the Students table:
-```sql
-ALTER TABLE Students
-	CHECK CONSTRAINT CK_PhoneNo
-```
+	```sql
+	ALTER TABLE Students
+		CHECK CONSTRAINT CK_PhoneNo
+	```
 
 8. To delete the default constraint named DF_Mark from the Marks table:
-```sql
-ALTER TABLE Marks
-	DROP CONSTRAINT DF_Mark
-```
+	```sql
+	ALTER TABLE Marks
+		DROP CONSTRAINT DF_Mark
+	```
 
-## Indexes
+# Indexes
 
 An index is an object stored in the db.
 
@@ -334,7 +358,7 @@ Since we can only have one clustered index, how do we choose?
 By default, the clustered index is created using the PK of the table. In many instances, this is the best choice. If another column is frequently used in the `ORDER BY` clause, or passed to the `COUNT`, `MIN`, or `MAX` aggregate functions, it’s also a good candidate.
 Some designers create a non-clustered index for each FK. This increased overhead needs to be weighed against the improved performance of retrieving data.
 
-### Syntax:
+## Syntax:
 ```sql
 CREATE [UNIQUE] [ CLUSTERED | NONCLUSTERED ] INDEX index name
 ON table name ( column name [ ASC | DESC] [, ...n] )
@@ -342,13 +366,14 @@ ON table name ( column name [ ASC | DESC] [, ...n] )
 
 The column name is the key for the index (one or more columns may act as the key). All indexes must have a unique name. We normally use the prefix `IX` when naming an index.
 
-Example:
+## Example:
 To create a nonclustered index associated with the `Marks` table using `CourseID` (a FK referencing the `Course` table) as the index key:
 ```sql
 CREATE nonclustered INDEX IX_CourseId
 		ON Marks (CourseId)
 ```
-To drop a nonclustered index:
+
+## To drop a nonclustered index:
 ```sql
 DROP INDEX IX_CourseID ON Marks
 ```

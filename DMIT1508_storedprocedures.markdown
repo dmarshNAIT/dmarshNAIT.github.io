@@ -42,7 +42,7 @@ Or from a query that returns multiple columns/expressions:
 DECLARE @firstname varchar(40)
     ,	@lastname varchar(40)
 SELECT @firstname = StaffFirstName
-	,	@lastname = StaffLastName
+    ,	@lastname = StaffLastName
 FROM Staff 
 WHERE StaffID = 1
 ```
@@ -68,7 +68,7 @@ ELSE
 - To create a new stored procedure:
     ```sql
     CREATE PROCEDURE procedure_name AS
-    SQL statements
+    -- SQL statements
     RETURN
     ```
 - To drop an existing stored procedure:
@@ -78,7 +78,7 @@ ELSE
 - To change an existing stored procedure:
     ```sql
     ALTER PROCEDURE procedure_name
-    SQL statements
+    -- SQL statements
     RETURN
     ```
 - To run a stored procedure:
