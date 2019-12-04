@@ -4,8 +4,7 @@ title: Glossary
 permalink: /cpsc1012/glossary
 ---
 
-<h2>A</h2>
-
+## A
 + **Arithmetic operators** are operators we use to do math. Some common operators are:
 
     Operator | Meaning | Example
@@ -17,7 +16,7 @@ permalink: /cpsc1012/glossary
     `%` | Modulus | `remainder = value % 3;`
 
 
-<h2>C</h2>
+## C
 
 + **camelCase** is a type of capitalization where the first letter is lowercase and all remaining words are capitalized. Generally, we'll use camelCase to name our variables (e.g. `myInt`, `itemsOrdered`).
 
@@ -45,7 +44,7 @@ permalink: /cpsc1012/glossary
     const double GST_RATE = 0.05;
     ```
 
-<h2>D</h2>
+## D
 
 + Every variable in C# has a **data type**, which defines what kind of data it can hold (e.g. numbers with or without decimal places, strings of characters, etc). Some common data types are:
 
@@ -61,7 +60,7 @@ permalink: /cpsc1012/glossary
 
     Before a value can be stored in a variable, the value's data type *must* be compatible with the variable's data type. This is where data type ranking comes in: `int` has lower rank than `double`, which means I can store an `int` value in a `double` variable, but not the reverse.
 
-<h2>E</h2>
+## E
 
 + **Escape sequences** are special combinations of characters that we can use in strings that aren't intrepreted literally, but rather represent something else. For example, some common escape sequences are:
 
@@ -74,7 +73,7 @@ permalink: /cpsc1012/glossary
    `\'` | Single quote | Causes a single quote to be printed
    `\"` | Double quote | Causes a double quote to be printed
 
-<h2>I</h2>
+## I
 
 + **Integer division** is what happens when both operands of the division operand are intagers: remainders are discarded.
 
@@ -84,7 +83,7 @@ permalink: /cpsc1012/glossary
 
     Integer division can be avoided by converting one of the numbers to a floating point number first.
 
-<h2>L</h2>
+## L
 
 + **Literals** are values written into the code of a program.
 
@@ -99,7 +98,7 @@ permalink: /cpsc1012/glossary
     + `||` represents _or_ and is a logical disjunction.
     + `^` represents _exclusive or_ and is a logical exclusion.
 
-<h2>M</h2>
+## M
 
 + The **Math** class provides us a number of useful methods to perform mathematical operations.
 
@@ -108,7 +107,7 @@ permalink: /cpsc1012/glossary
     + `Math.Sqrt(x)` returns the square root of x.
     + `Math.Round(x)` will round a number to the nearest integer using engineering rounding. We can also pass in a second argument to specify the number of digits we'd like.
 
-<h2>P</h2>
+## P
 
 + **PascalCase** is a type of capitalization where the first letter of every word is capitalized. Generally, we'll use PascalCase to name our namespaces, classes, methods, and member fields (e.g. `DoSomething()`, `Name`).
 
@@ -125,7 +124,8 @@ permalink: /cpsc1012/glossary
     1. `=` `+=` `-=` `*=` `/=` `%=` (assignment, combined assignment)
 
 
-<h2>R</h2>
+## R
+
 + **Relational operators** allow us to compare values.
 
     C# Operator | Math Symbol | Name | Example | Result if `radius = 6`
@@ -138,13 +138,13 @@ permalink: /cpsc1012/glossary
     `!=` | ≠ | Not equal to | `radius != 0` | `true`
 
 
-<h2>S</h2>
+## S
 
 + **Scope** is the part of the program that has access to a variable. Variables come into existence when they are declared, and stop existing at the end of that block of code.
 
     For example, if I declare a variable within a `for` loop, it's only visible within that loop.
 
-<h2>V</h2>
+## V
 
 + **Variables** are named locations in a computer's memory. They hold one value at a time.
 

@@ -92,6 +92,17 @@ C# has several types of selection statements: one-way `if` statements, two-way `
     }
     ```
 
-
++ Common errors:
+  - Using `=` instead of `==` to compare primitive values
+  - Forgetting to enclose an `if` statement’s boolean expression in parentheses
+  - Writing a semicolon at the end of an `if` clause
+  - Forgetting to enclose multiple conditionally executed statements in braces
+  - Omitting the trailing `else` in an `if-else-if` statement
+  - Not writing complete Boolean expressions on both sides of a logical `&&` or `||` operator
+  - Using a `switch` expression that is not an `int`, `char`, or `string`
+  - Using a `case` expression that is not a literal or `const` variable
+  - Forgetting to write a colon at the end of a `case` statement
+  - Forgetting to write a `default` section in a `switch` statement
+  - Reversing the `?` and the `:` when using the conditional operator
 
 
