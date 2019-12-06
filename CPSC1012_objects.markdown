@@ -80,6 +80,27 @@ class Dog {
 } // end of class
 ```
 
+## Accessors
+Accessors are a type of `public` method that lets us **get** (or access) the value of a private field. 
+
+For example:
+```csharp
+public int GetBalance() {  
+  return Balance;  
+} // end of method
+```
+
+## Mutators
+Mutators are a type of `public` method that lets us **set** (or change or mutate) the value of a private field.
+
+For example:
+```csharp
+public void SetAge(int Age) {  
+    this.Age = Age;  
+        // assign the value passed in as an argument to the Age instance field
+} // end of method
+```
+
 ## Overloading methods
 This lets us have flexibility in what arguments can be passed into a method call.
 ```csharp
