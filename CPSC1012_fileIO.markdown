@@ -14,7 +14,7 @@ writer.Close();
 ```
 
 ## Reading from a file
-From a file of known length:
+Reading a single line:
 ```csharp
 using System.IO;
 
@@ -24,14 +24,29 @@ Console.WriteLine(line);
 reader.Close();
 ```
 
+
+From a file of known length:
+```csharp
+using System.IO;
+
+StreamReader reader = new StreamReader("test.txt");
+string line;
+
+for (int i = 0; i < 3; i++) {
+    line = reader.ReadLine();
+    Console.WriteLine(line);
+} // end for
+reader.Close();
+```
+
 From a file of unknown length:
 ```csharp
 using System.IO;
 
 StreamReader reader = new StreamReader("test.txt");
 while (reader.EndOfStream == false) {
-string line = reader.ReadLine();
-Console.WriteLine(line);
-}
+  string line = reader.ReadLine();
+  Console.WriteLine(line);
+} // end while
 reader.Close();
 ```
