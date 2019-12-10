@@ -4,7 +4,7 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please contact me to set up a meeting outside of scheduled class times.
+Please contact me directly to set up a meeting outside of scheduled class times.
 
 #### Fall 2019 Schedule
 
@@ -219,4 +219,5 @@ Please contact me to set up a meeting outside of scheduled class times.
   </tbody>
 </table>
 </html>
-\* E01 students will be given priority for evening time slots.
+
+*\* E01 students will be given priority for evening time slots.*

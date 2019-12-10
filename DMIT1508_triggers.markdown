@@ -43,7 +43,7 @@ Triggers will execute:
 ```sql
 CREATE TRIGGER	trigger_name
 	ON	table_name
-	FOR {[UPDATE][,] [INSERT][,] [DELETE]}	AS
+	FOR [UPDATE][,] [INSERT][,] [DELETE]	AS
 	SQL statements
 RETURN
 ```
@@ -53,7 +53,7 @@ Example:
     ```sql
     CREATE TRIGGER TR_Staff_Insert_Update
         ON Staff 
-        FOR {INSERT, UPDATE}	
+        FOR INSERT, UPDATE	
     AS
         -- SQL statements go here
     RETURN
@@ -63,7 +63,7 @@ Example:
     ```sql
     CREATE TRIGGER TR_Student_Delete
         ON Student 
-        FOR {DELETE}	
+        FOR DELETE	
     AS
         -- SQL statements go here
     RETURN
@@ -82,7 +82,8 @@ If you drop a table that has triggers associated with it, the triggers are dropp
 ```sql
 ALTER TRIGGER trigger_name
     ON table_name
-    FOR {[UPDATE][,] [INSERT][,] [DELETE]}	AS
+    FOR [UPDATE][,] [INSERT][,] [DELETE]
+AS
     -- SQL statements
 RETURN
 ```

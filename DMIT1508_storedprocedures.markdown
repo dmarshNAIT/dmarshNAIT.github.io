@@ -10,8 +10,8 @@ Before we use variables, we must declare them:
 ```sql
 DECLARE 
     @variablename datatype
-,	@variablename datatype
-,	@variablename datatype
+,   @variablename datatype
+,   @variablename datatype
 ...
 ```
 
@@ -94,16 +94,16 @@ ELSE
 
 We can pass in parameters to be used within our stored procedures:
 ```sql
-CREATE PROCEDURE LookupStudent 
-	(@StudentID int) AS
-SQL statements
+CREATE PROCEDURE LookupStudent (@StudentID int) 
+AS
+-- SQL statements
 RETURN
 ```
 We can also initalize the values of the parameters:
 ```sql
-CREATE PROCEDURE LookupStudent 
-	(@StudentID int = NULL) AS
-SQL statements
+CREATE PROCEDURE LookupStudent (@StudentID int = NULL) 
+AS
+-- SQL statements
 RETURN
 ```
 

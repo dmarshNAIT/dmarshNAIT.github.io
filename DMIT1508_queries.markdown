@@ -14,7 +14,7 @@ Queries are written with a `SELECT` statement:
 ```sql
 SELECT [ALL | DISTINCT] column_list 	
 [INTO [new_table_name]]
-[FROM table_name [, table_name2 […, table_name16]] 
+[FROM table_name [, table_name2 [..., table_name16]] 
 [INNER, LEFT OUTER, RIGHT OUTER JOIN]
 [WHERE clause] 
 [GROUP BY clause] 
@@ -32,7 +32,7 @@ SELECT
 ,   LastName 
 FROM STUDENT
 WHERE City = 'Edmonton' 
-    -- only return rows where the City column contains the value "Edmonton"
+    -- only return rows where the City column is exactly the value "Edmonton"
 ```
 
 #### Search Criteria Operators
@@ -78,7 +78,7 @@ FROM Registration
 GROUP BY CourseID
 ```
 
-This can be read as: *for each course ID, return courseID and the average mark*
+This can be read as: *for each course ID, select courseID and the average mark*
 
 ### HAVING Clause
 
@@ -87,7 +87,8 @@ This can be read as: *for each course ID, return courseID and the average mark*
 SELECT CourseID, AVG(Mark) as AverageMark
 FROM Registration
 WHERE AVG(Mark) > 80 
-    -- this line will fail: I can't check the AVG(Mark) until after I group-by.
+    -- this line will fail: I can't check the AVG(Mark) until after I group-by,
+    -- i.e. I need to know the average mark per CourseID
 GROUP BY CourseID
 ```
 
@@ -151,9 +152,9 @@ Millisecond | `ms` | 0 | 999
 
 How do we connect data in one table to its related record(s) in another?
 ```sql
-SELECT field1, field2, … 
+SELECT field1, field2, ... 
 FROM table1
-[INNER, FULL OUTER, …] JOIN table2
+[INNER, FULL OUTER, ...] JOIN table2
 	ON table1.joinfield = table2.joinfield
 ```
 
@@ -166,7 +167,7 @@ FROM table1
 #### Selecting from 3+ tables
 We can add additional `JOIN` statements:
 ```sql
-SELECT field1, field2, … 
+SELECT field1, field2, ... 
 FROM table1
 INNER JOIN table2
 	ON table1.joinfield = table2.joinfield
@@ -176,7 +177,7 @@ INNER JOIN table3
 INNER JOIN table4
 	ON table.joinfield = table4.joinfield 
         -- where table is table1, table2, or table3
-…
+...
 ```
 
 ### Subqueries
@@ -187,13 +188,13 @@ There are nested and correlated subqueries, and in this course we will focus on 
 ### ANY, SOME, and ALL operators
 What if want something other than an exact match?
 ```sql
-WHERE StudentID IN (SELECT StudentID … )
+WHERE StudentID IN (SELECT StudentID ... )
 ```
 `ANY` or `SOME` compares against any of the values:
 ```sql
-WHERE Grade > SOME (SELECT Grade … )
+WHERE Grade > SOME (SELECT Grade ... )
 ```
 `ALL` compares against all of the values:
 ```sql
-WHERE Grade > ALL (SELECT Grade …)
+WHERE Grade > ALL (SELECT Grade ...)
 ```

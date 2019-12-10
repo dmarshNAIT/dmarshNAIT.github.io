@@ -11,6 +11,7 @@ permalink: /dmit1508/
 - [DDL](./DDL)
   - Creating tables
   - Constraints
+  - The `LIKE` operator
   - Altering tables
   - Indexes
 - [Queries](./queries)

@@ -49,10 +49,36 @@ int i = 5;
 int j = 0;
 
 try {
-Console.WriteLine(i / j);
+    Console.WriteLine(i / j);
 }
 catch (Exception ex) {
     Console.WriteLine("Cannot divide by zero.");
     Console.WriteLine(ex.Message);
 }
 ```
+
+Which returns:
+```
+Cannot divide by zero.
+Attempted to divide by zero.
+```
+
+## Throwing our own exceptions
+
+We may also write methods which throw exceptions in certain conditions.
+
+That segment of code might look something like:
+```csharp
+bool isValid;
+
+// some code executes that sets isValid to true or false
+
+if (isValid) {
+    Console.WriteLine("Input was valid.");
+} // end if
+else {
+    throw new Exception("Input is invalid.");
+} // end else
+```
+
+The code calling this method would then need to handle the exception this method has thrown.

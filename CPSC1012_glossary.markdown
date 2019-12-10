@@ -58,7 +58,7 @@ permalink: /cpsc1012/glossary
     double | 8 bytes | ±5.0 × 10−324 to ±1.7 × 10308, 15-16 digits precision | `d`
     decimal | 16 bytes | ±1.0 x 10-28 to ±7.9228 x 1028, 28-29 significant digits | `m`
 
-    Before a value can be stored in a variable, the value's data type *must* be compatible with the variable's data type. This is where data type ranking comes in: `int` has lower rank than `double`, which means I can store an `int` value in a `double` variable, but not the reverse.
+    Before a value can be stored in a variable, the value's data type *must* be compatible with the variable's data type. This is where data type ranking comes in: `int` has lower rank than `double`, which means I can assign an `int` value to a `double` variable, but not the reverse.
 
 ## E
 

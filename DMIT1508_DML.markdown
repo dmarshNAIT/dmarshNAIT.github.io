@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Views
+title: DML
 permalink: /dmit1508/DML
 ---
 
@@ -87,8 +87,8 @@ The `UPDATE` statement updates existing data in the table. It can update one or 
 Data can be updated by providing new values for columns or using subqueries to provide the data.
 ```sql
 UPDATE	table_name
-SET column = expression[, column = expression … ]
-[WHERE … ]
+SET column = expression[, column = expression ... ]
+[WHERE ... ]
 ```
 
 Examples:
@@ -127,9 +127,9 @@ Examples:
 ## DELETE
 The `DELETE` statement removes rows from a table.
 ```sql
-DELETE [from] table_name
-[FROM … ]
-[WHERE … ]
+DELETE [FROM] table_name
+[FROM ... ]
+[WHERE ... ]
 ```
 
 Examples:

@@ -11,3 +11,5 @@ They are currently teaching CPSC 1012 (Programming Fundamentals) and DMIT 1508 (
 Prior to NAIT, Dana worked in software design, testing, technical consulting, and data analytics. They have also taught Simulation and Computer Modelling Techniques.
 
 Dana is interested in data viz, test strategy, and finding stories within data.
+
+Outside of NAIT, Dana enjoys travelling, reading, and volunteering.

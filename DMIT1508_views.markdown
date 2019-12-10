@@ -23,7 +23,7 @@ If the `SELECT` statement contains `GROUP BY`, `DISTINCT`, `TOP`, or `UNION` you
 ```sql
 CREATE VIEW viewname
 AS
-SELECT …
+SELECT ...
 ```
 
 #### Retrieving the definition:
@@ -35,7 +35,7 @@ SP_HELPTEXT viewname
 ```sql
 ALTER VIEW viewname
 AS
-SELECT …
+SELECT ...
 ```
 #### Dropping existing views:
 
