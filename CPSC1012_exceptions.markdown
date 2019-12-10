@@ -65,9 +65,9 @@ Attempted to divide by zero.
 
 ## Throwing our own exceptions
 
-We may also write methods which throw exceptions in certain conditions.
+We may also write methods which `throw` exceptions in certain conditions.
 
-That segment of code might look something like:
+We could have a method containing a segment of code that looks something like:
 ```csharp
 bool isValid;
 
