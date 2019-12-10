@@ -21,6 +21,7 @@ using System.IO;
 StreamReader reader = new StreamReader("test.txt");
 string line = reader.ReadLine();
 Console.WriteLine(line);
+
 reader.Close();
 ```
 
@@ -36,6 +37,7 @@ for (int i = 0; i < 3; i++) {
     line = reader.ReadLine();
     Console.WriteLine(line);
 } // end for
+
 reader.Close();
 ```
 
@@ -48,5 +50,6 @@ while (reader.EndOfStream == false) {
   string line = reader.ReadLine();
   Console.WriteLine(line);
 } // end while
+
 reader.Close();
 ```
