@@ -10,7 +10,7 @@ permalink: /cpsc1012/
 - [Decision Structures](./decisionstructures)
   - `if` statements
   - `switch` statements
-- [Exception Handling](./exceptions)
+- [Exceptions](./exceptions)
 - [File i/o](./fileIO)
 - [Formatting](./formatting)
   - adjusting precision
