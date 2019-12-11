@@ -21,6 +21,9 @@ class Dog {
     private string Name;
 } // end of class
 ```
+This means that I could create a `Dog` object that has the `Name` `"Jasmine"`, and another `Dog` object that has the `Name` `"Bowser"`. 
+
+*Note: These instance fields are different from `static` fields which are associated with the class, not a specific object. The value of a `static` field is shared across all instances of that class.*
 
 When you define a class, you describe its **behaviour** using methods.
 ```csharp
@@ -36,9 +39,9 @@ class Dog {
 
 ### Access Modifiers
 
-`private` members are only visible to the methods of the class defining the member (only methods of the `Dog` class have access to `Age` and `Name`).
+`private` members are only visible to the methods of the class defining the member (e.g. only methods of the `Dog` class have access to `Age` and `Name`).
 
-`public` members can be called from methods in any class (so any class of object can call `TakeWalk()` on an instance of `Dog`).
+`public` members can be called from methods in any class (e.g. any class can call `TakeWalk()` on an instance of `Dog`).
 
 ## Instantiating Objects
 
@@ -75,7 +78,8 @@ public class Dog {
 If certain member variables are going to have the same value when the object is created, we can initialize them:
 ```csharp
 class Dog {
-    private int Age = 0;
+    private int Age = 0;                    // instance field
+    private static bool GoodBoy = true;     // static field
     // other fields and methods go here
 } // end of class
 ```
@@ -102,7 +106,7 @@ public void SetAge(int Age) {
 ```
 
 ## Overloading methods
-This lets us have flexibility in what arguments can be passed into a method call.
+This lets us have flexibility in what arguments can be passed into a method call. Here is an example of overloading our constructor method:
 ```csharp
 public class Dog {
     // some private variables
@@ -111,3 +115,9 @@ public class Dog {
     public Dog (string theName) { ... }
 } // end class
 ```
+
+## Static methods
+
+If we declare a method as `static`, then it does not need an object to be called.
+
+For instance, `Math.Round()` is a `static` method. I don't need to create a `Math` object in order to call it.
