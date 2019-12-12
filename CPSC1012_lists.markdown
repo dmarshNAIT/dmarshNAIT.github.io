@@ -4,7 +4,7 @@ title: Lists
 permalink: /cpsc1012/lists
 ---
 # Lists
-Arrays were a type of collection class. All its elements are the same data type, and they are a set size (i.e. we can't change our mind later and increase the size of our array).
+Arrays are a type of collection class. All its elements are the same data type, and they are a set size (i.e. we can't change our mind later and increase the size of our array).
 
 Another type of collection class is a `List`, which will dynamically increase its size as required. 
 

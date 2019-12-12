@@ -144,6 +144,10 @@ permalink: /cpsc1012/glossary
 
     For example, if I declare a variable within a `for` loop, it's only visible within that loop.
 
+    **Variables must be declared before they are used.** Do your variables also need to be initialized, updated, and/or re-initialized?
+
+    It is good practice to declare variables in their innermost scope. For example, if I have a counter variable in a `for` loop inside of another `do-while` loop and it isn't used anywhere else, I should probably declare it inside that `for` loop rather than at the very beginning of my program.
+
 ## V
 
 + **Variables** are named locations in a computer's memory. They hold one value at a time.

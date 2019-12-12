@@ -79,6 +79,7 @@ If certain member variables are going to have the same value when the object is 
 ```csharp
 class Dog {
     private int Age = 0;                    // instance field
+        // this is redundant because the default value for an int is already 0
     private static bool GoodBoy = true;     // static field
     // other fields and methods go here
 } // end of class
@@ -89,8 +90,8 @@ Accessors are a type of `public` method that lets us **get** (or access) the val
 
 For example:
 ```csharp
-public int GetBalance() {  
-  return Balance;  
+public int GetAge() {  
+  return this.Age;  
 } // end of method
 ```
 
@@ -99,8 +100,8 @@ Mutators are a type of `public` method that lets us **set** (or change or mutate
 
 For example:
 ```csharp
-public void SetAge(int Age) {  
-    this.Age = Age;  
+public void SetAge(int age) {  
+    this.Age = age;  
         // assign the value passed in as an argument to the Age instance field
 } // end of method
 ```
@@ -121,3 +122,7 @@ public class Dog {
 If we declare a method as `static`, then it does not need an object to be called.
 
 For instance, `Math.Round()` is a `static` method. I don't need to create a `Math` object in order to call it.
+
+## What does this look like altogether?
+
+<script src="https://gist.github.com/dmarshNAIT/35db61dde38abfab9cccb659076043ae.js"></script>
