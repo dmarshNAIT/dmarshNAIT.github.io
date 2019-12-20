@@ -68,6 +68,20 @@ or
 DROP TABLE dbo.Items
 ```
 
+### What if the table doesn't exist?
+
+If I try to run `DROP TABLE` on a table that doesn't exist, I will get an error.
+
+We can add in a check to say: *if the table exists, drop it.*
+That way, if the table doesn't exist, I won't see an error.
+
+An example of what this would look like for a table called `dbo.Activity` follows:
+
+```sql
+IF OBJECT_ID('dbo.Activity', 'U') IS NOT NULL -- if a table called dbo.Activity exists
+  DROP TABLE dbo.Activity; 
+```
+
 # Constraints
 
 Constraints are used to:
