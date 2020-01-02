@@ -6,9 +6,6 @@ permalink: /calendar/
 
 Please contact me directly to set up a meeting outside of scheduled class times.
 
-#### Fall 2019 Schedule
-
-<html>
  <table style="font-size: 12.4px; text-align:center">
   <thead>
     <tr>

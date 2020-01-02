@@ -5,4 +5,3 @@
 layout: default
 ---
 Welcome!
-Check back in 2020 for some exciting content.
