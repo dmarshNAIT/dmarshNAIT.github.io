@@ -50,15 +50,15 @@ permalink: /cpsc1012/glossary
 
     Data type | Size | Range | Suffix
     --- | --- | --- | ---
-    byte | 1 byte | 0 to 255
-    short | 2 bytes | -32,768 to 32,767
-    int | 4 bytes | -2,147,483,648 to 2,147,483,647
-    long | 8 bytes | 9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `L`
-    float | 4 bytes | ±1.5 x 10−45 to ±3.4 x 1038, 7 digits precision | `f`
-    double | 8 bytes | ±5.0 × 10−324 to ±1.7 × 10308, 15-16 digits precision | `d`
-    decimal | 16 bytes | ±1.0 x 10-28 to ±7.9228 x 1028, 28-29 significant digits | `m`
+    `byte` | 1 byte | 0 to 255
+    `short` | 2 bytes | -32,768 to 32,767
+    `int` | 4 bytes | -2,147,483,648 to 2,147,483,647
+    `long` | 8 bytes | 9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `L`
+    `float` | 4 bytes | ±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>, 7 digits precision | `f`
+    `double` | 8 bytes | ±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>, 15-16 digits precision | `d`
+    `decimal` | 16 bytes | ±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>, 28-29 significant digits | `m`
 
-    Before a value can be stored in a variable, the value's data type *must* be compatible with the variable's data type. This is where data type ranking comes in: `int` has lower rank than `double`, which means I can assign an `int` value to a `double` variable, but not the reverse.
+    Before a value can be stored in a variable, the value's data type **must** be compatible with the variable's data type. This is where data type ranking comes in: `int` has lower rank than `double`, which means I can assign an `int` value to a `double` variable, but not the reverse.
 
 ## E
 
@@ -75,13 +75,13 @@ permalink: /cpsc1012/glossary
 
 ## I
 
-+ **Integer division** is what happens when both operands of the division operand are intagers: remainders are discarded.
++ **Integer division** is what happens when both operands of the division operand are integers: remainders are discarded.
 
     ```csharp
     double number = 5/2; // results in 2, not 2.5
     ```
 
-    Integer division can be avoided by converting one of the numbers to a floating point number first.
+    Integer division can be avoided by converting one of the numbers to a floating point number (like a `double`) first.
 
 ## L
 
