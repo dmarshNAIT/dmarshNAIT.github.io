@@ -6,24 +6,24 @@ permalink: /cpsc1012/
 
 ## Main Topics
 - [Glossary](./glossary)
-- [Arrays](./arrays)
 - [Decision Structures](./decisionstructures)
   - `if` statements
   - `switch` statements
-- [Exceptions](./exceptions)
-- [File i/o](./fileIO)
 - [Formatting](./formatting)
   - adjusting precision
   - formatting currency
   - formatting as columns
   - adding colour
-- [Lists](./lists)
 - [Loops](./loops)
   - operator shorthand (`i++`)
   - `while`
   - `for`
   - `do while`
+- [File i/o](./fileIO) 
+- [Exceptions](./exceptions)
 - [Methods](./methods)
+- [Arrays](./arrays)
+- [Lists](./lists)
 - [Objects & Classes](./objects)
 
 
