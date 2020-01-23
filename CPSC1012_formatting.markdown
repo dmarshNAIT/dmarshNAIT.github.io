@@ -69,7 +69,7 @@ firstNum: 150.00  secondNum: 1,234.57
 
 Let's say I have a table of values that I want to display. Using what we know so far, I could code the following:
 ```csharp
-Console.WriteLine("firstNum: {0:0.00}  secondNum: {1,10:0.00}", firstNum, secondNum);
+Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", 0, 0);
 Console.WriteLine($"firstNum: {0:0.00}  secondNum: {0:0.00}");
 Console.WriteLine($"firstNum: {firstNum:0.00}  secondNum: {secondNum:0.00}");
@@ -77,7 +77,7 @@ Console.WriteLine($"firstNum: {firstNum:0.00}  secondNum: {secondNum:0.00}");
 
 This will result in:
 ```csharp
-firstNum: 150.00  secondNum:    1234.57
+firstNum: 150.00  secondNum: 1234.57
 firstNum: 0.00  secondNum: 0.00
 firstNum: 0.00  secondNum: 0.00
 firstNum: 150.00  secondNum: 1234.57
