@@ -63,6 +63,58 @@ Cannot divide by zero.
 Attempted to divide by zero.
 ```
 
+## We can catch exceptions of many kinds. A common exception is when we parse our user's input.
+
+For example
+```csharp
+int userAge;
+Console.WriteLine("How old are you?");
+userAge = int.Parse(Console.ReadLine());
+```
+This works perfectly if the user enters a number. But what if the user enters something else, like the word "eight"?
+
+An exception!
+
+We can move this into a try/catch block:
+```csharp
+int userAge;
+Console.WriteLine("How old are you?");
+try
+{
+    userAge = int.Parse(Console.ReadLine());
+
+} // end try
+catch (Exception)
+{
+    Console.WriteLine("Invalid input!");
+} // end catch
+```
+
+Now, the program doesn't crash, but instead returns a message back to the Console. 
+
+We can continue to build on this example by moving the code inside of a loop, which we remain in until the user enters a valid number:
+```csharp
+int userAge;
+bool validInput = false; // default value, will be set to true if parsing is successful
+Console.WriteLine("How old are you?");
+
+while (!validInput)
+{
+    try
+    {
+        userAge = int.Parse(Console.ReadLine());
+        validInput = true;
+    } // end try
+    catch (Exception)
+    {
+        Console.WriteLine("Invalid input! Please re-enter.");
+    } // end catch
+
+} // end while
+
+Console.WriteLine("We got to the end!");
+```
+
 ## Throwing our own exceptions
 
 We may also write methods which `throw` exceptions in certain conditions.
