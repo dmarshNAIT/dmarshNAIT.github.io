@@ -82,7 +82,6 @@ Console.WriteLine("How old are you?");
 try
 {
     userAge = int.Parse(Console.ReadLine());
-
 } // end try
 catch (Exception)
 {
