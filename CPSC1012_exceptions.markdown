@@ -23,10 +23,12 @@ results in:
 int i = 5;
 int j = 0;
 
-if (j != 0)
+if (j != 0) {
     Console.WriteLine(i / j);
-else
+}
+else {
    Console.WriteLine("Cannot divide by zero.");
+}
 ```
 
 ## Or, we can catch the exception!
