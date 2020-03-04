@@ -114,6 +114,8 @@ while (!validInput)
 Console.WriteLine("We got to the end!");
 ```
 
+An alternative way to deal with parsing exceptions would be to use the `.TryParse()` method.
+
 ## Throwing our own exceptions
 
 We may also write methods which `throw` exceptions in certain conditions.
