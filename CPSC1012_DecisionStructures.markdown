@@ -74,8 +74,9 @@ if (isHungry) {
         Console.WriteLine("no lunch for me");
     } // end inner else
 } // end outer if
-else
+else {
     Console.WriteLine("no lunch for me");
+} // end outer else
 ```
 
 # **Switch statements** 
