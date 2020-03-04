@@ -25,10 +25,10 @@ int j = 0;
 
 if (j != 0) {
     Console.WriteLine(i / j);
-}
+} // end if
 else {
    Console.WriteLine("Cannot divide by zero.");
-}
+} // end else
 ```
 
 ## Or, we can catch the exception!
@@ -39,10 +39,10 @@ int j = 0;
 try { // we'll try to run the code in this block. 
     // if any of it fails, we jump to the catch block.
     Console.WriteLine(i / j);
-}
+} // end try
 catch { // this code will only run if there was an exception in the try block.
     Console.WriteLine("Cannot divide by zero.");
-}
+} // end catch
 ```
 
 ## We can also view the specific exception message:
@@ -52,11 +52,11 @@ int j = 0;
 
 try {
     Console.WriteLine(i / j);
-}
+} // end try
 catch (Exception ex) {
     Console.WriteLine("Cannot divide by zero.");
     Console.WriteLine(ex.Message);
-}
+} // end catch
 ```
 
 Which returns:
@@ -116,7 +116,14 @@ while (!validInput)
 Console.WriteLine("We got to the end!");
 ```
 
-An alternative way to deal with parsing exceptions would be to use the `.TryParse()` method.
+An alternative way to deal with parsing exceptions would be to use the `.TryParse()` method. This returns a `bool` that is true if the parsing was successful, and false otherwise, and when we call this method, we pass in a `string` that we want to parse, and an `out` reference of the variable where the parsed data should be stored.
+
+For example:
+```csharp
+string rawInputString = Console.ReadLine();
+int userInt;
+bool parsingSuccessful = int.TryParse(rawInputString, out userInt);
+```
 
 ## Throwing our own exceptions
 
