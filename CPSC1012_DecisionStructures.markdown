@@ -26,7 +26,7 @@ The syntax is:
 ```csharp
 if (boolean_expression) {
     // statement(s)
-}
+} // end if
 ```
 
 For example:
@@ -35,7 +35,7 @@ For example:
 if (radius > 0) {
     double area = Math.Pow(radius, Math.PI);
     Console.WriteLine($"The area for the circle of radius {radius} is {area}");
-}
+} // end if
 ```
 # **Two-way `if-else` statements**
 
@@ -45,20 +45,20 @@ The syntax is:
 ```csharp
 if (boolean-expression) {
     // statement(s)-for-true-case
-}
+} // end if
 else {
     // statement(s)-for-false-case
-}
+} // end else
 ```
 
 For example:
 ```csharp
 if (number % 2 == 0) {
     Console.WriteLine($"{number} is even");
-}
+} // end if
 else {
     Console.WriteLine($"{number} is odd");
-}
+} // end else
 ```
 
 # **Nested `if` statements**
@@ -67,10 +67,12 @@ An `if` statement can be inside another `if` statement to form a nested `if` sta
 
 ```csharp
 if (isHungry) {
-    if (money > 10)
+    if (money > 10) {
         Console.WriteLine("I’ll buy lunch.");
-    else
+    } // end inner if
+    else {
         Console.WriteLine("no lunch for me");
+    } // end inner else
 } // end outer if
 else
     Console.WriteLine("no lunch for me");
@@ -92,7 +94,7 @@ switch (variable or expression to check) {
     default:            // if none of the above cases matched
         statement(s)-for-default;
         break;
-}
+} // end switch
 ```
 
 
