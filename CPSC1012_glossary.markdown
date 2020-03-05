@@ -129,10 +129,10 @@ permalink: /cpsc1012/glossary
 + **Random objects** can be used to generate random numeric values.
 
 ```csharp
-Random numGenerator = new Random();
+Random numGenerator = new Random(); // creates a random number generator
 int randNum1 = numGenerator.Next(); // generates a random non-negative int
 int randNum2 = numGenerator.Next(5); // generates a random non-negative int less than 5
-int randNum3 = numGenerator.Next(2,6); // generates a random int that's at least 2 and less than 6
+int randNum3 = numGenerator.Next(2, 6); // generates a random int that's at least 2 and less than 6
 double randNum4 = numGenerator.NextDouble(); // generates a random double that's at least 0.0 and less than 1.0
 ```
 
