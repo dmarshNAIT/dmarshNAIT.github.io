@@ -91,7 +91,7 @@ Please contact me directly to set up a meeting outside of scheduled class times.
       <td style="background-color:#6495ed">CPSC 1012 - A03</td>
       <td style="color:#d3d3d3">by appointment</td>
       <td style="color:#d3d3d3">by appointment</td>
-      <td></td>
+      <td style="color:#d3d3d3">by appointment</td>
     </tr>
     <tr>
       <td style="text-align:center">17:00-18:00</td>
