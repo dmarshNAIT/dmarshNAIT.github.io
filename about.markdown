@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Dana Marsh (she/them) is an instructor in the Digital Media and IT program.
+Dana Marsh (they/she) is an instructor in the Digital Media and IT program.
 
 They are currently teaching CPSC 1012 (Programming Fundamentals) and DMIT 2028 (Systems Analysis & Design II), and have previously taught DMIT 1508 (Database Fundamentals).
 
