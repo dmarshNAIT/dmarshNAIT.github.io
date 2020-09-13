@@ -12,11 +12,11 @@ The rules of normalization guide us to decide:
 
 We evaluate database design by how well it minimizes data redundancy, and the occurrence of anomalies.
 
-### Step 1: Create initial table
+### Step 0: Create initial table
 1. The initial table must have a primary key identified, after considering all candidates.
 1. Repeating groups are listed in parentheses. Repeating groups are attributes that hae multiple values within the view.
 
-### Step 2: Apply the rules of 1NF
+### Step 1: Apply the rules of 1NF
 1.  A table must contain only *atomic* attributes.
 1.  A table cannot contain any repeating groups of attributes.
 
@@ -27,7 +27,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
     |3. Designate the cardinality of the relationship between the tables.
     |4. Designate a PK for the new table.
     
-### Step 3: Apply the rules of 2NF
+### Step 2: Apply the rules of 2NF
 
 1. All non-key attributes in a table must fully depend on the entire primary key of the table.
 
@@ -44,7 +44,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
     |3. Designate the cardinality of the relationship between the tables.
     |4. Designate a PK for the new table.
     
-### Step 4: Apply the rules of 3NF
+### Step 3: Apply the rules of 3NF
     
 1. A non-key attribute cannot be fully dependent on another non-key attribute.
     
