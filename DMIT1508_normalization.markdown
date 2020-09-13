@@ -13,6 +13,8 @@ The rules of normalization guide us to decide:
 We evaluate database design by how well it minimizes data redundancy, and the occurrence of anomalies.
 
 ### Step 1: Create initial table
+1. The initial table must have a primary key identified, after considering all candidates.
+1. Repeating groups are listed in parentheses. Repeating groups are attributes that hae multiple values within the view.
 
 ### Step 2: Apply the rules of 1NF
 1.  A table must contain only *atomic* attributes.
