@@ -14,7 +14,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
 
 ### Step 0: Create initial table
 1. The initial table must have a primary key identified, after considering all candidates.
-1. Repeating groups are listed in parentheses. Repeating groups are attributes that hae multiple values within the view.
+1. Repeating groups are listed in parentheses. Repeating groups are attributes that can have multiple values within the view.
 
 ### Step 1: Apply the rules of 1NF
 1.  A table must contain only *atomic* attributes.
@@ -29,7 +29,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
     
 ### Step 2: Apply the rules of 2NF
 
-1. All non-key attributes in a table must fully depend on the entire primary key of the table.
+1. All non-key attributes in a table must *fully depend* on the entire primary key of the table.
 
     A violation can only occur in a table with a composite primary key.
     
