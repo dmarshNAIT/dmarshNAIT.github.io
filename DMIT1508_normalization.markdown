@@ -13,7 +13,7 @@ The rules of normalization guide us to decide:
 We evaluate database design by how well it minimizes data redundancy, and the occurrence of anomalies.
 
 ### Step 0: Create initial table
-1. The initial table must have a primary key identified, after considering all candidates.
+1. The initial table must have a primary key identified, *after considering all candidates*.
 1. Repeating groups are listed in parentheses. Repeating groups are attributes that can have multiple values within the view.
 
 ### Step 1: Apply the rules of 1NF
@@ -22,7 +22,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
 
     | If a repeating group of attributes exists:
     |---
-    |1. Move the repeating group of attributes to a new table.
+    |1. Move the repeating group(s) of attributes to a new table.
     |2. Duplicate the PK of the original table and place in the new table as a FK.
     |3. Designate the cardinality of the relationship between the tables.
     |4. Designate a PK for the new table.
@@ -39,10 +39,9 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
     
     | If a partial dependency exists:
     |---
-    |1. Move the partially dependent attribute to a new table.
-    |2. Duplicate the PK it's dependent on, and place in new table.
+    |1. Move the partially dependent attribute(s) to a new table.
+    |2. Duplicate the part of the PK it's dependent on, and place in new table as a PK (it's now an FK in the original table). 
     |3. Designate the cardinality of the relationship between the tables.
-    |4. Designate a PK for the new table.
     
 ### Step 3: Apply the rules of 3NF
     
@@ -52,7 +51,6 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
         
     |If a transitive dependency exists:
     |---
-    |1. Move the transitively dependent attribute to a new table.
-    |2. Duplicate the non-key attribute it's dependent on, and place in new table.
+    |1. Move the transitively dependent attribute(s) to a new table.
+    |2. Duplicate the non-key attribute it's dependent on, and place in new table as PK (it's now a FK in the original table).
     |3. Designate the cardinality of the relationship between the tables.
-    |4. Designate a PK for the new table.
