@@ -5,6 +5,7 @@ permalink: /calendar/
 ---
 
 Please contact me directly to set up a meeting outside of scheduled class times.
+I recommend always suggesting a couple times, in the case that I have any other meetings in the slot you'd had in mind, to minimize the back-and-forth emails, and include your class name and section for quick reference.
 
 #### Fall 2020 Schedule
 
@@ -59,7 +60,7 @@ Please contact me directly to set up a meeting outside of scheduled class times.
       <td style="color:#d3d3d3">by appointment</td>
       <td style="color:#d3d3d3">by appointment</td>
       <td style="background-color:#bc64ed">CPSC 1012 - OA02</td>
-      <td style="color:#d3d3d3">by appointment</td>
+      <td style="color:#d3d3d3"></td>
     </tr>
     <tr>
       <td style="text-align:center">13:00-14:00</td>
