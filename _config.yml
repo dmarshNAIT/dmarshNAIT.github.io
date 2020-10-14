@@ -28,6 +28,7 @@ url: "https://dmarshNAIT.github.io" # the base hostname & protocol for your site
 github_username:  dmarshNAIT
 
 header_pages:
+  - COMP1017.markdown
   - CPSC1012.markdown
   - DMIT1508.markdown
   - calendar.markdown
