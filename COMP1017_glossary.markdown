@@ -15,26 +15,26 @@ permalink: /comp1017/glossary
 
 ## P
 + A **parent container** is an element which contains another element. For example, in the following snippet, `<body>` is the parent container for all the content, and has **children** `<header>`, `<main>`, and `<footer>`:
-```html
-<body>
-	<header>...</header>
-	<main>
-		<h2>This is a heading.</h2>
-		<p>And here’s a paragraph.</p>
-	</main>
-	<footer>...</footer>
-</body>
-```
+	```html
+	<body>
+		<header>...</header>
+		<main>
+			<h2>This is a heading.</h2>
+			<p>And here’s a paragraph.</p>
+		</main>
+		<footer>...</footer>
+	</body>
+	```
 
 ## S
 + In this snippet, `<header>`, `<main>`, and `<footer>` are **siblings**:
-```html
-<body>
-	<header>...</header>
-	<main>
-		<h2>This is a heading.</h2>
-		<p>And here’s a paragraph.</p>
-	</main>
-	<footer>...</footer>
-</body>
-```
+	```html
+	<body>
+		<header>...</header>
+		<main>
+			<h2>This is a heading.</h2>
+			<p>And here’s a paragraph.</p>
+		</main>
+		<footer>...</footer>
+	</body>
+	```
