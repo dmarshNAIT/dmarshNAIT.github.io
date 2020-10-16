@@ -16,6 +16,8 @@ Please include:
 <html>
   <style>
     table {font-size: 12.4px; text-align:center;}
+    .row-header {width : 80px;}
+    .col-header {text-align:center;}
     .appointment {color: #d3d3d3;}
     .comp02 {background-color:#bc64ed;}
     .comp08 {background-color:#ed6495;}
@@ -26,17 +28,17 @@ Please include:
  <table>
   <thead>
     <tr>
-      <th></th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
+      <th class = "row-header"></th>
+      <th class = "col-header">Monday</th>
+      <th class = "col-header">Tuesday</th>
+      <th class = "col-header">Wednesday</th>
+      <th class = "col-header">Thursday</th>
+      <th class = "col-header">Friday</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>8:00-9:00</th>
+      <th>8am - 9am</th>
       <td></td>
       <td></td>
       <td class="dmit1508">DMIT 1508 - OA04</td>
@@ -44,7 +46,7 @@ Please include:
       <td></td>
     </tr>
     <tr>
-      <th>9:00-10:00</th>
+      <th>9am - 10am</th>
       <td class="appointment">by appointment</td>
       <td class="appointment">by appointment</td>
       <td class="dmit1508">DMIT 1508 - OA04</td>
@@ -52,7 +54,7 @@ Please include:
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
-      <th>10:00-11:00</th>
+      <th>10am - 11am</th>
       <td class="appointment">by appointment</td>
       <td class="comp08">COMP 1017 - 0A08</td>
       <td class="appointment">by appointment</td>
@@ -60,7 +62,7 @@ Please include:
       <td class="comp09">COMP 1017 - OA09</td>
     </tr>
     <tr>
-      <th>11:00-12:00</th>
+      <th>11am - 12pm</th>
       <td class="appointment">by appointment</td>
       <td class="comp08">COMP 1017 - 0A08</td>
       <td class="appointment">by appointment</td>
@@ -68,7 +70,7 @@ Please include:
       <td class="comp09">COMP 1017 - OA09</td>
     </tr>
     <tr>
-      <th>12:00-13:00</th>
+      <th>12pm - 1pm</th>
       <td class="appointment">by appointment</td>
       <td class="appointment">by appointment</td>
       <td class="appointment">by appointment</td>
@@ -76,7 +78,7 @@ Please include:
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
-      <th>13:00-14:00</th>
+      <th>1m - 2pm</th>
       <td class="comp09">COMP 1017 - OA09</td>
       <td class="appointment">by appointment</td>
       <td class="comp02">CPSC 1012 - OA02</td>
@@ -84,7 +86,7 @@ Please include:
       <td class="dmit1508">DMIT 1508 - OA04</td>
     </tr>
     <tr>
-      <th>14:00-15:00</th>
+      <th>2pm - 3pm</th>
       <td class="comp09">COMP 1017 - OA09</td>
       <td class="dmit1508">DMIT 1508 - OA04</td>
       <td class="comp02">CPSC 1012 - OA02</td>
@@ -92,7 +94,7 @@ Please include:
       <td class="dmit1508">DMIT 1508 - OA04</td>
     </tr>
     <tr>
-      <th>15:00-16:00</th>
+      <th>3pm - 4pm</th>
       <td class="appointment">by appointment</td>
       <td class="dmit1508">DMIT 1508 - OA04</td>
       <td class="appointment">by appointment</td>
@@ -100,7 +102,7 @@ Please include:
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
-      <th>16:00-17:00</th>
+      <th>4pm - 5pm</th>
       <td class="appointment">by appointment</td>
       <td class="appointment">by appointment</td>
       <td class="appointment">by appointment</td>
@@ -108,7 +110,7 @@ Please include:
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
-      <th>17:00-18:00</th>
+      <th>5pm - 6pm</th>
       <td class="cpsc1012">CPSC 1012 - OE01</td>
       <td></td>
       <td class="cpsc1012">CPSC 1012 - OE01</td>
@@ -116,7 +118,7 @@ Please include:
       <td class="cpsc1012">CPSC 1012 - OE01</td>
     </tr>
     <tr>
-      <th>18:00-19:00</th>
+      <th>6pm - 7pm</th>
       <td class="cpsc1012">CPSC 1012 - OE01</td>
       <td></td>
       <td class="cpsc1012">CPSC 1012 - OE01</td>
