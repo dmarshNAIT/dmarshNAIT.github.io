@@ -78,7 +78,7 @@ Please include:
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
-      <th>1m - 2pm</th>
+      <th>1pm - 2pm</th>
       <td class="comp09">COMP 1017 - OA09</td>
       <td class="appointment">by appointment</td>
       <td class="comp02">CPSC 1012 - OA02</td>
