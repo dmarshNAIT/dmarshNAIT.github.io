@@ -5,7 +5,6 @@ permalink: /comp1017/css
 ---
 
 
-# CSS
 **Cascading Style Sheets** are how we tell the browser how everything should look. 
 
 They're a set of rules that we write to help with **layout** and **style**.
@@ -55,15 +54,15 @@ We have 3 options: linking, embedding, or inline styles.
 ## Types of Selectors
 + **Element selectors**. That's when we target `<p>` or `<body>` or any of the other HTML elements we've learned.
 
-+ A **multiple element selector** is when we target multiple elements with the same declaration(s). For example, this will make both my 1st and 2nd level headings blue:
++ A **multiple element selector** is when we target multiple elements with the same declaration(s). For example, this will make both my 1st and 2nd level headings blue, by listing allt the elements I want to select, separated by commas:
     ```css
     h1, h2 {
         color: blue;
     }
     ```
-+ IDs. We won't be using them for CSS in this class, but they look like this: `#jumbotron`
++ **IDs**. We won't be using them for CSS in this class, but they look like this: `#jumbotron`
 
-+ **Class selectors** are selectors we make up. In CSS, they'll have a period in their name:
++ **Class selectors** are selectors we make up. In CSS, they'll have a dot in their name:
     ```css
     .container {
         margin: 0 auto;
@@ -115,14 +114,14 @@ We have 3 options: linking, embedding, or inline styles.
 + **Pseudo-class selectors** target an element based on their current state. A few we've covered in class:
     + `a:hover` targets links when we mouse over them.
     + `a:visited` targets links that have already been visited.
-    + `a:active` targets links while you are clicking them.
+    + `a:active` targets links *while* you are clicking them.
     + `a:link` targets links that have not yet been visited.
-    + `:nth-child()` targets an element based on their position within their group of siblings.
+    + `:nth-child()` targets an element based on its position within its group of siblings.
         + `nth-child(7)` targets the 7th element
         + `li:nth-child(2)` targets the 2nd `<li>` in a list
         + `:nth-child(4n)` targets every 4th element
-        + `tr:nth-child(odd)` targets odd rows of a table
-        + Learn more on the [:nth-child() page](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child).
+        + `tr:nth-child(odd)` targets odd rows of a `<table>`
+        + *Learn more on the [:nth-child() page](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child).*
 
 + The **universal selector** selects *everything*. It's also the weakest selector with a specificity value of 0.
 
@@ -200,4 +199,4 @@ There are a ton of other properties for Flexbox, but we'll only use one other in
 ```css
 flex-wrap: wrap;
 ```
-Just like turning on word-wrap in a text editor means that lines will `wrap` onto the next line if there isn't room for them, turning on `flex-wrap` lets items in the same `flex` container `wrap` onto the next line.
+Just like turning on word-wrap in a text editor means that lines will `wrap` onto the next line if there isn't room for them, adding `flex-wrap: wrap;` to a container lets items in that `flex` container `wrap` onto the next line.

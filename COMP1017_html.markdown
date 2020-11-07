@@ -5,7 +5,6 @@ permalink: /comp1017/html
 ---
 
 
-# HTML
 ## The grammar of HTML
 A basic template might look like this:
 ```html
@@ -42,7 +41,7 @@ Tags are how we mark up content. They usually come in pairs. They can also conta
 ### Block-level elements
 Block level elements start on a new line and take up the full width available. Some that we've learned about are:
 + The `<article>` tag is a sectioning element for content that would make sense all on its own: a blog post, news story, or, of course, an article.
-+ The `<aside>` tag is a sectioning elment for extra info that isn't the key content of a page: a glossary, related links, etc. An `<aside>` with a `<nav>` inside is generally how we'd mark up sidebar navigation.
++ The `<aside>` tag is a sectioning element for extra info that isn't the key content of a page: a glossary, related links, etc. An `<aside>` with a `<nav>` inside is generally how we'd mark up sidebar navigation.
 + The `<blockquote>` tag is how we mark up a quotation.
 	```html
 	<blockquote cite="en.wikipedia.org/wiki/Pee_Pee_Island">
@@ -82,10 +81,11 @@ Block level elements start on a new line and take up the full width available. S
 	1. Item 3
 + `<p>` is how we mark up a pararaph, or text:
 	```html
-	<p>This is the start of my paragraph. I don't have much to say so I'm gonna type until I have a few lines.</p>
+	<p>This is the start of my paragraph. I don't have much 
+	to say so I'm gonna type until I have a few lines.</p>
 	```
 + The `<section>` tag is a sectioning element for generic grouping.
-+ Tables are created using the `<table>` tag, which is then organized into a `<thead>`, `<tbody>`, and `<tfoot>`. Within each of those, data are organized into rows using `<tr>` and then wthin each row, cells: `<th>` for headings and `<td>` for data.  Altogether, that could look like:
++ Tables are created using the `<table>` tag, which is then organized into a `<thead>`, `<tbody>`, and `<tfoot>`. Within each of those, data are organized into rows using `<tr>` and then within each row, cells: `<th>` for headings and `<td>` for data.  Altogether, that could look like:
 	```html
 	<table>
 		<thead>
@@ -194,6 +194,6 @@ Inline elements do not start a new line and only take up as much width as necess
 	<img src="img/cats.png" alt="image of two cats sitting on a bench">
 	```
 	*Note: the `<alt>` text should sufficiently describe the photo to anyone who cannot view it.*
-+ `<em>` is what makes text appear in *italics*. We'll use this sparingly because HTML is meant for content and CSS is where we style
++ `<em>` is what makes text appear in *italics*. We'll use this sparingly because HTML is meant for content and CSS is where we style.
 + `<span>` is a non-semantic wrapper, and a generic container for any content you want to group together so that you can target it with CSS. It's like `<div>` except it doesn't create a new row.
 + `<strong>` is what makes text appear **bold**. We'll use this sparingly because HTML is meant for content and CSS is where we style.
