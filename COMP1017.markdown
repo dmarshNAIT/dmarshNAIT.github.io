@@ -6,7 +6,7 @@ permalink: /comp1017/
 
 ## Main Topics
 - [Glossary](./glossary)
-- [Module 1: HTML](.html)
-- [Module 2: CSS](.css)
+- [Module 1: HTML](./html)
+- [Module 2: CSS](./css)
 - Module 3: *Coming Soon!*
 - Module 4: *Coming Soon!*
