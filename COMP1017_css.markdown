@@ -54,7 +54,7 @@ We have 3 options: linking, embedding, or inline styles.
 ## Types of Selectors
 + **Element selectors**. That's when we target `<p>` or `<body>` or any of the other HTML elements we've learned.
 
-+ A **multiple element selector** is when we target multiple elements with the same declaration(s). For example, this will make both my 1st and 2nd level headings blue, by listing allt the elements I want to select, separated by commas:
++ A **multiple element selector** is when we target multiple elements with the same declaration(s). For example, this will make both my 1st and 2nd level headings blue, by listing all the elements I want to select, separated by commas:
     ```css
     h1, h2 {
         color: blue;
@@ -108,7 +108,7 @@ We have 3 options: linking, embedding, or inline styles.
 
     <ul>
         <li>One</li> <!-- this will not -->
-        <li class="my-things">Two</li> <!--  this will not -->
+        <li class="my-things">Two</li> <!--  neither will this -->
     </ul>
     ```
 + **Pseudo-class selectors** target an element based on their current state. A few we've covered in class:
@@ -121,7 +121,7 @@ We have 3 options: linking, embedding, or inline styles.
         + `li:nth-child(2)` targets the 2nd `<li>` in a list
         + `:nth-child(4n)` targets every 4th element
         + `tr:nth-child(odd)` targets odd rows of a `<table>`
-        + *Learn more on the [:nth-child() page](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child).*
+            + *Learn more on the [:nth-child() page](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child).*
 
 + The **universal selector** selects *everything*. It's also the weakest selector with a specificity value of 0.
 
@@ -139,14 +139,16 @@ Descendant Combinator | `ul.my-things li` | 12
 ID | `#jumbotron` | 100
 `!important` | `p { color: red !important; }` | 101
 
+*Learn more with the [specificity calculator](https://specificity.keegan.st/).*
+
 ## The Box Model
 Everything on our page is rendered as a box, with 4 parts:
 1. The **content**
 1. A **border**
-1. Space between the content and the border, called **padding**
-1. Space outside the border, called **margin**
+1. Space *between* the content and the border, called **padding**
+1. Space *outside* the border, called **margin**
 
-We will need to make sure that the total width of all the content, `border`, `padding`, and `margin`s within our page add up to a total width of exactly 960px.
+We will need to make sure that the total width of all the content, `border`, `padding`, and `margin`s within our page add up to a total width of *exactly* 960px.
 
 ### Border
 By default, has a `width` of 0. In addition to `width` we can also control its `style` and `color`.
