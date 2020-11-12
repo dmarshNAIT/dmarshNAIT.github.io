@@ -54,7 +54,7 @@ Operator | Usage
 
 ### UNION
 
-The union operation lets you combine the data retrieved by multiple `SELECT` statements.
+The union operation lets you combine the data retrieved by multiple `SELECT` statements. It's basically just gluing together the results of 2 or more queries, combining them into one output.
 ```sql
 SELECT ...
 UNION [ALL]
@@ -173,10 +173,10 @@ INNER JOIN table2
 	ON table1.joinfield = table2.joinfield
 INNER JOIN table3
 	ON table.joinfield = table3.joinfield 
-        -- where table is table1 or table2
+        -- where "table" is table1 or table2
 INNER JOIN table4
 	ON table.joinfield = table4.joinfield 
-        -- where table is table1, table2, or table3
+        -- where "table" is table1, table2, or table3
 ...
 ```
 

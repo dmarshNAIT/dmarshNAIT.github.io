@@ -10,3 +10,4 @@ permalink: /comp1017/
 - [Module 2: CSS](./css)
 - Module 3: *Coming Soon!*
 - Module 4: *Coming Soon!*
+- [Common Errors](./errors)

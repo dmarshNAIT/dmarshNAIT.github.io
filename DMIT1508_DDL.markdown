@@ -132,7 +132,7 @@ CREATE TABLE Marks (
 The FK constraint defines relationships between rows, and defines a parent-child relationship between tables. This affects:
 1. Dropping tables (e.g. cannot drop a parent table before its child)
 2. Creating table (e.g. cannot create a child table before its parent)
-3. Inserting/updating/deleting rows in tables (e.g. cannot insert an FK in a child table if there isn't an corresponding PK in its parent)
+3. Inserting/updating/deleting rows in tables (e.g. cannot insert an FK in a child table if there isn't an corresponding PK in its parent, can't delete a PK in a parent it has a corresponding child record)
 
 Foreign keys must have the same datatype as its associated PK.
 

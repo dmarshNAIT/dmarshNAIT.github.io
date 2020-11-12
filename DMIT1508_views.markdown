@@ -6,7 +6,7 @@ permalink: /dmit1508/views
 
 ## Views
 
-Views can:
+Views are basically virtual tables. They can:
 - simplify data retrieval from complex queries
 - hide the underlying table structure
 - controll access to data for different users

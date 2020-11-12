@@ -37,6 +37,7 @@ permalink: /dmit1508/
   - Parameters
   - Raising errors
   - Global variables
+  - Transactions
 - [Triggers](./triggers)
   - Temporary tables
 
