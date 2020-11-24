@@ -128,3 +128,7 @@ Please include:
   </tbody>
 </table>
 </html>
+
+#### Fall 2020 Schedule
+
+* Coming soon! *
