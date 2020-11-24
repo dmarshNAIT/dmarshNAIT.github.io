@@ -4,26 +4,25 @@ title: Common Errors
 permalink: /comp1017/errors
 ---
 
-## Common Errors
 This is not an exhaustive list, but some common problems I've seen.
 + wrong URL
 + errors in HTML or CSS validation
 + a Document Outline that has untitled sections or a weird structure
 + HTML or CSS isn't formatted
 
-### HTML
+## HTML
 + more than one `<h1>` on a page
 + content outside of a sectioning element
 + page content in `<head>`
 + using discouraged tags like `<br>`
 + broken links or images
 
-### CSS
+## CSS
 + unnecessarily complex (extra classes, redundant declarations, etc)
 + poorly named classes
 + missing fixed-width container
 
-### Framework
+## Framework
 + files/folders with uppercase characters, spaces, or any punctuation other than a dash or an underscore
 + non-semantic names
 + missing a required component:
@@ -32,6 +31,6 @@ This is not an exhaustive list, but some common problems I've seen.
     + a folder called **css** that contains the reset code and any site-specific code
     + a folder called **js**
 
-### URL
+## URL
 + missing **index.html** in the root of your folder
 + the folder in public_html is not named exactly the same as the last part of the URL you're trying (e.g. if I'm trying to access dmarsh.dmitstudent.ca/my-page, my folder needs to be named exactly **my-page**)
