@@ -129,6 +129,6 @@ Please include:
 </table>
 </html>
 
-#### Fall 2020 Schedule
+#### Winter 2021 Schedule
 
 *Coming soon!*
