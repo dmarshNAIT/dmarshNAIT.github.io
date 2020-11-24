@@ -131,4 +131,4 @@ Please include:
 
 #### Fall 2020 Schedule
 
-* Coming soon! *
+*Coming soon!*
