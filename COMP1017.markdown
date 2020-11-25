@@ -6,8 +6,12 @@ permalink: /comp1017/
 
 ## Main Topics
 - [Glossary](./glossary)
-- [Module 1: HTML](./html)
-- [Module 2: CSS](./css)
-- Module 3: *Coming Soon!*
+- Module 1:
+    - [HTML](./html)
+- Module 2:
+    - [CSS](./css)
+- Module 3:
+    - [CSS properties](./css-properties)
+    - [Web image formats](./web-image-formats)
 - Module 4: *Coming Soon!*
 - [Common Errors](./errors)
