@@ -24,3 +24,5 @@ permalink: /comp1017/web-image-formats
 + Animated .GIFs can be played once, or on a loop.
 + However, it only supports 8-bit images (i.e. a palette of **256 or fewer colours**). 
 + It also allows for one transparent colour. This is great for things like logos, text, or simple cartoons.
+
+Generally: we want the best looking image at the smallest size.

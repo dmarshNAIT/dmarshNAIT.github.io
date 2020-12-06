@@ -22,7 +22,7 @@ Some properties we've used to style our text include:
 + `font-variant` can be `normal` or `small-caps`.
 + `font-weight` sets the weight: `100`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `bold`, etc.
 + `letter-spacing` defines the spacing between each character.
-+ `line-height` defines the amount of space above and below inline elements.
++ `line-height` defines the amount of space above and below inline elements. This creates space that we need to account for when we measure our margins and padding: we need to more than just `font-size` to know how much space our text takes up! In Photoshop, *leading* measures the distance from the baseline of one line of text to the baseline of the next, and that translates to our `line-height` in CSS, which is the `font-size` *plus* a bit of space above and below the text. More about that [on this site.](https://dev.to/lampewebdev/css-line-height-jjp)
 + `list-style-type` can be set to `none` to remove bullets.
 + `text-align` defines whether the text is aligned to the `left` or `right` or `center`, etc.
 + `text-transform` can set the text to be `uppercase`.

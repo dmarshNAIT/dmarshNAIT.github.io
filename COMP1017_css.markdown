@@ -148,6 +148,8 @@ Everything on our page is rendered as a box, with 4 parts:
 1. Space *between* the content and the border, called **padding**
 1. Space *outside* the border, called **margin**
 
+[More on the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) availale thanks to Mozilla Web docs.
+
 We will need to make sure that the total width of all the content, `border`, `padding`, and `margin`s within our page add up to a total width of *exactly* 960px.
 
 ### Border
@@ -167,11 +169,12 @@ This is how we move things around on our page.
 We can control the `margin` on each side of the box individually:
 ```css
 margin: 5px 10px 5px 10px; 
-/* The order is top, right, bottom, left. */
+/* The order is top, right, bottom, left... start at the top then go around clock-wise. */
 /* If you don't specify left, it'll be the same as right. */
 /* If you don't specify bottom, it'll be the same as top. */
 /* If you don't specify right, it'll be the same as top. */
 ```
++ Sometimes adjacent elements will essentially "share" their margin. This is called margin collapsing, and means we can't always just add together margins to figure out how much space they take up. More on this phenomenon is available at [this page on mastering_margin_collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing).
 
 ### Padding
 This is how we increase the space inside an element.
@@ -187,6 +190,7 @@ or
 ```css
 display: inline;
 ```
+This can be useful if we want to set the `height` and `width` of an element that is normally `inline`, or we want an element that is normally `block` to show up on the same line as another element. [More on this at MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow)
 
 ## Flexbox
 The **CSS Flexible Box Layout Model** is a way to order, align, and lay out website content.

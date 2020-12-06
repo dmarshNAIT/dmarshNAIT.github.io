@@ -19,7 +19,7 @@ This is not an exhaustive list, but some common problems I've seen.
 
 ## CSS
 + unnecessarily complex (extra classes, redundant declarations, etc)
-+ poorly named classes
++ poorly named classes (or typos in class names)
 + missing fixed-width container
 
 ## Framework

@@ -39,7 +39,7 @@ Tags are how we mark up content. They usually come in pairs. They can also conta
 ```
 
 ### Block-level elements
-Block level elements start on a new line and take up the full width available. Some that we've learned about are:
+Block level elements start on a new line and take up the full width available. We can set their height and width in CSS. Some that we've learned about are:
 + The `<article>` tag is a sectioning element for content that would make sense all on its own: a blog post, news story, or, of course, an article.
 + The `<aside>` tag is a sectioning element for extra info that isn't the key content of a page: a glossary, related links, etc. An `<aside>` with a `<nav>` inside is generally how we'd mark up sidebar navigation.
 + The `<blockquote>` tag is how we mark up a quotation.
@@ -153,7 +153,7 @@ Block level elements start on a new line and take up the full width available. S
 	+ Item 3
 
 ### In-line elements
-Inline elements do not start a new line and only take up as much width as necessary. Some we've learned are:
+Inline elements do not start a new line and only take up as much width as necessary (this means we can't set their height or width; and we don't have much control over their margins). Some we've learned are:
 + The anchor tag (`<a>`) is how we create links. This is what it looks like in HTML:
 	```html
 	<a href="https://www.instagram.com/maimee.the.chihuahua/">Maimee's page</a>
