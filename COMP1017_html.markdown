@@ -31,7 +31,7 @@ A basic template might look like this:
 	This will not appear on the rendered page but can be viewed in the source code.
 
 ## HTML Tags
-Tags are how we mark up content. They usually come in pairs. They can also contain **attributes**. The format looks like:
+Tags are how we mark up content. They usually come in pairs. They can also contain [**attributes**](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes). The format looks like:
 ```html
 <element attribute="value">
 	Content goes here! 
