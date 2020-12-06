@@ -153,7 +153,7 @@ Block level elements start on a new line and take up the full width available. W
 	+ Item 3
 
 ### In-line elements
-Inline elements do not start a new line and only take up as much width as necessary (this means we can't set their height or width; and we don't have much control over their margins). Some we've learned are:
+Inline elements do not start a new line and only take up as much width as necessary (this means we can't set their height or width, and we don't have much control over their margins). Some we've learned are:
 + The anchor tag (`<a>`) is how we create links. This is what it looks like in HTML:
 	```html
 	<a href="https://www.instagram.com/maimee.the.chihuahua/">Maimee's page</a>
