@@ -134,12 +134,13 @@ Please include:
 <html>
   <style>
     table {font-size: 12.4px; text-align:center;}
-    .row-header {width : 80px;}
+    .row-header {width : 85px;}
     .col-header {text-align:center;}
     .appointment {color: #d3d3d3;}
     .dmit1508 { background-color:#6495ed;}
     .anap1525 {background-color:#ed6495;}
     .dmit2028 {background-color:#bc64ed;}
+    .comp1017 { background-color:#95ed64;}
   </style>
  <table>
   <thead>
@@ -217,6 +218,7 @@ Please include:
       <td class="anap1525">ANAP 1525</td>
       <td class="appointment">by appointment</td>
     </tr>
+
   </tbody>
 </table>
 </html>
