@@ -134,7 +134,7 @@ Please include:
 <html>
   <style>
     table {font-size: 12.4px; text-align:center;}
-    .row-header {width : 85px;}
+    .row-header {width : 80px;}
     .col-header {text-align:center;}
     .appointment {color: #d3d3d3;}
     .dmit1508 { background-color:#6495ed;}
@@ -218,7 +218,22 @@ Please include:
       <td class="anap1525">ANAP 1525</td>
       <td class="appointment">by appointment</td>
     </tr>
-
+    <tr>
+      <th>5pm - 6pm</th>
+      <td class="comp1017">COMP 1017</td>
+      <td></td>
+      <td class="comp1017">COMP 1017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6pm - 7pm</th>
+      <td class="comp1017">COMP 1017</td>
+      <td></td>
+      <td class="comp1017">COMP 1017</td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 </html>
