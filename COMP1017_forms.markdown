@@ -26,8 +26,8 @@ There are a few other attributes, including `value`, `placeholder`, `disabled`, 
 ### CSS
 We can target our form elements using classes, and descendant selectors, as well as something new: using the value of an attribute. If I wanted to target all the inputs where the `type` is `text`, I could use this declaration:
 
-    ```css
-    input[type=text] {
+```css
+input[type=text] {
     /** CSS goes here **/
-    }
-    ```
+}
+```
