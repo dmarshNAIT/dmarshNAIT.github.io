@@ -13,5 +13,6 @@ permalink: /comp1017/
 - Module 3:
     - [CSS properties](./css-properties)
     - [Web image formats](./web-image-formats)
-- Module 4: *Coming Soon!*
+- Module 4:
+    - [Forms](./forms)
 - [Common Errors](./errors)
