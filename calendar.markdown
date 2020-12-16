@@ -24,6 +24,7 @@ Please include:
     .comp09 {background-color:#edbc64;}
     .cpsc1012 { background-color:#95ed64;}
     .dmit1508 { background-color:#6495ed;}
+    .drop-in { color: #1f66e5;}
   </style>
  <table>
   <thead>
@@ -167,7 +168,7 @@ Please include:
       <td class="dmit1508">DMIT 1508</td>
       <td class="dmit1508">DMIT 1508</td>
       <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment">by appointment</td>
+      <td class="drop-in">drop-in (WebEx)</td>
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
@@ -175,12 +176,12 @@ Please include:
       <td class="dmit1508">DMIT 1508</td>
       <td class="dmit1508">DMIT 1508</td>
       <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment">by appointment</td>
+      <td class="drop-in">drop-in (WebEx)</td>
       <td class="appointment">by appointment</td>
     </tr>
     <tr>
       <th>12pm - 1pm</th>
-      <td class="appointment">by appointment</td>
+      <td class="drop-in">drop-in (WebEx)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -188,7 +189,7 @@ Please include:
     </tr>
     <tr>
       <th>1pm - 2pm</th>
-      <td class="appointment">by appointment</td>
+      <td class="drop-in">drop-in (WebEx)</td>
       <td class="dmit2028">DMIT 2028</td>
       <td class="dmit2028">DMIT 2028</td>
       <td class="dmit2028">DMIT 2028</td>
@@ -212,7 +213,7 @@ Please include:
     </tr>
     <tr>
       <th>4pm - 5pm</th>
-      <td class="appointment">by appointment</td>
+      <td class="drop-in">drop-in (WebEx)</td>
       <td class="appointment">by appointment</td>
       <td class="anap1525">ANAP 1525</td>
       <td class="anap1525">ANAP 1525</td>
@@ -237,3 +238,5 @@ Please include:
   </tbody>
 </table>
 </html>
+
+Drop-in hours are meant to be virtual versions of old-fashioned office hours: I'll have my WebEx room open, and any students past or present are welcome to pop in and say hi, socialize, ask questions, or complain about how terrible isolation is.
