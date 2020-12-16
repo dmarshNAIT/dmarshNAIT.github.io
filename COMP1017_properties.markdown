@@ -12,7 +12,7 @@ Some properties we've used to style our text include:
     h1 {
         font: normal 
         small-caps 700 48px/1 
-        ‘Lato’, sans-serif;
+        'Lato', sans-serif;
     }
     ```
 + `font-family` defines the font being applied to an element. We list multiple fonts separated by commas, so if the first font isn't available it uses the next, and so on.
