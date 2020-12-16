@@ -161,8 +161,13 @@ Example:
 RAISERROR('Must provide required parameters', 16, 1)
 ```
 
+Scenarios where we will want to raise an error include:
+- Required parameters are not passed to a stored procedure.
+- A DML operation failed (INSERT, UPDATE, DELETE).
+- An UPDATE/DELETE operation affected 0 rows (this may not always require an error, but if not specified, assume so).
+
 ### Global variables
-- `@@error` returns the error count for the last statement executed. If the last statement did not error, it has a value of `0`.
+- `@@error` returns the error count for the last statement executed. If the last statement did not error, it has a value of `0`. We will check this after every DML operation.
 - `@@identity` returns the last-inserted identity value.
 - `@@rowcount` returns the number of rows affected by the last statement.
 

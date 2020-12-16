@@ -6,7 +6,7 @@ permalink: /dmit1508/triggers
 
 ## Triggers
 
-Triggers are objects that are stored in the database, that execute when they are triggered by a specific DML statement.
+Triggers are objects that are stored in the database, that execute when they are triggered **by a specific DML statement**.
 
 For example, we could create a trigger that's associated with an `INSERT` operation on the `Staff` table. Every time we execute an `INSERT` on the `Staff` table, the code in that trigger will execute.
 
@@ -18,24 +18,48 @@ Triggers can help us to
 - Automate an operation
 - Create an audit trail
 
-### Temporary tables
+For example: 
++ one trigger might check the value of an `INSERT`ed or `UPDATE`d column, and `ROLLBACK` if it's an invalid value (e.g. a CustomerID that doesn't exist in our database, or an OrderNumber from an order with a status of "cancelled").
++ a 2nd trigger may `ROLLBACK` if we attempt to `DELETE` from a certain table that contains important data.
++ a 3rd trigger may automatically `INSERT` records into an audit-log table that contain the "old" and "new" values when key fields are changed, like the budget for our project, or an employee's wage.
++ and so on. Anything we'd want to *automatically* do or check after a specific DML statement is a candidate for a trigger!
+
+### When *exactly* do triggers execute?
+Triggers happen at a **specific** point in a series of events, most of which that are happening *automatically* behind-the-scenes.
+1. The process kicks off when a DML operation is executed: `INSERT`, `UPDATE`, or `DELETE`.
+1. Next, the server will check if any `CONSTRAINT`s were violated by the DML statement. If so, an error is raised and the process ends without executing our trigger.
+1. Then, the server will check for any issues with data types. If there are, an error is raised and the process ends without executing our trigger.
+1. The server then `BEGIN`s a `TRANSACTION`, and creates 2 temporary tables (more on those below).
+1. The DML operation occurs, which will mean changes may occur on the base table and the temporary tables.
+1. Then, **the trigger will execute**. In that trigger, we may `ROLLBACK` the `TRANSACTION` that was started by the server, but will never `COMMIT TRANSACTION`. We may do other DML operations, or `RAISERROR`s.
+    + Note: It's possible that we have multiple triggers on a single table. In this case, we have very little control over what order they occur in... we will generally ignore this within the scope of this class.
+1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server automatically `COMMIT`s the `TRANSACTION`.
+1. Finally, the `inserted` and `deleted` tables are dropped.
+
+
+### More about temporary tables...
 Two temporary tables are created and used by the server when executing a DML operation.
-- `Deleted`: contains the before image of all rows affected
-- `Inserted`: contains the after image of all rows affected
+- `deleted`: contains the "before" image of all rows affected
+- `inserted`: contains the "after" image of all rows affected
 - We'll use the term "base table" to refer to the table the trigger is associated with.
 
 The contents of each temporary table depend on which DML statement the trigger is associated with:
 
 | |  `deleted` table | `inserted` table | base table
 --- | --- | --- | --- 
-`INSERT` trigger | empty | new rows | new rows and previously existing rows
-`DELETE` trigger | before image of deleted rows | empty | all rows that weren't deleted
+`INSERT` trigger | *empty* | new rows | new rows and previously existing rows
+`DELETE` trigger | before image of deleted rows | *empty* | all rows that weren't deleted
 `UPDATE` trigger |  before image of changed rows | after image of changed rows | after image of changed rows AND all other rows not affected by the operation
 
+For example, if the `deleted` table is empty, that might mean that no records were affected, or it could mean we just executed an `INSERT` operation. We can use the contents of the temporary tables within our trigger logic, as needed.
+
+### Logic to include in triggers
+We'll almost always check `@@rowcount` at the start of our trigger, and if our trigger is trigged by an `UPDATE`, check `UPDATE(column_name)`, to make sure there were actually changes we need to check/audit/etc. If not, we branch around the logic in our trigger.
+
 Triggers will execute:
-- When the DML operation affects zero rows in the base table
-- When the DML operation affects one row in the base table
-- When the DML operation affects many rows in the base table
+- When the DML operation affects **zero** rows in the base table
+- When the DML operation affects **one** row in the base table
+- When the DML operation affects **many** rows in the base table
 
 **The logic must work in all three conditions.**
 
@@ -43,8 +67,9 @@ Triggers will execute:
 ```sql
 CREATE TRIGGER	trigger_name
 	ON	table_name
-	FOR [UPDATE][,] [INSERT][,] [DELETE]	AS
-	SQL statements
+	FOR [UPDATE][,] [INSERT][,] [DELETE]	
+AS
+	-- SQL statements
 RETURN
 ```
 
