@@ -9,6 +9,7 @@ permalink: /dmit1508/
 *Looking for the [course GitHub repo](https://github.com/dmarshNAIT/dmit1508)?*
 
 - [Glossary](./glossary)
+- *NEW*: [Quick reference cheatsheet](./cheatsheet)
 - [Normalization](./normalization)
 - [DDL](./DDL)
   - Creating tables
