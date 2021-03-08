@@ -89,25 +89,25 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 - `>=` means "greater than or equal to"
 
 ## String functions:
-+ LEN(column | expression) 
-+ LEFT(column | expression, length) 
-+ RIGHT(column | expression, length) 
-+ SUBSTRING(column | expression, start, length) 
-+ REVERSE(column | expression) 
-+ UPPER(column | expression) 
-+ LOWER(column | expression) 
-+ LTRIM(column | expression) 
-+ RTRIM(column | expression) 
++ `LEN(column | expression) `
++ `LEFT(column | expression, length) `
++ `RIGHT(column | expression, length) `
++ `SUBSTRING(column | expression, start, length) `
++ `REVERSE(column | expression) `
++ `UPPER(column | expression) `
++ `LOWER(column | expression) `
++ `LTRIM(column | expression) `
++ `RTRIM(column | expression)` 
 
 ## Date Functions
-+ GETDATE() returns the system date
-+ DATEADD(xx, n, date1) adds n xx to date1 (n may be negative)
-+ DATEDIFF(xx, date1, date2) returns the number of xx from date1 to date2
-+ DATENAME(xx, date1) returns string representation of the xx of date1
-+ DATEPART(xx, date1) returns integer representation of the xx of date1
-    + YEAR(date1) functions the same as DATEPART(yy, date1)
-    + MONTH(date1) functions the same as DATEPART(mm, date1)
-    + DAY(date1) functions the same as DATEPART(dd, date1)
++ `GETDATE()` returns the system date
++ `DATEADD(xx, n, date1)` adds `n` `xx` to `date1` (`n` may be negative)
++ `DATEDIFF(xx, date1, date2)` returns the number of `xx` from `date1` to `date2`
++ `DATENAME(xx, date1)` returns string representation of the `xx` of `date1`
++ `DATEPART(xx, date1)` returns integer representation of the `xx` of `date1`
+    + `YEAR(date1)` functions the same as `DATEPART(yy, date1)`
+    + `MONTH(date1)` functions the same as `DATEPART(mm, date1)`
+    + `DAY(date1)` functions the same as `DATEPART(dd, date1)`
 
 ## To be added:
 + Lesson 26 - Views & DML
