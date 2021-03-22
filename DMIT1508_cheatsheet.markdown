@@ -98,6 +98,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 + `LOWER(column | expression) `
 + `LTRIM(column | expression) `
 + `RTRIM(column | expression)` 
+Check out the [Queries](./queries) page for definitions of each.
 
 ## Date Functions
 + `GETDATE()` returns the system date
@@ -111,5 +112,6 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 
 ## To be added:
 + Lesson 26 - Views & DML
+    + In the meantime, check out the [Views](./views) and [DML](./DML) pages!
 + Lesson 28 - Stored Procedures
 + Lesson 37 - Triggers
