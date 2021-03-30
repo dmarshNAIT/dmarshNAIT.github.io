@@ -202,8 +202,13 @@ To get items to be in the same flexbox (i.e. on the same line) we apply this to 
 ```
 The parent becomes the **flex container** and the children become **flex items**.
 
-There are a ton of other properties for Flexbox, but we'll only use one other in this course:
+There are a ton of other properties for Flexbox, but we'll only require one other in this course:
 ```css
 flex-wrap: wrap;
 ```
 Just like turning on word-wrap in a text editor means that lines will `wrap` onto the next line if there isn't room for them, adding `flex-wrap: wrap;` to a container lets items in that `flex` container `wrap` onto the next line.
+
+Some "bonus" content:
++ Adding `justify-content: center;` to a flex-container centers items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit.
++ Adding `align-items: center;` to a flex-container will center items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom.
++ There are helpful examples of both in this [complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).

@@ -11,12 +11,13 @@ The `INSERT` statement adds 1+ rows to a table.
 It can include hard-coded values, or can use subqueries to retrieve data from other tables.
 
 ```sql
-INSERT [into] table_name 
-[(column list)]
-{VALUES
-({DEFAULT | NULL | expression}, . . . )
+INSERT INTO TableName 
+(Column1, Column2, ...)
+{
+VALUES ({DEFAULT | NULL | expression}, . . . )
 |
-SELECT ... }
+SELECT ... 
+}
 ```
 
 If the statement supplies data that does not comply with constraints, or the data is incompatible with the data type of the column, the statement fails.
@@ -127,8 +128,7 @@ Examples:
 ## DELETE
 The `DELETE` statement removes rows from a table.
 ```sql
-DELETE [FROM] table_name
-[FROM ... ]
+DELETE FROM table_name
 [WHERE ... ]
 ```
 

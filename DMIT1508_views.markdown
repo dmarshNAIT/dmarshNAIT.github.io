@@ -21,24 +21,24 @@ If the `SELECT` statement contains `GROUP BY`, `DISTINCT`, `TOP`, or `UNION` you
 
 ### Syntax:
 ```sql
-CREATE VIEW viewname
+CREATE VIEW ViewName
 AS
 SELECT ...
 ```
 
 #### Retrieving the definition:
 ```sql
-SP_HELPTEXT viewname
+SP_HELPTEXT ViewName
 ```
 
 #### Altering existing views:
 ```sql
-ALTER VIEW viewname
+ALTER VIEW ViewName
 AS
 SELECT ...
 ```
 #### Dropping existing views:
 
 ```sql
-DROP VIEW viewname
+DROP VIEW ViewName
 ```
