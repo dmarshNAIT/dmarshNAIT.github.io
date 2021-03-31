@@ -11,13 +11,16 @@ The `INSERT` statement adds 1+ rows to a table.
 It can include hard-coded values, or can use subqueries to retrieve data from other tables.
 
 ```sql
-INSERT INTO TableName 
-(Column1, Column2, ...)
-{
-VALUES ({DEFAULT | NULL | expression}, . . . )
-|
-SELECT ... 
-}
+INSERT INTO TableName (Column1, Column2, ...)
+VALUES (Value1, Value2, ...))
+-- Value1 could be DEFAULT, NULL, or an expression or subquery that returns a value
+```
+
+OR 
+```sql
+INSERT INTO TableName (Column1, Column2, ...)
+SELECT Column1, Column2, ...
+FROM ...
 ```
 
 If the statement supplies data that does not comply with constraints, or the data is incompatible with the data type of the column, the statement fails.
@@ -87,8 +90,8 @@ VALUES ('Jason'
 The `UPDATE` statement updates existing data in the table. It can update one or more columns.
 Data can be updated by providing new values for columns or using subqueries to provide the data.
 ```sql
-UPDATE	table_name
-SET column = expression[, column = expression ... ]
+UPDATE	TableName
+SET Column1 = expression[, Column2 = expression ... ]
 [WHERE ... ]
 ```
 

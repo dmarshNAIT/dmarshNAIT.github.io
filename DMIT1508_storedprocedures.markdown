@@ -106,31 +106,31 @@ A stored procedure is a set of SQL statements.
 
 - To create a new stored procedure:
     ```sql
-    CREATE PROCEDURE procedure_name AS
+    CREATE PROCEDURE ProcedureName AS
     -- SQL statements go here
     RETURN
     ```
 - To drop an existing stored procedure:
     ```sql
-    DROP PROCEDURE procedure_name
+    DROP PROCEDURE ProcedureName
     ```
 - To change an existing stored procedure:
     ```sql
-    ALTER PROCEDURE procedure_name
+    ALTER PROCEDURE ProcedureName
     -- SQL statements go here
     RETURN
     ```
 - To run a stored procedure:
     ```sql
-    EXEC procedure_name
+    EXEC ProcedureName
     ```
     If the procedure has parameters, they are listed after, separated by commas:
     ```sql
-    EXEC procedure_name param1, param2
+    EXEC ProcedureName Param1, Param2
     ```
 - To display the definition of an existing stored procedure:
     ```sql
-    EXEC sp_helptext procedure_name
+    EXEC sp_helptext ProcedureName
     ```
 
 ### Parameters
@@ -174,6 +174,8 @@ Scenarios where we will want to raise an error include:
 ### Transactions
 Transactions are SQL structures that ensure that a complete Logical Unit of Work is complete.
 
+**Transactions are needed in any Stored Procedure that has more than 1 DML statement occurring.**
+
 + `BEGIN TRANSACTION` marks the beginning of the transaction
 + `COMMIT TRANSACTION` marks the end of the transaction, and makes the changes permanent.
 + `ROLLBACK TRANSACTION` marks the end of the transaction, and "undoes" the changes: we go back to the state we were in when the transaction began.
@@ -184,9 +186,9 @@ Let's say we are creating an SP to register a student. Our stored procedure woul
 + Otherwise:
     + `BEGIN TRANSACTION `
     + `INSERT` into Grade
-    + Check if the `INSERT` failed. If so, `ROLLBACK`.
+    + Check if the `INSERT` failed. If so, `RAISERROR` & `ROLLBACK`.
     + Otherwise:
         + `UPDATE` Student.BalanceOwing
-        + Check if the `UPDATE` failed. If so, `ROLLBACK`.
+        + Check if the `UPDATE` failed. If so, `RAISERROR` & `ROLLBACK`.
         + Otherwise, `COMMIT`.
 

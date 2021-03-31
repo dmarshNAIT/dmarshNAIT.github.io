@@ -31,9 +31,9 @@ A lot of that is optional, so here's what it looks like with just some of the re
 
 ```sql
 CREATE TABLE tablename (
-    column1 datatype
-  , column2 datatype
-  , column3 datatype
+    Column1 datatype
+  , Column2 datatype
+  , Column3 datatype
     ...  
 ) 
 ```
@@ -44,7 +44,7 @@ After a table has been created, use the system stored procedure `SP_HELP` to lis
 
 To run a stored procedure:
 ```sql
-EXEC procedurename [parameter1 [, parameter2 ... ]]
+EXEC ProcedureName Parameter1, Parameter2 --as many params as we need, all comma-separated
 ```
 
 In this case, we'd run:
@@ -56,7 +56,7 @@ EXEC SP_HELP Customers
 
 To drop a table, the syntax is 
 ```sql
-DROP TABLE [[databasename.]owner.]tablename
+DROP TABLE TableName
 ```
 
 For example, if I have a table called `Items`, I'd execute 
@@ -82,6 +82,11 @@ IF OBJECT_ID('dbo.Activity', 'U') IS NOT NULL -- if a table called dbo.Activity 
   DROP TABLE dbo.Activity; 
 ```
 
+Another way to write this:
+```sql
+DROP TABLE IF EXISTS Activity -- drop Activity table IF it exists
+```
+
 # Constraints
 
 Constraints are used to:
@@ -105,7 +110,7 @@ In a normalized db design, all tables must have the PK constraint, and any colum
 
 The syntax of a PK constraint is 
 ```sql
-[CONSTRAINT constraint_name PRIMARY KEY [CLUSTERED | NONCLUSTERED]
+CONSTRAINT ConstraintName PRIMARY KEY [CLUSTERED | NONCLUSTERED]
 ```
 
 Example:
@@ -117,7 +122,7 @@ CREATE TABLE Student (
 )
 ```
 
-If the table has a composite key, the primary key constraint will be on the table level rather than the column level:
+If the table has a composite key, the primary key constraint will be on the table level rather than the column level. Instead of putting it beside the column definition, it's comma separated from the columns like this:
 ```sql
 CREATE TABLE Marks (
     StudentID   CHAR(9)     NOT NULL
@@ -139,8 +144,8 @@ Foreign keys must have the same datatype as its associated PK.
 ### Syntax:
 ```sql
 CONSTRAINT constraint_name 
-[FOREIGN KEY (col_name)[, ... col_name16] ]
-REFERENCES table_name (ref_col[, ... ref_col16] )
+[FOREIGN KEY (Col1Name)[, ... ColName2] ]
+REFERENCES TableName (Col1Name[, ... ColNam2] )
 ```
 
 ### Example with a column-level constraint:
@@ -175,7 +180,7 @@ The `CHECK` constraint enables you to specify what values are acceptable (i.e. s
 
 ### Syntax:
 ```sql
-CONSTRAINT constraint_name CHECK (expression)
+CONSTRAINT ConstraintName CHECK (expression)
 ```
 The expression:
 - cannot contain a subquery
@@ -214,7 +219,7 @@ The `LIKE` operator allows us to perform pattern matching on character or dateti
 
 #### Syntax: 
 ```sql
-column_name LIKE 'pattern'
+ColumnnName LIKE 'pattern'
 ```
 #### Example: 
 ```sql
@@ -241,7 +246,7 @@ A default constraint can be defined on any column *except*:
 
 ### Syntax: 
 ```sql
-[CONSTRAINT constraint_name] DEFAULT constant | function | NULL
+CONSTRAINT DF_ConstraintName DEFAULT constant | function | NULL
 ```
 
 ### Examples:
@@ -276,15 +281,15 @@ If the table is empty, you can add a column that is `NOT NULL`.
 ```sql
 [ WITH { CHECK | NOCHECK } ]
 {
-[ { CHECK | NOCHECK } CONSTRAINT  constraint_name ]
-| [ ADD column_name column properties [column_constraints ]
-| [ ADD table_constraint ] 
-| [ ( ALTER column_name
+[ { CHECK | NOCHECK } CONSTRAINT  ConstraintName ]
+| [ ADD ColumnName column properties [column_constraints ]
+| [ ADD TableConstraint ] 
+| [ ( ALTER ColumnName
 { datatype {NULL|NOT NULL} | IDENTITY (seed, increment) 
 | DROP DEFAULT | SET DEFAULT expression} ) ]
-| [ DROP COLUMN column_name ]
-| [ DROP CONSTRAINT constraint_name ]
-| [ {ENABLE | DISABLE } TRIGGER trigger_name ]
+| [ DROP COLUMN ColumnName ]
+| [ DROP CONSTRAINT ConstraintName ]
+| [ {ENABLE | DISABLE } TRIGGER TriggerName ]
 }
 ```
 
@@ -374,8 +379,8 @@ Some designers create a non-clustered index for each FK. This increased overhead
 
 ## Syntax:
 ```sql
-CREATE [UNIQUE] [ CLUSTERED | NONCLUSTERED ] INDEX index name
-ON table name ( column name [ ASC | DESC] [, ...n] )
+CREATE NONCLUSTERED INDEX IX_Name
+ON TableName ( ColumnName )
 ```
 
 The column name is the key for the index (one or more columns may act as the key). All indexes must have a unique name. We normally use the prefix `IX` when naming an index.
@@ -383,7 +388,7 @@ The column name is the key for the index (one or more columns may act as the key
 ## Example:
 To create a nonclustered index associated with the `Marks` table using `CourseID` (a FK referencing the `Course` table) as the index key:
 ```sql
-CREATE nonclustered INDEX IX_CourseId
+CREATE NONCLUSTERED INDEX IX_CourseId
 		ON Marks (CourseId)
 ```
 

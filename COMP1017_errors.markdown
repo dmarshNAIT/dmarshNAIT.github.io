@@ -4,8 +4,8 @@ title: Common Errors
 permalink: /comp1017/errors
 ---
 
-This is not an exhaustive list, but some common problems I've seen.
-+ wrong URL
+This is not an exhaustive list, but some common problems I've seen (AKA, things you may lose marks for).
++ wrong URL (the name of your folder defines your URL)
 + errors in HTML or CSS validation
 + a Document Outline that has untitled sections or a weird structure
 + HTML or CSS isn't formatted

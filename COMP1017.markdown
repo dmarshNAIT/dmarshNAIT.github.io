@@ -9,9 +9,9 @@ permalink: /comp1017/
 - Module 1:
     - [HTML](./html)
 - Module 2:
-    - [CSS](./css)
+    - [CSS](./css) - including Flexbox!
 - Module 3:
-    - [CSS properties](./css-properties)
+    - [CSS properties](./css-properties) - including font styling
     - [Web image formats](./web-image-formats)
 - Module 4:
     - [Forms](./forms)

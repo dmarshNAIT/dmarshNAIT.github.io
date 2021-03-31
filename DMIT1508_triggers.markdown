@@ -25,12 +25,12 @@ For example:
 + and so on. Anything we'd want to *automatically* do or check after a specific DML statement is a candidate for a trigger!
 
 ### When *exactly* do triggers execute?
-Triggers happen at a **specific** point in a series of events, most of which that are happening *automatically* behind-the-scenes.
+Triggers happen at a **specific** point in a series of events, most of which that are happening *automatically* behind-the-scenes. Here's what the whole series looks like:
 1. The process kicks off when a DML operation is executed: `INSERT`, `UPDATE`, or `DELETE`.
 1. Next, the server will check if any `CONSTRAINT`s were violated by the DML statement. If so, an error is raised and the process ends without executing our trigger.
 1. Then, the server will check for any issues with data types. If there are, an error is raised and the process ends without executing our trigger.
 1. The server then `BEGIN`s a `TRANSACTION`, and creates 2 temporary tables (more on those below).
-1. The DML operation occurs, which will mean changes may occur on the base table and the temporary tables.
+1. The DML operation occurs, which will mean changes *may* occur on the base table and the temporary tables.
 1. Then, **the trigger will execute**. In that trigger, we may `ROLLBACK` the `TRANSACTION` that was started by the server, but will never `COMMIT TRANSACTION`. We may do other DML operations, or `RAISERROR`s.
     + Note: It's possible that we have multiple triggers on a single table. In this case, we have very little control over what order they occur in... we will generally ignore this within the scope of this class.
 1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server automatically `COMMIT`s the `TRANSACTION`.

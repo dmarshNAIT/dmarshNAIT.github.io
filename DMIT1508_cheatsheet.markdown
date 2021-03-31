@@ -28,31 +28,31 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 ## D
 - `DISTINCT` can be added to a `SELECT` or `COUNT()` to only count **unique** rows or values.
 - `DROP INDEX` deletes an index from the database.
-- `DROP TABLE` deletes a table from the database: both its structure AND its contents.
+- `DROP TABLE` deletes a table from the database: both its structure AND its contents. If you drop a table that has triggers associated with it, the triggers are dropped as well.
 
 ## E
 - `EXEC ProcedureName ParameterName` is how we execute a stored procedure called *ProcedureName* with a parameter called ParameterName. Some SPs have no parameters, some have one, some have many.
     - `EXEC sp_help Customers` runs the `sp_help` on the `Customers` table.
 
 ## G
-- `GetDate()` returns the current datetime.
+- `GetDate()` returns the current datetime (i.e. today's date).
 
 ## I
 - `IN` lets us check for an exact match within a list of values. e.g. `WHERE StudentID IN (20001, 20002, 20004)`
 
 ## J
 - `JOIN` lets us join data from multiple tables.
-    - `table1 INNER JOIN table2` returns only records that exist in both tables. 
-        + If you're joining a parent to child, OR child to parent, you'll only get records for parents that have child records.
-    - `table1 LEFT JOIN table2` returns all records in table1, regardless of whether they exist in table2.
-        + If you're joining parent to child, you'll get parents regardless of whether they have child records.
-        + If you're joining child to parent, you'll get only child records, so `INNER JOIN` probably makes more sense.
-    - `table1 RIGHT JOIN table2` returns all records in table2, regardless of whether they exist in table1.
-        + If you're joining parent to child, you'll get only child records, so `INNER JOIN` probably makes more sense.
-        + If you're joining child to parent, you'll get parents regardless of whether they have child records.
+    - `table1 INNER JOIN table2` returns only **records that exist in both tables**. 
+        + If you're joining a parent to child, OR child to parent, you'll only get **records for parents that have child records**.
+    - `table1 LEFT JOIN table2` returns **all records in table1**, regardless of whether they exist in table2.
+        + If you're joining parent to child, you'll get **parents regardless of whether they have child records**.
+        + If you're joining child to parent, you'll get only child records, so you **should use `INNER JOIN` instead**.
+    - `table1 RIGHT JOIN table2` returns **all records in table2**, regardless of whether they exist in table1.
+        + If you're joining parent to child, you'll get only child records, so you **should use `INNER JOIN` instead**.
+        + If you're joining child to parent, you'll get **parents regardless of whether they have child records**.
     - `table1 FULL OUTER JOIN table2` returns all records that exist in either table.
-        + If you're joining parent to child, you'll get parents regardless of whether they have child records, so `LEFT JOIN` probably makes more sense.
-        + If you're joining child to parent, you'll get parents regardless of whether they have child records, so `RIGHT JOIN` probably makes more sense.
+        + If you're joining parent to child, you'll get parents regardless of whether they have child records, so you **should use `LEFT JOIN` instead**.
+        + If you're joining child to parent, you'll get parents regardless of whether they have child records, so you **should use `RIGHT JOIN` instead**.
 
 ## L
 - The `LIKE` operator lets us do pattern matching on a character. This is useful in a `CHECK` constraint or in a `WHERE` clause. Check out the [DDL page](./DDL) to see the wildcards we can use within our patterns.
@@ -63,30 +63,32 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 
 ## N
 - `NOT` can be added to many other keywords: `NOT IN`, `NOT BETWEEN`, `NOT NULL`.
-- `NULL` is the absence of a value. We can test whether or not a value is null by using `IS NULL` in our clause (We do **not** use `= NULL`. Why? `NULL` is not a value so it's impossible to be equal to it).
+- `NULL` is the absence of a value. We can test whether or not a value is null by using `IS NULL` in our clause.
+    + We do **not** use "`= NULL`". Why? `NULL` is **not** a value so it's impossible to be equal to it).
 
 
 ## O
 - `OR` is used between two boolean expressions, if we need **either** to be true. Both sides of the expression need to be a full and complete boolean expression:
-    e.g. `WHERE Value = 5 OR Value = 10` is correct. `WHERE VALUE = 5 OR 10` is incorrect, because `10` is not a boolean expression.
+    e.g. "`WHERE Value = 5 OR Value = 10`" is correct. "`WHERE VALUE = 5 OR 10`" is incorrect, because "`10`" is not a boolean expression.
 
 
 ## S
 - `SELECT` is how we start a query that retrieves data from our database. Details on all its parts are available on the [Queries](./queries) page.
 - `SOME` compares against any of the values:
-`WHERE Grade > SOME (SELECT Grade … )`. It's the same as `ANY`.
-- `SUM` is a function that returns the sum of a column containing numeric values.
+    + `WHERE Grade > SOME (SELECT Grade … )` 
+    + It's the same as `ANY`.
+- `SUM()` is a function that returns the sum of a column containing numeric values.
 
 ## U
 - `UNION` lets us combine the results of multiple SQL queries, as long as they have the same number of columns and similar data types. The columns are named according to the **first** query in the `UNION` (i.e. the names of the columns in subsequent queries doesn't appear in the results).
 
 ## Other Operators
-- `=` lets us look for an exact match ("is equal to")
-- `<>` or `!=` both mean "is not equal to"
-- `<` means "less than"
-- `<=` means "less than or equal to"
-- `>` means "greater than"
-- `>=` means "greater than or equal to"
+- `=` lets us look for an exact match (*is equal to*)
+- `<>` or `!=` both mean *is not equal to*
+- `<` means *less than*
+- `<=` means *less than or equal to*
+- `>` means *greater than*
+- `>=` means *greater than or equal to*
 
 ## String functions:
 + `LEN(column | expression) `
@@ -98,7 +100,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 + `LOWER(column | expression) `
 + `LTRIM(column | expression) `
 + `RTRIM(column | expression)` 
-Check out the [Queries](./queries) page for definitions of each.
++ Check out the [Queries](./queries) page for definitions of each.
 
 ## Date Functions
 + `GETDATE()` returns the system date

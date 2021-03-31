@@ -152,31 +152,32 @@ Millisecond | `ms` | 0 | 999
 
 How do we connect data in one table to its related record(s) in another?
 ```sql
-SELECT field1, field2, ... 
-FROM table1
-[INNER, FULL OUTER, ...] JOIN table2
-	ON table1.joinfield = table2.joinfield
+SELECT Field1, Field2, ... 
+FROM Table1
+[INNER, LEFT OUTER, ...] JOIN Table2
+	ON Table1.JoinField = Table2.JoinField
+  -- the Join Field is generally the FK/PK that connects the tables, though technically we can JOIN by any field.
 ```
 
 #### Types of Joins
 - `INNER JOIN` returns only records that exist in both tables
-- `FULL OUTER JOIN` returns all records that exist in either table
-- `LEFT JOIN` returns all records in `table1`, regardless of whether they exist in `table2`
-- `RIGHT JOIN` returns all tables in `table2`, regardless of whether they exist in `table1`
+- `FULL OUTER JOIN` returns all records that exist in either table (if we're `JOIN`ing on our FK, which we always do in DMIT 1508, this type of `JOIN` isn't used)
+- `Table1 LEFT JOIN Table2` returns all records in `Table1`, regardless of whether they exist in `Table2`
+- `Table1 RIGHT JOIN Table2` returns all tables in `Table2`, regardless of whether they exist in `Table1`
 
 #### Selecting from 3+ tables
 We can add additional `JOIN` statements:
 ```sql
-SELECT field1, field2, ... 
-FROM table1
-INNER JOIN table2
-	ON table1.joinfield = table2.joinfield
-INNER JOIN table3
-	ON table.joinfield = table3.joinfield 
-        -- where "table" is table1 or table2
+SELECT Field1, Field2, ... 
+FROM Table1
+INNER JOIN Table2
+	ON Table1.JoinField = Table2.JoinField
+INNER JOIN Table3
+	ON Table.JoinField = Table3.JoinField 
+        -- where "Table" is Table1 or Table2
 INNER JOIN table4
-	ON table.joinfield = table4.joinfield 
-        -- where "table" is table1, table2, or table3
+	ON Table.JoinField = table4.JoinField 
+        -- where "Table" is Table1, Table2, or Table3
 ...
 ```
 
@@ -189,12 +190,15 @@ There are nested and correlated subqueries, and in this course we will focus on 
 What if want something other than an exact match?
 ```sql
 WHERE StudentID IN (SELECT StudentID ... )
+-- IN lets us compare to a bunch of values at once, unlike = which only compares to a single value
 ```
 `ANY` or `SOME` compares against any of the values:
 ```sql
 WHERE Grade > SOME (SELECT Grade ... )
+-- this will be TRUE if Grade (in the outer query) is greater than at least one Grade in the inner query
 ```
 `ALL` compares against all of the values:
 ```sql
 WHERE Grade > ALL (SELECT Grade ...)
+-- this will only be TRUE if Grade (in the outer query) is greater than every single Grade in the inner query
 ```

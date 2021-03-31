@@ -84,7 +84,7 @@ We have 3 options: linking, embedding, or inline styles.
         font-size: 56px;
     }
     ```
-    specifically targets paragraphs with the `red-text` class applied. No other paragraphs, and no other HTML elements with that class, will be affected by this declaration.
+    specifically targets paragraphs with the `red-text` class applied. Other paragraphs, and  other HTML elements with the `red-text` class applied, will **not** be affected by this declaration.
 
 + **Descendant selectors** are when we use an element's location in the DOM to target it. We write it with a space between each element:
     ```css
@@ -189,6 +189,10 @@ display: block;
 or
 ```css
 display: inline;
+```
+or
+```css
+display: inline-block;
 ```
 This can be useful if we want to set the `height` and `width` of an element that is normally `inline`, or we want an element that is normally `block` to show up on the same line as another element: we can just change their `display` property! [More on this at MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow)
 
