@@ -193,7 +193,7 @@ Inline elements do not start a new line and only take up as much width as necess
 	```html
 	<img src="img/cats.png" alt="image of two cats sitting on a bench">
 	```
-	*Note: the `<alt>` text should sufficiently describe the photo to anyone who cannot view it.*
+	*Note: the `alt` text should sufficiently describe the photo to anyone who cannot view it.*
 + `<em>` is what makes text appear in *italics*. We'll use this sparingly because HTML is meant for content and CSS is where we style.
 + `<span>` is a non-semantic wrapper, and a generic container for any content you want to group together so that you can target it with CSS. It's like `<div>` except it doesn't create a new row.
 + `<strong>` is what makes text appear **bold**. We'll use this sparingly because HTML is meant for content and CSS is where we style.

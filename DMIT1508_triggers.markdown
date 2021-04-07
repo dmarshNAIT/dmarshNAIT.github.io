@@ -14,9 +14,13 @@ For example, we could create a trigger that's associated with an `INSERT` operat
 
 Triggers can help us to
 - Enforce referential integrity across databases
+    - e.g. Every time I `INSERT` or `UPDATE` a specific table, I can check the values against another table or database to make sure they are valid.
 - Enforce business rules
+    - e.g. something too complicated for a `CHECK` constraint like "cannot increase this field by more than 25% at a time".
 - Automate an operation
+    - e.g. automatically `UPDATE` associated records when a new record is added, like updating the total Job cost when a new Service is added to the Job.
 - Create an audit trail
+    - e.g. automatically log the changes when a value is changed, like the cost of an item.
 
 For example: 
 + one trigger might check the value of an `INSERT`ed or `UPDATE`d column, and `ROLLBACK` if it's an invalid value (e.g. a CustomerID that doesn't exist in our database, or an OrderNumber from an order with a status of "cancelled").
@@ -65,8 +69,8 @@ Triggers will execute:
 
 ### Syntax:
 ```sql
-CREATE TRIGGER	trigger_name
-	ON	table_name
+CREATE TRIGGER	TrigerName
+	ON	TableName
 	FOR [UPDATE][,] [INSERT][,] [DELETE]	
 AS
 	-- SQL statements
@@ -96,7 +100,7 @@ Example:
 
 ### Dropping existing triggers:
 ```sql
-DROP TRIGGER trigger_name
+DROP TRIGGER TriggerName
 ```
     
 If you drop a table that has triggers associated with it, the triggers are dropped as well.
@@ -105,8 +109,8 @@ If you drop a table that has triggers associated with it, the triggers are dropp
 
 ### Changing existing triggers:
 ```sql
-ALTER TRIGGER trigger_name
-    ON table_name
+ALTER TRIGGER TriggerName
+    ON TableName
     FOR [UPDATE][,] [INSERT][,] [DELETE]
 AS
     -- SQL statements
@@ -122,5 +126,5 @@ WHERE Type = 'TR'
 
 ### To see the source code of a trigger:
 ```sql
-sp_helptext trigger_name
+sp_helptext TriggerName
 ```

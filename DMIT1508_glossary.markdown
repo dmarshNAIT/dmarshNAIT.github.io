@@ -25,6 +25,6 @@ permalink: /dmit1508/glossary
 - A **foreign key** is how we define relationships between entities. A foreign key is the primary key of another entity (the parent) that appears as an attribute of this entity (the child).
 
 ## P
-- **Primary keys** are unique identifiers for each instance of an entity. Sometimes there isn't a naturally occuring identifier, so we make one up. These are called *technical keys*.
+- **Primary keys** are unique identifiers for each instance of an entity. Sometimes there isn't a naturally occuring identifier, so we make one up. These are called *technical keys*, and are created in SQL using `IDENTITY`.
 
     A combination of 2 or more attributes acting as the primary key is called a *concatenated key* or *composite key*.

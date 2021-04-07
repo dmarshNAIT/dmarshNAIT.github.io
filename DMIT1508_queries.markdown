@@ -186,6 +186,18 @@ A subquery is a `SELECT` statement inside of another statement.
 It's a full and complete `SELECT` statement that could execute on its own.
 There are nested and correlated subqueries, and in this course we will focus on nested subqueries only.
 
+They are especially useful for finding records that are in one table but not another: for example, staff who have never taught a course:
+```sql
+SELECT FirstName, LastName
+FROM Staff
+WHERE StaffID NOT IN (
+    -- the list of Staff who HAVE taught:
+    SELECT DISTINCT StaffID 
+    FROM Offering
+)
+
+```
+
 ### ANY, SOME, and ALL operators
 What if want something other than an exact match?
 ```sql
