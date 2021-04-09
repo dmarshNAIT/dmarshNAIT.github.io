@@ -52,7 +52,7 @@ Block level elements start on a new line and take up the full width available. W
 			Island" to its current name.</p>
 	</blockquote>
 	```
-+ `<div>` is a non-semantic wrapper, and a generic container for any content you want to group together so that you can target it with CSS.
++ `<div>` is a non-semantic wrapper, and a generic container for any content you want to group together so that you can target it with CSS. **It is strongly recommended to add classes to each `div` so they can be easily targeted.**
 + The `<figure>` tag is how we mark up images, diagrams, etc, and will have an `<img>` and a `<figcaption>` within. It will look like:
 	```html
 	<figure>

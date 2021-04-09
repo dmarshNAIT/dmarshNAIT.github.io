@@ -13,15 +13,15 @@ All forms start with the `<form>` element, which has 2 attributes:
 
 Within form, we can have a bunch of elements: `input`, `textarea`, `label`, `button`, and [more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms)!
 
-Here's an example of a form with 3 input 
+Here's an example of a form with 3 `input` elements, a `textarea`, and a `button`:
 
 ```html
 <form id="contact-form">
-<!-- the id is optional but lets me link to this form directly from another location, using an anchor tag-->
+<!-- the id is optional but handy for linking directly to the form -->
     <div class="user-name">
-    <!-- adding this div will help us to easily target this input in our CSS, and we **always** add a class to divs so that we can target a specific div in our CSS. -->
+    <!-- this div helps us easily target this input field in our CSS -->
         <label for="firstname">Your Name:</label>
-        <!-- the "for" tag connects this label to the thing that it's labelling, using the id field. in other words, the value of "for" must match the value of the "id" for the related input or textarea -->
+        <!-- see below for more on the for attribute -->
         <input id="firstname"  type="text"> 
         <!-- see below for more on the type attribute -->
     </div>
@@ -70,14 +70,16 @@ Then, we'd use CSS to style it.
 
 
 #### HTML Attributes
++ the `for` attributes connects a label to the thing that it's labelling, using the other element's `id`. in other words, the value of `for` must match the value of the `id` for the related `input` or `textarea`.
 
-Some elements have a `type` attribute which controls the input field behaviour. For example, `input` can have a `type` of `email` or `tel` or just regular `text` (amongst many other values), and the `button` can have a type of `submit` or `reset`. A list of all the types is available [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and more info on them is available [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types).
++ The `ID` attribute lets us hook up the element with JavaScript and CSS. 
 
-The `ID` attribute lets us hook up the element with JavaScript and CSS. 
++ The `name` attribute will be used as a variable name, which will be out of scope for COMP 1017.
 
-The `name` attribute will be used as a variable name, which will be out of scope for COMP 1017.
++ Some elements have a `type` attribute which controls the input field behaviour. For example, `input` can have a `type` of `email` or `tel` or just regular `text` (amongst many other values), and the `button` can have a type of `submit` or `reset`. A list of all the types is available [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and more info on them is available [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types).
 
-There are a few other attributes, including `value`, `placeholder`, `disabled`, and `required`. More on those [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls).
+
++ There are a few other attributes, including `value`, `placeholder`, `disabled`, and `required`. More on those [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls).
 
 ### CSS
 We can target our form elements using classes, and descendant selectors, as well as something new: using the value of an attribute. If I wanted to target all the inputs where the `type` is `text`, I could use this declaration:
