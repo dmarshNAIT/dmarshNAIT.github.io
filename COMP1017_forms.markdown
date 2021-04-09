@@ -13,6 +13,62 @@ All forms start with the `<form>` element, which has 2 attributes:
 
 Within form, we can have a bunch of elements: `input`, `textarea`, `label`, `button`, and [more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms)!
 
+Here's an example of a form with 3 input 
+
+```html
+<form id="contact-form">
+<!-- the id is optional but lets me link to this form directly from another location, using an anchor tag-->
+    <div class="user-name">
+    <!-- adding this div will help us to easily target this input in our CSS, and we **always** add a class to divs so that we can target a specific div in our CSS. -->
+        <label for="firstname">Your Name:</label>
+        <!-- the "for" tag connects this label to the thing that it's labelling, using the id field. in other words, the value of "for" must match the value of the "id" for the related input or textarea -->
+        <input id="firstname"  type="text"> 
+        <!-- see below for more on the type attribute -->
+    </div>
+    <div class="user-phone">
+        <label for="phonenumber">Your Phone Number:</label>
+        <input id="phonenumber"  type="tel"> 
+    </div>
+    <div class="user-password">
+        <label for="pw">Your Password:</label>
+        <input id="pw"  type="password"> 
+    </div>
+    <div class="user-feedback">
+        <label for="user-message">Your Feedback:</label>
+        <textarea id="user-message"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">ok</button>
+    </div>
+</form>
+```
+This is how it would look:
+<html>
+    <form id="contact-form">
+        <div class="user-name">
+            <label for="firstname">Your Name:</label>
+            <input id="firstname"  type="text"> 
+        </div>
+        <div class="user-phone">
+            <label for="phonenumber">Your Phone Number:</label>
+            <input id="phonenumber"  type="tel"> 
+        </div>
+        <div class="user-password">
+            <label for="pw">Your Password:</label>
+            <input id="pw"  type="password"> 
+        </div>
+        <div class="user-feedback">
+            <label for="user-message">Your Feedback:</label>
+            <textarea id="user-message"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">ok</button>
+        </div>
+    </form>
+</html>
+Then, we'd use CSS to style it.
+
+
 #### HTML Attributes
 
 Some elements have a `type` attribute which controls the input field behaviour. For example, `input` can have a `type` of `email` or `tel` or just regular `text` (amongst many other values), and the `button` can have a type of `submit` or `reset`. A list of all the types is available [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and more info on them is available [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types).

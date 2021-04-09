@@ -174,6 +174,19 @@ Inline elements do not start a new line and only take up as much width as necess
 	```html
 	<a href="../index.html">Home</a>
 	```
+	We can also link to files instead of pages:
+	```html
+	<a href="cool-file.pdf">Click here for a PDF!</a>
+	```
+	And we can set the target attribute so that the file opens in a new tab or window, which is a best practice when linking to non-HTML resources:
+	```html
+	<a href="cool-file.pdf" target="_blank">Click here for a PDF! </a>
+	```
+	We can also use anchor tags to launch email clients and create a new message:
+	```html
+	<a href="mailto:nowhere@gmail.com">Send an email to nowhere. </a>
+	```
+	
 + If you want to link to a part of a page (a **fragment**) you need to first identify where on the page you want to link to by adding an `id` attribute:
 	```html
 	<h2 id="contact-us">Contact Us Info</h2>
