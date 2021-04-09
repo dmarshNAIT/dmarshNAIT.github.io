@@ -17,7 +17,7 @@ Here's an example of a form with 3 `input` elements, a `textarea`, and a `button
 
 ```html
 <form id="contact-form">
-<!-- the id is optional but handy for linking directly to the form -->
+<!-- adding this is makes it easier to link directly to the form -->
     <div class="user-name">
     <!-- this div helps us easily target this input field in our CSS -->
         <label for="firstname">Your Name:</label>
@@ -70,9 +70,9 @@ Then, we'd use CSS to style it.
 
 
 #### HTML Attributes
-+ the `for` attributes connects a label to the thing that it's labelling, using the other element's `id`. in other words, the value of `for` must match the value of the `id` for the related `input` or `textarea`.
++ the `for` attributes connects a label to the element that it's labelling, using the other element's `id`. In other words, the value of `for` must match the value of the `id` for the related `input` or `textarea`.
 
-+ The `ID` attribute lets us hook up the element with JavaScript and CSS. 
++ The `ID` attribute lets us hook up the element with JavaScript and CSS. It needs to be unique within the page (in other words, you can't use the same `id` twice on the same page).
 
 + The `name` attribute will be used as a variable name, which will be out of scope for COMP 1017.
 
@@ -89,3 +89,36 @@ input[type=text] {
     /** CSS goes here **/
 }
 ```
+
+Here are examples of how I could target all the `input` fields in the form above:
+```css
+input {
+    background-color: #efefef;
+    border: 1px solid #c4c4c4;
+    padding-left: 44px;
+}
+```
+
+This is how we define the size of a `textarea`:
+```css
+textarea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 150px;
+    max-width: 150px;
+}
+```
+
+And here's how we target a specific `input` field, using the name of the class of the `div` it's in:
+```css
+.user-name input {
+    background-image: url("../img/name-icon.gif");
+    background-repeat: no-repeat;
+}
+```
+
+
+
+
+
+
