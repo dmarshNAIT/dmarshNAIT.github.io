@@ -10,6 +10,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 - `ALL` can be added to a `UNION` to include duplicates, or lets us compare to multiple values in a subquery.
 - `ALTER PROCEDURE` replaces the previously saved query in a stored procedure.
 - `ALTER TABLE` lets us make changes to a table that already exists, like adding an a new column or constraint. The [DDL page](./DDL) explains exactly what types of changes we can make.
+- `ALTER TRIGGER` replaces the SQL in an existing trigger with new logic.
 - `ALTER VIEW` lets us replace the query defining a view with a new query.
 - `AND` is used between two boolean expressions, if we need **both** expressions to be true. You need a full and complete expression on both sides of `AND`.
 - `ANY` compares against any of the values:
@@ -29,6 +30,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 - `CREATE PROCEDURE` lets us create a set of SQL statements that is stored in the database, and can be run as needed. Check out the [Stored Procedures](./storedprocedures) page for more info.
 - `CREATE TABLE` creates the structure for a new table in our database (see [DDL page](./DDL) for syntax)
     - `IDENTITY(seed, increment)` is what we add to each column that is a technical key (i.e. SQL will generate the value for us)
+- `CREATE TRIGGER` creates a new trigger that will be executed by a specific kind of DML statement on a specific table. Learn more on the [triggers page](./triggers).
 - `CREATE VIEW` lets us save a specific query, and `SELECT` from that view just like we select from a table. More on the [Views](./views) page.
 
 ## D
@@ -53,12 +55,13 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 - `DROP PROCEDURE` deletes a stored procedure.
 - `DROP TABLE` deletes a table from the database: both its structure AND its contents.
     - If you `DROP` a table that has triggers associated with it, the triggers are dropped as well.
+- `DROP TRIGGER` deletes a trigger from the database.
 - `DROP VIEW` deletes a view from the database.
 
 ## E
 - `EXEC ProcedureName ParameterName` is how we execute a stored procedure called *ProcedureName* with a parameter called *ParameterName*. Some SPs have no parameters, some have one, some have many: if we have multiple parameters, we separate them with commas like this: `EXEC ProcedureName Param1, Param2`.
     - e.g. `EXEC sp_help Customers` runs the `sp_help` on the `Customers` table.
-    - e.g. `EXEC sp_helptext CustomerView` runs `sp_helptext` on the `CustomerView` view.
+    - e.g. `EXEC sp_helptext CustomerView` runs `sp_helptext` on the `CustomerView` view. It can also be used to get the definition of [triggers](./triggers)!
 
 ## G
 - `GetDate()` returns the current datetime (i.e. today's date).
@@ -68,24 +71,26 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 - `IF` is a conditional statement: the code within an `IF` block will only run if its condition evaluates to **true**. Optionally, an `IF` statement may have an `ELSE` block: that code will only run if the original condition evaluates to **false**.
 - `IF EXISTS (...)` will run the query in parentheses, and will return **true** if at least one record is returned. This is helpful to check if there are existing records to `UPDATE` or `DELETE` before trying to `UPDATE` or `DELETE` them.
 - `IN` lets us check for an exact match within a list of values. e.g. `WHERE StudentID IN (20001, 20002, 20004)`
-- `INSERT` lets us add a new row to a table. We can add using hardcoded values, the results of a subquery, or the results of a `SELECT` statement! More on the [DML](./DML) page. Some examples:
+- `INSERT` lets us add a new row (or rows) to a table. We can add using hardcoded values, the results of a subquery, or the results of a `SELECT` statement! More on the [DML](./DML) page. Some examples:
 ```sql
     INSERT INTO Staff (FirstName, LastName)
     VALUES ('Bob', 'Smith')
+        , ('Bob', 'Jones') --inserting 2 rows in a single INSERT
 ```
 ```sql
     INSERT INTO Item (ItemID
         , ItemName
         , Cost
         , Description)
-    VALUES (123
+    VALUES (123  
         , 'Thingamabob'
-        , SELECT AVG(Cost) FROM Item
+        , SELECT AVG(Cost) FROM Item -- INSERTing a value from subquery!
         , NULL)
 ```
 ```sql
     INSERT INTO Student (FirstName, LastName)
     SELECT FirstName, LastName FROM Employee
+    -- this is essentially copying values from one table to another
 ```
 
 ## J
@@ -106,9 +111,9 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
     |  | joining Parent to Child | joining Child to Parent
     | -----  |  ----- | -----
     | `INNER` | only records for parents that have child records | only records for parents that have child records
-    | `LEFT`  |  parents regardless of whether they have child records | use `INNER JOIN` instead
-    | `RIGHT`  |  use `INNER JOIN` instead | parents regardless of whether they have child records
-    | `FULL OUTER`  |  use `LEFT JOIN` instead | use `RIGHT JOIN` instead
+    | `LEFT`  |  parents regardless of whether they have child records | *use `INNER JOIN` instead*
+    | `RIGHT`  |  *use `INNER JOIN` instead* | parents regardless of whether they have child records
+    | `FULL OUTER`  |  *use `LEFT JOIN` instead* | *use `RIGHT JOIN` instead*
 
 
 ## L
@@ -144,6 +149,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
 ## S
 - `SELECT` is how we start a query that retrieves data from our database. Details on all its parts are available on the [Queries](./queries) page.
     - It's also how we can assign literal values to multiple variables, or assign values to a variable FROM a `SELECT` statement. Check out the [Stored Procedures](./storedprocedures) page for more info.
+    - We can also use it to get info from our databases, like a list of triggers: `SELECT Name FROM SysObjects WHERE Type = 'TR'`
 - `SET` lets us assign a literal value to a variable: e.g. `SET @FirstName = 'Bob'`
 - `SOME` compares against any of the values:
     + `WHERE Grade > SOME (SELECT Grade … )` 
@@ -157,6 +163,7 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
     - e.g. `UPDATE Student
         SET FirstName = 'Bob', LastName = 'Smith'
         WHERE StudentID = 123`
+- The `UPDATE()` function returns **true** if an `INSERT` or `UPDATE` was attempted on a specified column. These are used in triggers to let us branch around the logic if the column of interest wasn't updated.
 - `UPPER(column | expression)` returns a string in UPPERCASE. e.g. `UPPER('Bob')` returns `BOB`.
 
 
@@ -176,8 +183,3 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
     - e.g. `Total > 10` is **true** if the value of `Total` is greater than (not equal to) the value `10`.
 - `>=` means *greater than or equal to*
     - e.g. `Total >= 10` is **true** if the value of `Total` is greater than, or exactly, the value `10`.
-
-
-
-## To be added:
-+ Lesson 37 - Triggers
