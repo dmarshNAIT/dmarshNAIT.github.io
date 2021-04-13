@@ -58,7 +58,7 @@ The contents of each temporary table depend on which DML statement the trigger i
 For example, if the `deleted` table is empty, that might mean that no records were affected, or it could mean we just executed an `INSERT` operation. We can use the contents of the temporary tables within our trigger logic, as needed.
 
 ### Logic to include in triggers
-We'll almost always check `@@rowcount` at the start of our trigger, and if our trigger is trigged by an `UPDATE`, check `UPDATE(column_name)`, to make sure there were actually changes we need to check/audit/etc. If not, we branch around the logic in our trigger.
+We'll almost always check `@@rowcount` at the start of our trigger, and if our trigger is triggered by an `UPDATE`, check `UPDATE(ColumnName)`, to make sure there were actually changes we need to check/audit/etc. If not, we branch around the logic in our trigger.
 
 Triggers will execute:
 - When the DML operation affects **zero** rows in the base table
@@ -69,7 +69,7 @@ Triggers will execute:
 
 ### Syntax:
 ```sql
-CREATE TRIGGER	TrigerName
+CREATE TRIGGER	TriggerName
 	ON	TableName
 	FOR [UPDATE][,] [INSERT][,] [DELETE]	
 AS
