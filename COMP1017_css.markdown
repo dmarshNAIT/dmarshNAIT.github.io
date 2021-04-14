@@ -212,6 +212,8 @@ flex-wrap: wrap;
 ```
 Just like turning on word-wrap in a text editor means that lines will `wrap` onto the next line if there isn't room for them, adding `flex-wrap: wrap;` to a container lets items in that `flex` container `wrap` onto the next line.
 
+In other words: **we'll only use `flex-wrap` on elements that are flex boxes.**
+
 Some "bonus" content:
 + Adding `justify-content: center;` to a flex-container centers items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit.
 + Adding `align-items: center;` to a flex-container will center items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom.
