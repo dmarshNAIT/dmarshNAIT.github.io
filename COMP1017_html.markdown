@@ -178,7 +178,7 @@ Inline elements do not start a new line and only take up as much width as necess
 	```html
 	<a href="cool-file.pdf">Click here for a PDF!</a>
 	```
-	And we can set the target attribute so that the file opens in a new tab or window, which is a best practice when linking to non-HTML resources:
+	And we can set the `target` attribute so that the file opens in a new tab or window, which is a best practice when linking to non-HTML resources:
 	```html
 	<a href="cool-file.pdf" target="_blank">Click here for a PDF! </a>
 	```
