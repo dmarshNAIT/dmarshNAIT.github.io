@@ -10,7 +10,7 @@ Please include:
 * a few options when we are both available
 * your name and class name / section
 
-#### Spring 2021 Schedule
+#### Spring/Summer 2021 Schedule
 
 <html>
   <style>
