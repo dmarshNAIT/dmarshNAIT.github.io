@@ -36,83 +36,27 @@ Please include:
   </thead>
   <tbody>
     <tr>
-      <th>9am - 10am</th>
+      <th>9am - 2pm</th>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
     </tr>
+        <tr>
+      <th>2pm - 7pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr>
-      <th>10am - 11am</th>
+      <th>7pm - 9pm</th>
+      <td></td>
       <td class="dmit1508">DMIT 1508</td>
+      <td></td>
       <td class="dmit1508">DMIT 1508</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>11am - 12pm</th>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>12pm - 1pm</th>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>1pm - 2pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>2pm - 3pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="dmit2028">DMIT 2028</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>3pm - 4pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="anap1525">ANAP 1525</td>
-      <td class="anap1525">ANAP 1525</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>4pm - 5pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="anap1525">ANAP 1525</td>
-      <td class="anap1525">ANAP 1525</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>5pm - 6pm</th>
-      <td class="comp1017">COMP 1017</td>
-      <td></td>
-      <td class="comp1017">COMP 1017</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>6pm - 7pm</th>
-      <td class="comp1017">COMP 1017</td>
-      <td></td>
-      <td class="comp1017">COMP 1017</td>
-      <td></td>
       <td></td>
     </tr>
   </tbody>
