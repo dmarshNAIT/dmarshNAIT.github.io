@@ -10,7 +10,7 @@ Please include:
 * a few options when we are both available
 * your name and class name / section
 
-#### Winter 2021 Schedule
+#### Spring 2021 Schedule
 
 <html>
   <style>
@@ -52,7 +52,7 @@ Please include:
       <td></td>
     </tr>
     <tr>
-      <th>7pm - 9pm</th>
+      <th>7pm - 10pm</th>
       <td></td>
       <td class="dmit1508">DMIT 1508</td>
       <td></td>
