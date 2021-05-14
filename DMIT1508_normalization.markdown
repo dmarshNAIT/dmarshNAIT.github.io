@@ -17,11 +17,11 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
     + When picking a PK, think of whether this will *always* be unique for every instance of you entity (in other words, for every row in your table).
     + If a single attribute doesn't work, you may need a combination of 2+ attributes.
 1. Repeating groups are listed in parentheses. Repeating groups are attributes that can have multiple values within the view.
-    + One way to think about repeating groups of attributes: are there attributes that, for a *single* instance of our entity, can have more than one value *at the same time*? e.g. a Customer entity can have more than one payment record on their account: payment ID would be a repeating group.
+    + One way to think about repeating groups of attributes: are there attributes that, for a *single* instance of our entity, can have more than one value *at the same time*? e.g. a `Customer` entity can have more than one payment record on their account: `PaymentID` would be a repeating group.
 
 ### Step 1: Apply the rules of 1NF
 1.  A table must contain only *atomic* attributes.
-    + That means, if we have any composite attributes, break 'em down! e.g. *Name* becomes *FirstName* and *LastName*, *Address* gets split up into *StreetAddress*, *City*, *Province*, *PostalCode*, etc.
+    + That means, if we have any composite attributes, break 'em down! e.g. `Name` becomes `FirstName` and `LastName`, `Address` gets split up into `StreetAddress`, `City` `Province`, `PostalCode`, etc.
 1.  A table cannot contain any repeating groups of attributes.
 
     | If a repeating group of attributes exists:
