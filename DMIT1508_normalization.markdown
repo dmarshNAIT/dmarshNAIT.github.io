@@ -21,7 +21,7 @@ We evaluate database design by how well it minimizes data redundancy, and the oc
 
 ### Step 1: Apply the rules of 1NF
 1.  A table must contain only *atomic* attributes.
-    + That means, if we have any composite attributes, break 'em down! e.g. Name becomes FirstName and LastName, Address gets split up into StreetAddress, City, Province, PostalCode, etc.
+    + That means, if we have any composite attributes, break 'em down! e.g. *Name* becomes *FirstName* and *LastName*, *Address* gets split up into *StreetAddress*, *City*, *Province*, *PostalCode*, etc.
 1.  A table cannot contain any repeating groups of attributes.
 
     | If a repeating group of attributes exists:
