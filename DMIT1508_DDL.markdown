@@ -250,18 +250,20 @@ CONSTRAINT DF_ConstraintName DEFAULT constant | function | NULL
 ```
 
 ### Examples:
+1. Use 5.90 as default for `HourlyRate`:
+	```sql
+	CONSTRAINT DF_HourlyRate DEFAULT 5.90
+	```
+1. Use `NULL` as default for `PostalCode`:
+	```sql
+	CONSTRAINT DF_PostalCode DEFAULT NULL
+	```
 1. Use current date as default for `DateReceived`:
 	```sql
 	CONSTRAINT DF_DateRecevied DEFAULT GetDate()
 	```
-2. Use `NULL` as default for `PostalCode`:
-	```sql
-	CONSTRAINT DF_PostalCode DEFAULT NULL
-	```
-3. Use 5.90 as default for `HourlyRate`:
-	```sql
-	CONSTRAINT DF_HourlyRate DEFAULT 5.90
-	```
+
+
 
 # Altering Tables
 The `ALTER TABLE` statement is used to:
@@ -313,9 +315,9 @@ If the table is empty, you can add a column that is `NOT NULL`.
 		FOREIGN KEY (CourseId)  REFERENCES Courses (CourseId)
 	```
 
-4. To add a check constraint to the existing PhoneNo column in the Students table to ensure the phone number is in the format (nnn) nnn-nnnn:
+4. To add a check constraint to the existing PhoneNo column in the Student table to ensure the phone number is in the format (nnn) nnn-nnnn:
 	```sql
-	ALTER TABLE Students
+	ALTER TABLE Student
 		ADD CONSTRAINT CK_PhoneNo
 			CHECK ( PhoneNo LIKE '([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]' )
 	```
@@ -327,15 +329,15 @@ If the table is empty, you can add a column that is `NOT NULL`.
 		DEFAULT GetDate() FOR OrderDate
 	```
 
-6. To disable the default constraint named CK_PhoneNo in the Students table:
+6. To disable the default constraint named CK_PhoneNo in the Student table:
 	```sql
-	ALTER TABLE Marks
+	ALTER TABLE Student
 		NOCHECK CONSTRAINT CK_PhoneNo
 	```
 
-7. To enable the default constraint named CK_PhoneNo in the Students table:
+7. To enable the default constraint named CK_PhoneNo in the Student table:
 	```sql
-	ALTER TABLE Students
+	ALTER TABLE Student
 		CHECK CONSTRAINT CK_PhoneNo
 	```
 
