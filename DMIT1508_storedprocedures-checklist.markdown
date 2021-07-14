@@ -32,20 +32,20 @@ How can we effectively test the "error" branches of our code?
 ### Example pseudocode: creating a student 
 ```sql
 IF (parameters are missing)
-    RAISERROR -- test 1
+    RAISERROR -- branch 1
 ELSE
 	BEGIN TRANSACTION 
 	INSERT into Registration ...
 	IF (INSERT failed)
         RAISERROR
-        ROLLBACK TRANSACTION -- test 2
+        ROLLBACK TRANSACTION -- branch 2
 	ELSE
 		UPDATE Student.BalanceOwing ...
 		IF (UPDATE failed)
             RAISERROR
-            ROLLBACK TRANSACTION -- test 3
+            ROLLBACK TRANSACTION -- branch 3
 		ELSE
-            COMMIT TRANSACTION --  test 4
+            COMMIT TRANSACTION --  branch 4
 		
 -- testing each brach: 
 	-- 1. missing parameter(s)
