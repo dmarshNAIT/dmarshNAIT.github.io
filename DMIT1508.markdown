@@ -41,6 +41,7 @@ permalink: /dmit1508/
   - Raising errors
   - Global variables
   - Transactions
+  - *NEW:* [SP checklist](./storedprocedures-checklist)
 - [Triggers](./triggers)
   - Temporary tables
 
