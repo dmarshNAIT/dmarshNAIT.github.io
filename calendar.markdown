@@ -17,7 +17,7 @@ Please include:
     table {font-size: 12.4px; text-align:center;}
     .row-header {width : 80px;}
     .col-header {text-align:center;}
-    .appointment {color: #d3d3d3;}
+    .appointment {color: black;}
     .dmit1508 { background-color:#6495ed;}
     .anap1525 {background-color:#ed6495;}
     .dmit2028 {background-color:#bc64ed;}
