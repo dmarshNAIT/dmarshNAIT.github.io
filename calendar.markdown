@@ -77,7 +77,7 @@ Please include:
     </tr>
       <tr>
       <th>2pm - 3pm</th>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td></td>
       <td></td>
       <td></td>
@@ -85,7 +85,7 @@ Please include:
     </tr>
       <tr>
       <th>3pm - 4pm</th>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td></td>
       <td></td>
       <td class="appointment">available by appointment</td>
@@ -93,9 +93,9 @@ Please include:
     </tr>
       <tr>
       <th>4pm - 5pm</th>
+      <td class="appointment">available by appointment</td>
       <td></td>
-      <td></td>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td></td>
     </tr>
@@ -132,7 +132,7 @@ Please include:
       <td></td>
     </tr>
     <tr>
-      <th>9pm - 10pm</th>
+      <th>9pm - 9:30pm</th>
       <td></td>
       <td class="appointment">available by appointment</td>
       <td></td>
