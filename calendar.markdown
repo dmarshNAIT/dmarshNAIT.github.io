@@ -4,11 +4,12 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please contact me directly to set up a meeting outside of scheduled class times.
+Please contact me directly via Emails or Teams to set up a meeting outside of scheduled class times.
 
 Please include:
-* a few options when we are both available
+* 2-3 options when we are both available
 * your name and class name / section
+* what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 
 #### Winter 2022 Schedule ####
 
