@@ -17,7 +17,7 @@ Please include:
     table {font-size: 12.4px; text-align:center;}
     .row-header {width : 80px;}
     .col-header {text-align:center;}
-    .appointment {color: black;}
+    .appointment {color: black; background-color:#d3d3d3;}
     .dmit1508 { background-color:#6495ed;}
     .anap1525 {background-color:#ed6495;}
     .dmit2028 {background-color:#bc64ed;}
@@ -113,7 +113,7 @@ Please include:
       <td></td>
       <td class="appointment">available by appointment</td>
       <td></td>
-      <td></td>
+      <td class="appointment">available by appointment</td>
     </tr>
     <tr>
       <th>7pm - 8m</th>
