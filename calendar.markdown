@@ -4,7 +4,7 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please contact me directly via Emails or Teams to set up a meeting outside of scheduled class times.
+Please contact me directly via email or Teams to set up a meeting outside of scheduled class times.
 
 Please include:
 * 2-3 options when we are both available
