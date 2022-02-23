@@ -41,7 +41,7 @@ Please include:
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td></td>
     </tr>
     <tr>
@@ -49,7 +49,7 @@ Please include:
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td></td>
     </tr>
     <tr>
