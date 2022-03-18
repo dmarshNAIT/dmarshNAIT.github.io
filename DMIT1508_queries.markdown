@@ -159,6 +159,13 @@ FROM Table1
   -- the Join Field is generally the FK/PK that connects the tables, though technically we can JOIN by any field.
 ```
 
+To see what that looks like with real fields/columns:
+```sql
+SELECT FirstName, LastName, Mark
+FROM Student 
+INNER JOIN Registration ON Student.StudentID = Registration.StudentID
+```
+
 #### Types of Joins
 - `INNER JOIN` returns only records that exist in both tables
 - `FULL OUTER JOIN` returns all records that exist in either table (if we're `JOIN`ing on our FK, which we always do in DMIT 1508, this type of `JOIN` isn't used)
