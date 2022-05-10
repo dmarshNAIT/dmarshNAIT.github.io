@@ -11,7 +11,7 @@ Please include:
 * your name and class name / section
 * what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 
-#### Winter 2022 Schedule ####
+#### Summer 2022 Schedule ####
 
 <html>
   <style>
@@ -36,42 +36,50 @@ Please include:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>9am - 10am</th>
-      <td></td>
+      <tr>
+      <th>8am - 9am</th>
       <td></td>
       <td></td>
       <td class="appointment">available by appointment</td>
       <td></td>
+      <td class="appointment">available by appointment</td>
+    </tr>
+    <tr>
+      <th>9am - 10am</th>
+      <td></td>
+      <td></td>
+      <td class="appointment">available by appointment</td>
+      <td></td>
+      <td class="appointment">available by appointment</td>
     </tr>
     <tr>
       <th>10am - 11am</th>
       <td></td>
       <td></td>
-      <td></td>
       <td class="appointment">available by appointment</td>
       <td></td>
+      <td class="appointment">available by appointment</td>
     </tr>
     <tr>
       <th>11am - 12pm</th>
       <td></td>
       <td></td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
       <td></td>
+      <td></td>
+      <td class="appointment">available by appointment</td>
     </tr>
     <tr>
       <th>12pm - 1pm</th>
-      <td></td>
       <td class="appointment">available by appointment</td>
       <td></td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th>1pm - 2pm</th>
       <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -79,7 +87,7 @@ Please include:
       <tr>
       <th>2pm - 3pm</th>
       <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -89,49 +97,11 @@ Please include:
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td></td>
-      <td></td>
+      <td class="appointment">available by appointment</td>
       <td></td>
     </tr>
-      <tr>
-      <th>4pm - 5pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-      <tr>
-      <th>5pm - 6pm</th>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-      <tr>
-      <th>6pm - 7pm</th>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>7pm - 8m</th>
-      <td class="dmit1508">DMIT 1508</td>
-      <td></td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td></td>
-      <td class="dmit1508">DMIT 1508</td>
-    </tr>
-    <tr>
-      <th>8pm - 9pm</th>
-      <td class="dmit1508">DMIT 1508</td>
-      <td></td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td></td>
-      <td class="dmit1508">DMIT 1508</td>
-    </tr>
+
+
   </tbody>
 </table>
 </html>
