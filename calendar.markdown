@@ -6,6 +6,8 @@ permalink: /calendar/
 
 Please contact me directly via email or Teams to set up a meeting outside of scheduled class times.
 
+Outside of emergency situations, I generally do not honour same-day requests to meet.
+
 Please include:
 * 2-3 options when we are both available
 * your name and class name / section
