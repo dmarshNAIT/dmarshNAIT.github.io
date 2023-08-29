@@ -79,28 +79,20 @@ Please include:
       <td class="a05">CPSC 1012</td>
     </tr>
   <tr>
-      <th>5pm - 6pm</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-          <tr>
-      <th>6pm - 7pm</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th>5pm - 7pm</th>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
     </tr>
     <tr>
       <th>7pm - 10pm</th>
       <td class="oe02">CPSC 1012</td>
-      <td></td>
+      <td>n/a</td>
       <td class="oe02">CPSC 1012</td>
-      <td></td>
-      <td></td>
+      <td>n/a</td>
+      <td>n/a</td>
     </tr>
 
 
