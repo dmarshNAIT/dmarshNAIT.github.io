@@ -4,13 +4,13 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please contact me directly via email or Teams to set up a meeting outside of scheduled class times.
+Please use [my booking tool](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca) to set up a meeting outside of scheduled class times.
 
 Outside of emergency situations, I generally do not honour same-day requests to meet.
 
 Please include:
-* 2-3 options when we are both available
-* your name and class name / section
+* your name
+* your class section (e.g. A04)
 * what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 
 #### Fall 2023 Schedule ####
