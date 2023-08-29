@@ -95,7 +95,7 @@ Please include:
       <td></td>
     </tr>
     <tr>
-      <th>7pm - 9:50pm</th>
+      <th>7pm - 10pm</th>
       <td class="oe02">CPSC 1012</td>
       <td></td>
       <td class="oe02">CPSC 1012</td>
