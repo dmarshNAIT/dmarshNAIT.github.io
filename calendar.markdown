@@ -11,7 +11,7 @@ Please include:
 * your name and class name / section
 * what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 
-#### Summer 2022 Schedule ####
+#### Fall 2023 Schedule ####
 
 <html>
   <style>
@@ -20,9 +20,9 @@ Please include:
     .col-header {text-align:center;}
     .appointment {color: black; background-color:#d3d3d3;}
     .dmit1508 { background-color:#6495ed;}
-    .anap1525 {background-color:#ed6495;}
-    .dmit2028 {background-color:#bc64ed;}
-    .comp1017 { background-color:#95ed64;}
+    .a04 {background-color:#ed6495;}
+    .a05 {background-color:#bc64ed;}
+    .oe02 { background-color:#95ed64;}
   </style>
  <table>
   <thead>
@@ -37,67 +37,67 @@ Please include:
   </thead>
   <tbody>
       <tr>
-      <th>8am - 9am</th>
-      <td></td>
-      <td></td>
+      <th>8am - 10am</th>
       <td class="appointment">available by appointment</td>
-      <td></td>
+      <td class="a04">CPSC 1012</td>
       <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>9am - 10am</th>
-      <td></td>
-      <td></td>
       <td class="appointment">available by appointment</td>
-      <td></td>
       <td class="appointment">available by appointment</td>
     </tr>
     <tr>
-      <th>10am - 11am</th>
-      <td></td>
-      <td></td>
+      <th>10am - noon</th>
+      <td class="a04">CPSC 1012</td>
+      <td class="dmit1508">DMIT 1508</td>
+      <td>n/a</td>
       <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>11am - 12pm</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
+      <td class="a04">CPSC 1012</td>
     </tr>
     <tr>
       <th>12pm - 1pm</th>
+      <td>n/a</td>
       <td class="appointment">available by appointment</td>
+      <td>n/a</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+    </tr>
+    <tr>
+      <th>1pm - 3pm</th>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="dmit1508">DMIT 1508</td>
+      <td class="dmit1508">DMIT 1508</td>
+      <td class="appointment">available by appointment</td>
+    </tr>
+      <tr>
+      <th>3pm - 5pm</th>
+      <td class="a05">CPSC 1012</td>
+      <td class="appointment">available by appointment</td>
+      <td class="a05">CPSC 1012</td>
+      <td class="appointment">available by appointment</td>
+      <td class="a05">CPSC 1012</td>
+    </tr>
+  <tr>
+      <th>5pm - 6pm</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+          <tr>
+      <th>6pm - 7pm</th>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <th>1pm - 2pm</th>
-      <td class="appointment">available by appointment</td>
+      <th>7pm - 9:50pm</th>
+      <td class="oe02">CPSC 1012</td>
       <td></td>
+      <td class="oe02">CPSC 1012</td>
       <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-      <tr>
-      <th>2pm - 3pm</th>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-      <tr>
-      <th>3pm - 4pm</th>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td></td>
-      <td class="appointment">available by appointment</td>
       <td></td>
     </tr>
 
