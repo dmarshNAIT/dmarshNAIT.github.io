@@ -18,4 +18,4 @@ Prior to NAIT, Dana worked in software design, testing, technical consulting, an
 
 Dana is interested in data viz, test strategy, and finding stories within data.
 
-Outside of NAIT, Dana enjoys travelling, reading, and volunteering. They live in Edmonton with their partner and  2 puppers, Maimee the chihuahua and Moose the pitbull/bulldog mix.
+Outside of NAIT, Dana enjoys travelling, reading, and volunteering. They live in Edmonton with their partner and 2 puppers, [Maimee the chihuahua](https://www.instagram.com/maimee.the.chihuahua/) and [Moose the pitbull/bulldog mix](https://www.instagram.com/musqunamuk/).
