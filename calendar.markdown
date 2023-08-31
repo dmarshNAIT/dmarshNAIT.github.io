@@ -48,7 +48,7 @@ Please include:
     </tr>
     <tr>
       <th>10am - noon</th>
-      <td class="a04">CPSC 1012</td>
+      <td>n/a</td>
       <td class="dmit1508">DMIT 1508</td>
       <td>n/a</td>
       <td class="appointment">available by appointment</td>
@@ -64,7 +64,7 @@ Please include:
     </tr>
     <tr>
       <th>1pm - 3pm</th>
-      <td class="appointment">available by appointment</td>
+      <td class="a04">CPSC 1012</td>
       <td class="appointment">available by appointment</td>
       <td class="dmit1508">DMIT 1508</td>
       <td class="dmit1508">DMIT 1508</td>
