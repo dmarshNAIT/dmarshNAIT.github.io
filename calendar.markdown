@@ -36,6 +36,14 @@ Please include:
       <th class = "col-header">Thursday</th>
       <th class = "col-header">Friday</th>
     </tr>
+        <tr>
+      <th class = "row-header"></th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">remote</th>
+    </tr>
   </thead>
   <tbody>
       <tr>
