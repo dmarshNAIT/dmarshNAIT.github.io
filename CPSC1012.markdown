@@ -6,6 +6,7 @@ permalink: /cpsc1012/
 
 ## Main Topics
 - [Glossary](./glossary)
+- [Cheatsheet](./cheatsheet) (****NEW****)
 - [Decision Structures](./decisionstructures)
   - `if` statements
   - `switch` statements
