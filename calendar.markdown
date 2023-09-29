@@ -13,6 +13,7 @@ Please include:
 * your name
 * your class section (e.g. A04)
 * what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
+* whether you'd like to meet in-person, online, or have no preference
 
 #### Fall 2023 Schedule ####
 
