@@ -4,8 +4,7 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please use [my booking tool](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca?anonymous&ep=plink) to set up a meeting outside of scheduled class times.
-* Occasionally this link breaks for reasons I haven't yet diagnosed: if that's the case, please feel free to send me a regular calendar link for an appropriate length of time at a time I appear to be available. If you open Teams & start a chat with me there is a button called "Schedule a meeting" at the bottom of the screen.
+Please use [my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=) to set up a meeting outside of scheduled class times.
 
 Outside of **emergency situations**, I generally do not honour same-day requests to meet.
 
