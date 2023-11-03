@@ -109,4 +109,82 @@ Please include:
 </table>
 </html>
 
+
+#### Tentative Winter 2024 Schedule ####
+
+<html>
+  <style>
+    table {font-size: 12.4px; text-align:center;}
+    .row-header {width : 80px;}
+    .col-header {text-align:center;}
+    .appointment {color: black; background-color:#d3d3d3;}
+    .cpsc1520-a01 {background-color:#ed6495;}
+    .cpsc1520-a02 {background-color:#bc64ed;}
+    .dmit1530-a01 { background-color:#6495ed;}
+  </style>
+ <table>
+  <thead>
+    <tr>
+      <th class = "row-header"></th>
+      <th class = "col-header">Monday</th>
+      <th class = "col-header">Tuesday</th>
+      <th class = "col-header">Wednesday</th>
+      <th class = "col-header">Thursday</th>
+      <th class = "col-header">Friday</th>
+    </tr>
+      <tr>
+      <th class = "row-header"></th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">on-campus</th>
+      <th class = "col-header">remote</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th>8am - 10am</th>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="dmit1530-a01">DMIT 1530</td>
+    </tr>
+    <tr>
+      <th>10am - noon</th>
+      <td class="cpsc1520-a02">CPSC 1520</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="cpsc1520-a01">CPSC 1520</td>
+      <td class="cpsc1520-a01">CPSC 1520</td>
+    </tr>
+    <tr>
+      <th>12pm - 1pm</th>
+      <td>n/a</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <th>1pm - 3pm</th>
+      <td class="dmit1530-a01">DMIT 1530</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+      <td class="appointment">available by appointment</td>
+    </tr>
+      <tr>
+      <th>3pm - 5pm</th>
+      <td class="cpsc1520-a01">CPSC 1520</td>
+      <td class="cpsc1520-a02">CPSC 1520</td>
+      <td class="dmit1530-a01">DMIT 1530</td>
+      <td class="cpsc1520-a02">CPSC 1520</td>
+      <td class="appointment">available by appointment</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+
 All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
