@@ -120,7 +120,8 @@ Please include:
     .appointment {color: black; background-color:#d3d3d3;}
     .cpsc1520-a01 {background-color:#ed6495;}
     .cpsc1520-a02 {background-color:#bc64ed;}
-    .dmit1530-a01 { background-color:#6495ed;}
+    .dmit1530-a01 { background-color:#95ed64;}
+    .dmit1508 { background-color:#6495ed;}
   </style>
  <table>
   <thead>
@@ -181,6 +182,22 @@ Please include:
       <td class="dmit1530-a01">DMIT 1530</td>
       <td class="cpsc1520-a02">CPSC 1520</td>
       <td class="appointment">available by appointment</td>
+    </tr>
+    <tr>
+      <th>5pm - 7pm</th>
+      <td class="appointment"></td>
+      <td class="appointment"></td>
+      <td class="appointment"></td>
+      <td class="appointment"></td>
+      <td class="appointment"></td>
+    </tr>
+    <tr>
+      <th>7pm-10pm</th>
+      <td class="dmit1508">DMIT 1508</td>
+      <td class="appointment"></td>
+      <td class="dmit1508">DMIT 1508</td>
+      <td class="appointment"></td>
+      <td class="appointment"></td>
     </tr>
   </tbody>
 </table>
