@@ -161,11 +161,11 @@ Please include:
     </tr>
     <tr>
       <th>12pm - 1pm</th>
-      <td>n/a</td>
+      <td>lunch break</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
-      <td>n/a</td>
+      <td>lunch break</td>
     </tr>
     <tr>
       <th>1pm - 3pm</th>
@@ -185,19 +185,19 @@ Please include:
     </tr>
     <tr>
       <th>5pm - 7pm</th>
-      <td class="appointment"></td>
-      <td class="appointment"></td>
-      <td class="appointment"></td>
-      <td class="appointment"></td>
-      <td class="appointment"></td>
+      <td>not available</td>
+      <td>not available</td>
+      <td>not available</td>
+      <td>not available</td>
+      <td>not available</td>
     </tr>
     <tr>
       <th>7pm-10pm</th>
       <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment"></td>
+      <td>not available</td>
       <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment"></td>
-      <td class="appointment"></td>
+      <td>not available</td>
+      <td>not available</td>
     </tr>
   </tbody>
 </table>
