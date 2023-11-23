@@ -123,15 +123,15 @@ Please include:
     .dmit1530-a01 { background-color:#95ed64;}
     .dmit1508 { background-color:#6495ed;}
   </style>
- <table>
+ <table style="width:100%">
   <thead>
     <tr>
-      <th class = "row-header"></th>
-      <th class = "col-header">Monday</th>
-      <th class = "col-header">Tuesday</th>
-      <th class = "col-header">Wednesday</th>
-      <th class = "col-header">Thursday</th>
-      <th class = "col-header">Friday</th>
+      <th class = "row-header"  style="width:15%"></th>
+      <th class = "col-header"  style="width:17%">Monday</th>
+      <th class = "col-header"  style="width:17%">Tuesday</th>
+      <th class = "col-header"  style="width:17%">Wednesday</th>
+      <th class = "col-header"  style="width:17%">Thursday</th>
+      <th class = "col-header"  style="width:17%">Friday</th>
     </tr>
       <tr>
       <th class = "row-header"></th>
@@ -143,7 +143,7 @@ Please include:
     </tr>
   </thead>
   <tbody>
-      <tr>
+      <tr style="height:30px">
       <th>8am - 10am</th>
       <td>n/a</td>
       <td class="appointment">available online</td>
@@ -151,7 +151,7 @@ Please include:
       <td class="appointment">available online</td>
       <td class="dmit1530-a01">DMIT 1530</td>
     </tr>
-    <tr>
+      <tr style="height:30px">
       <th>10am - noon</th>
       <td class="cpsc1520-a02">CPSC 1520</td>
       <td class="appointment">available by appointment</td>
@@ -159,7 +159,7 @@ Please include:
       <td class="cpsc1520-a01">CPSC 1520</td>
       <td class="cpsc1520-a01">CPSC 1520</td>
     </tr>
-    <tr>
+      <tr style="height:30px">
       <th>12pm - 1pm</th>
       <td>n/a</td>
       <td class="appointment">available by appointment</td>
@@ -167,7 +167,7 @@ Please include:
       <td class="appointment">available by appointment</td>
       <td>n/a</td>
     </tr>
-    <tr>
+      <tr style="height:30px">
       <th>1pm - 3pm</th>
       <td class="dmit1530-a01">DMIT 1530</td>
       <td class="appointment">available by appointment</td>
@@ -175,7 +175,7 @@ Please include:
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
     </tr>
-      <tr>
+      <tr style="height:30px">
       <th>3pm - 5pm</th>
       <td class="cpsc1520-a01">CPSC 1520</td>
       <td class="cpsc1520-a02">CPSC 1520</td>
@@ -183,7 +183,7 @@ Please include:
       <td class="cpsc1520-a02">CPSC 1520</td>
       <td class="appointment">available by appointment</td>
     </tr>
-    <tr>
+      <tr style="height:30px">
       <th>5pm - 7pm</th>
       <td>n/a</td>
       <td>n/a</td>
@@ -191,7 +191,7 @@ Please include:
       <td>n/a</td>
       <td>n/a</td>
     </tr>
-    <tr>
+      <tr style="height:30px">
       <th>7pm-10pm</th>
       <td class="dmit1508">DMIT 1508</td>
       <td>n/a</td>
