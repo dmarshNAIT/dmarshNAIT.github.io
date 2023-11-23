@@ -145,10 +145,10 @@ Please include:
   <tbody>
       <tr>
       <th>8am - 10am</th>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
+      <td>n/a</td>
+      <td class="appointment">available online</td>
+      <td class="appointment">available online</td>
+      <td class="appointment">available online</td>
       <td class="dmit1530-a01">DMIT 1530</td>
     </tr>
     <tr>
@@ -161,11 +161,11 @@ Please include:
     </tr>
     <tr>
       <th>12pm - 1pm</th>
-      <td>lunch break</td>
+      <td>n/a</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
       <td class="appointment">available by appointment</td>
-      <td>lunch break</td>
+      <td>n/a</td>
     </tr>
     <tr>
       <th>1pm - 3pm</th>
@@ -185,19 +185,19 @@ Please include:
     </tr>
     <tr>
       <th>5pm - 7pm</th>
-      <td>not available</td>
-      <td>not available</td>
-      <td>not available</td>
-      <td>not available</td>
-      <td>not available</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
     </tr>
     <tr>
       <th>7pm-10pm</th>
       <td class="dmit1508">DMIT 1508</td>
-      <td>not available</td>
+      <td>n/a</td>
       <td class="dmit1508">DMIT 1508</td>
-      <td>not available</td>
-      <td>not available</td>
+      <td>n/a</td>
+      <td>n/a</td>
     </tr>
   </tbody>
 </table>
