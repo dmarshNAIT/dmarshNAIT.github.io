@@ -8,12 +8,12 @@ permalink: /cpsc1012/objects
 
 Classes define a type, objects model a thing.
 
-Objects are individual instances of a class.
+Objects are individual **instances** of a class.
 
-For example, we might define a class called `Dog`. Every dog will share characteristics (age, breed, colour, etc). Each individual dog (my dog, your dog) is an instance of the class `Dog`, and is therefore an object.
+For example, we might define a class called `Dog`. Every dog will share characteristics (age, breed, colour, etc). Each individual dog (my dog, your dog, that dog over there) is an instance of the class `Dog`, and is therefore an **object**.
 
 ## Defining a Class
-When you define a class, you describe the **characteristics** of its objects, using member variables or fields.
+When you define a class, you describe the **characteristics** of its objects, using member variables, also called instance fields.
 ```csharp
 class Dog {
     // instance fields, specific to an instance of this class:
@@ -21,7 +21,7 @@ class Dog {
     private string _name;
 } // end of class
 ```
-This means that I could create a `Dog` object that has the `_name` `"Jasmine"`, and another `Dog` object that has the `_n_ame` `"Bowser"`. 
+This means that I could create a `Dog` object that has the `_name` `"Jasmine"`, and another `Dog` object that has the `_name` `"Bowser"`. 
 
 *Note: These instance fields are different from `static` fields which are associated with the class, not a specific object. The value of a `static` field is shared across all instances of that class.*
 
@@ -39,7 +39,7 @@ class Dog {
 
 ### Access Modifiers
 
-`private` members are only visible to the methods of the class defining the member (e.g. only methods of the `Dog` class have access to `_age` and `_name`).
+`private` members are only visible to the methods of the class defining the member (e.g. only methods within the `Dog` class have access to `_age` and `_name`).
 
 `public` members can be called from methods in any class (e.g. any class can call `TakeWalk()` on an instance of `Dog`).
 
