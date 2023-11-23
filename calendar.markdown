@@ -154,7 +154,7 @@ Please include:
         <th style="text-align: center;">9am</th>
         <!-- skip Monday -->
         <td rowspan="6" class="appointment">available by appointment</td>
-        <td rowspan="6"class="appointment">available by appointment</td>
+        <td rowspan="6" class="appointment">available by appointment</td>
         <td class="appointment">available online</td>
         <!-- skip Friday -->
       </tr>
