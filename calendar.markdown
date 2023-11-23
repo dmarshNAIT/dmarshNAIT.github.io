@@ -9,198 +9,225 @@ Please use [my booking tool](https://calendar.google.com/calendar/u/0/appointmen
 Outside of **emergency situations**, I generally do not honour same-day requests to meet.
 
 Please include:
-* your name
-* your class section (e.g. A04)
-* what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
-* whether you'd like to meet in-person, online, or have no preference
 
-#### Fall 2023 Schedule ####
+- your name
+- your class section (e.g. A04)
+- what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
+- whether you'd like to meet in-person, online, or have no preference
+
+#### Fall 2023 Schedule
 
 <html>
   <style>
-    table {font-size: 12.4px; text-align:center;}
-    .row-header {width : 80px;}
-    .col-header {text-align:center;}
-    .appointment {color: black; background-color:#d3d3d3;}
-    .dmit1508 { background-color:#6495ed;}
-    .a04 {background-color:#ed6495;}
-    .a05 {background-color:#bc64ed;}
-    .oe02 { background-color:#95ed64;}
+    table {font-size: 12.4px;text-align: center;}
+    .row-header {width: 80px;}
+    .col-header {text-align: center;}
+    .appointment {color: black;background-color: #d3d3d3;}
+    .dmit1508 {background-color: #6495ed;}
+    .a04 {background-color: #ed6495;}
+    .a05 {background-color: #bc64ed;}
+    .oe02 {background-color: #95ed64;}
   </style>
- <table>
-  <thead>
-    <tr>
-      <th class = "row-header"></th>
-      <th class = "col-header">Monday</th>
-      <th class = "col-header">Tuesday</th>
-      <th class = "col-header">Wednesday</th>
-      <th class = "col-header">Thursday</th>
-      <th class = "col-header">Friday</th>
-    </tr>
-        <tr>
-      <th class = "row-header"></th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">remote</th>
-    </tr>
-  </thead>
-  <tbody>
+  <table>
+    <thead>
       <tr>
-      <th>8am - 10am</th>
-      <td class="appointment">available by appointment</td>
-      <td class="a04">CPSC 1012</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>10am - noon</th>
-      <td>n/a</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td>n/a</td>
-      <td class="appointment">available by appointment</td>
-      <td class="a04">CPSC 1012</td>
-    </tr>
-    <tr>
-      <th>12pm - 1pm</th>
-      <td>n/a</td>
-      <td class="appointment">available by appointment</td>
-      <td>n/a</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-    <tr>
-      <th>1pm - 3pm</th>
-      <td class="a04">CPSC 1012</td>
-      <td class="appointment">available by appointment</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
+        <th class="row-header"></th>
+        <th class="col-header">Monday</th>
+        <th class="col-header">Tuesday</th>
+        <th class="col-header">Wednesday</th>
+        <th class="col-header">Thursday</th>
+        <th class="col-header">Friday</th>
+      </tr>
       <tr>
-      <th>3pm - 5pm</th>
-      <td class="a05">CPSC 1012</td>
-      <td class="appointment">available by appointment</td>
-      <td class="a05">CPSC 1012</td>
-      <td class="appointment">available by appointment</td>
-      <td class="a05">CPSC 1012</td>
-    </tr>
-  <tr>
-      <th>5pm - 7pm</th>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-    </tr>
-    <tr>
-      <th>7pm - 10pm</th>
-      <td class="oe02">CPSC 1012</td>
-      <td>n/a</td>
-      <td class="oe02">CPSC 1012</td>
-      <td>n/a</td>
-      <td>n/a</td>
-    </tr>
-
-
-  </tbody>
-</table>
+        <th class="row-header"></th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">remote</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>8am - 10am</th>
+        <td class="appointment">available by appointment</td>
+        <td class="a04">CPSC 1012</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+      </tr>
+      <tr>
+        <th>10am - noon</th>
+        <td>n/a</td>
+        <td class="dmit1508">DMIT 1508</td>
+        <td>n/a</td>
+        <td class="appointment">available by appointment</td>
+        <td class="a04">CPSC 1012</td>
+      </tr>
+      <tr>
+        <th>12pm - 1pm</th>
+        <td>n/a</td>
+        <td class="appointment">available by appointment</td>
+        <td>n/a</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+      </tr>
+      <tr>
+        <th>1pm - 3pm</th>
+        <td class="a04">CPSC 1012</td>
+        <td class="appointment">available by appointment</td>
+        <td class="dmit1508">DMIT 1508</td>
+        <td class="dmit1508">DMIT 1508</td>
+        <td class="appointment">available by appointment</td>
+      </tr>
+      <tr>
+        <th>3pm - 5pm</th>
+        <td class="a05">CPSC 1012</td>
+        <td class="appointment">available by appointment</td>
+        <td class="a05">CPSC 1012</td>
+        <td class="appointment">available by appointment</td>
+        <td class="a05">CPSC 1012</td>
+      </tr>
+      <tr>
+        <th>5pm - 7pm</th>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th>7pm - 10pm</th>
+        <td class="oe02">CPSC 1012</td>
+        <td>n/a</td>
+        <td class="oe02">CPSC 1012</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+    </tbody>
+  </table>
 </html>
 
-
-#### Tentative Winter 2024 Schedule ####
+#### Tentative Winter 2024 Schedule
 
 <html>
   <style>
-    table {font-size: 12.4px; text-align:center;}
-    .row-header {width : 80px;}
-    .col-header {text-align:center;}
-    .appointment {color: black; background-color:#d3d3d3;}
-    .cpsc1520-a01 {background-color:#ed6495;}
-    .cpsc1520-a02 {background-color:#bc64ed;}
-    .dmit1530-a01 { background-color:#95ed64;}
-    .dmit1508 { background-color:#6495ed;}
+    table { font-size: 12.4px; text-align: center; }
+    .row-header { width: 80px; width: 10%; text-align: center; }
+    .col-header { width: 18%; }
+    /* cell-formatting */
+    .appointment { color: black; background-color: #d3d3d3; /* grey */  } 
+    .cpsc1520-a01 { background-color: #ed6495; } /* pink */
+    .cpsc1520-a02 { background-color: #bc64ed; } /* purple */
+    .dmit1530-a01 { background-color: #95ed64; } /* green */
+    .dmit1508 { background-color: #6495ed; } /* blue */
   </style>
- <table style="width:100%">
-  <thead>
-    <tr>
-      <th class = "row-header"  style="width:15%"></th>
-      <th class = "col-header"  style="width:17%">Monday</th>
-      <th class = "col-header"  style="width:17%">Tuesday</th>
-      <th class = "col-header"  style="width:17%">Wednesday</th>
-      <th class = "col-header"  style="width:17%">Thursday</th>
-      <th class = "col-header"  style="width:17%">Friday</th>
-    </tr>
+  <table style="width: 100%">
+    <thead>
       <tr>
-      <th class = "row-header"></th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">on-campus</th>
-      <th class = "col-header">remote</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr style="height:50px">
-      <th>8am - 10am</th>
-      <td>n/a</td>
-      <td class="appointment">available online</td>
-      <td class="appointment">available online</td>
-      <td class="appointment">available online</td>
-      <td class="dmit1530-a01">DMIT 1530</td>
-    </tr>
-      <tr style="height:50px">
-      <th>10am - noon</th>
-      <td class="cpsc1520-a02">CPSC 1520</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="cpsc1520-a01">CPSC 1520</td>
-      <td class="cpsc1520-a01">CPSC 1520</td>
-    </tr>
-      <tr style="height:50px">
-      <th>12pm - 1pm</th>
-      <td>n/a</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td>n/a</td>
-    </tr>
-      <tr style="height:50px">
-      <th>1pm - 3pm</th>
-      <td class="dmit1530-a01">DMIT 1530</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-      <tr style="height:50px">
-      <th>3pm - 5pm</th>
-      <td class="cpsc1520-a01">CPSC 1520</td>
-      <td class="cpsc1520-a02">CPSC 1520</td>
-      <td class="dmit1530-a01">DMIT 1530</td>
-      <td class="cpsc1520-a02">CPSC 1520</td>
-      <td class="appointment">available by appointment</td>
-    </tr>
-      <tr style="height:50px">
-      <th>5pm - 7pm</th>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-      <td>n/a</td>
-    </tr>
-      <tr style="height:50px">
-      <th>7pm-10pm</th>
-      <td class="dmit1508">DMIT 1508</td>
-      <td>n/a</td>
-      <td class="dmit1508">DMIT 1508</td>
-      <td>n/a</td>
-      <td>n/a</td>
-    </tr>
-  </tbody>
-</table>
+        <th class="row-header"></th>
+        <th class="col-header">Monday</th>
+        <th class="col-header">Tuesday</th>
+        <th class="col-header">Wednesday</th>
+        <th class="col-header">Thursday</th>
+        <th class="col-header">Friday</th>
+      </tr>
+      <tr>
+        <th class="row-header"></th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">on-campus</th>
+        <th class="col-header">remote</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th style="text-align: center;">8am</th>
+        <td rowspan="2">n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td class="dmit1530-a01" rowspan="2">DMIT 1530</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">9am</th>
+        <!-- skip Monday -->
+        <td rowspan="6" class="appointment">available by appointment</td>
+        <td rowspan="6"class="appointment">available by appointment</td>
+        <td class="appointment">available online</td>
+        <!-- skip Friday -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">10am</th>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
+        <!-- skip -->
+        <!-- skip -->
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">11am</th>
+        <!-- skip all days -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">noon</th>
+        <td>n/a</td>
+        <!-- skip x2 -->
+        <td rowspan="3" class="appointment">available by appointment</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">1pm</th>
+        <td rowspan="2" class="dmit1530-a01">DMIT 1530</td>
+        <!-- skip x3 -->
+        <td rowspan="4" class="appointment">available by appointment</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">2pm</th>
+        <!-- skip all -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">3pm</th>
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
+        <td rowspan="2" class="dmit1530-a01">DMIT 1530</td>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">4pm</th>
+        <!-- skip all -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">5pm</th>
+        <td rowspan="2">n/a</td>
+        <td rowspan="5">n/a</td>
+        <td rowspan="2">n/a</td>
+        <td rowspan="5">n/a</td>
+        <td rowspan="5">n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">6pm</th>
+        <!-- skip all -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">7pm</th>
+        <td rowspan="3" class="dmit1508">DMIT 1508</td>
+        <!-- skip -->
+        <td rowspan="3" class="dmit1508">DMIT 1508</td>
+        <!-- skip 2x -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">8pm</th>
+        <!-- skip all -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">9pm</th>
+        <!-- skip all -->
+      </tr>
+    </tbody>
+  </table>
 </html>
 
 
