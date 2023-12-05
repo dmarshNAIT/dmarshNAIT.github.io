@@ -27,7 +27,7 @@ permalink: /cpsc1012/
 - [Arrays](./arrays)
 - [Lists](./lists)
 - [Objects & Classes](./objects)
-
+- [Testing](./testing) *(bonus content)*
 
 ***
 
