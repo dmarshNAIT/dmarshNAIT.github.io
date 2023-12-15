@@ -148,7 +148,7 @@ Please include:
         <td>n/a</td>
         <td>n/a</td>
         <td>n/a</td>
-        <td class="dmit1530-a01" rowspan="2">DMIT 1530</td>
+        <td class="dmit1530-a01" rowspan="2">DMIT 1530 (Web Dev 2)</td>
       </tr>
       <tr>
         <th style="text-align: center;">9am</th>
@@ -160,11 +160,11 @@ Please include:
       </tr>
       <tr>
         <th style="text-align: center;">10am</th>
-        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520 (JavaScript)</td>
         <!-- skip -->
         <!-- skip -->
-        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
-        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520 (JavaScript)</td>
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520 (JavaScript)</td>
       </tr>
       <tr>
         <th style="text-align: center;">11am</th>
@@ -179,7 +179,7 @@ Please include:
       </tr>
       <tr>
         <th style="text-align: center;">1pm</th>
-        <td rowspan="2" class="dmit1530-a01">DMIT 1530</td>
+        <td rowspan="2" class="dmit1530-a01">DMIT 1530 (Web Dev 2)</td>
         <!-- skip x3 -->
         <td rowspan="4" class="appointment">available by appointment</td>
       </tr>
@@ -189,10 +189,10 @@ Please include:
       </tr>
       <tr>
         <th style="text-align: center;">3pm</th>
-        <td rowspan="2" class="cpsc1520-a01">CPSC 1520</td>
-        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
-        <td rowspan="2" class="dmit1530-a01">DMIT 1530</td>
-        <td rowspan="2" class="cpsc1520-a02">CPSC 1520</td>
+        <td rowspan="2" class="cpsc1520-a01">CPSC 1520 (JavaScript)</td>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520 (JavaScript)</td>
+        <td rowspan="2" class="dmit1530-a01">DMIT 1530 (Web Dev 2)</td>
+        <td rowspan="2" class="cpsc1520-a02">CPSC 1520 (JavaScript)</td>
         <!-- skip -->
       </tr>
       <tr>
@@ -213,9 +213,9 @@ Please include:
       </tr>
       <tr>
         <th style="text-align: center;">7pm</th>
-        <td rowspan="3" class="dmit1508">DMIT 1508</td>
-        <!-- skip -->
-        <td rowspan="3" class="dmit1508">DMIT 1508</td>
+        <td rowspan="3" class="dmit1508">DMIT 1508 (Database)</td>
+        <!-- skip -->  
+        <td rowspan="3" class="dmit1508">DMIT 1508 (Database)</td>
         <!-- skip 2x -->
       </tr>
       <tr>
