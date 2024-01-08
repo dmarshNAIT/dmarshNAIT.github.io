@@ -181,7 +181,7 @@ Please include:
         <th style="text-align: center;">1pm</th>
         <td rowspan="2" class="dmit1530-a01">DMIT 1530<br>(Web Dev 2)</td>
         <!-- skip x3 -->
-        <td rowspan="4" class="appointment">available by appointment</td>
+        <td rowspan="4" class="appointment">available online</td>
       </tr>
       <tr>
         <th style="text-align: center;">2pm</th>
