@@ -8,6 +8,8 @@ Dana Marsh (they/she) is an instructor in the Digital Media and IT program.
 
 Courses they teach include:
 - COMP 1017 (Web Design Fundamentals I)
+- DMIT 1530 (Web Design Fundamentals II)
+- CPSC 1520 (Client-Side Scripting with JavaScript)
 - CPSC 1012 (Programming Fundamentals)
 - DMIT 1508 (Database Fundamentals)
 - DMIT 2507 (Business Intelligence)
