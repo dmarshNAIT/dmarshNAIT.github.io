@@ -55,6 +55,13 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
 - Strings can be concatenated with variables in a few different ways.
   - `"Hello, " + userName + "."`
   - `` `Hello, ${userName}.` ``
+  - We can make an IIFE by adding this punctuation:
+    ```js
+    (function () {
+      // do stuff
+    })();
+    ```
+
 ### Events
 - To add an event listener to an element named `bob`:
   - `bob.addEventListener(eventType, functionName)` where `eventType` is something like `"click"` or `"submit"`, and `functionName` is a previously defined function.
@@ -67,6 +74,7 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
 - If our function has `event` as a param, we can do:
   - `event.stopPropagation()`
   - `event.preventDefault()`
+- Classes can be added using `.classList.add()` and removed with `.classList.remove()`.
 
 ### Forms
 - Assuming `form` refers to a form element in our HTML document, and if the first field in the form is called `bob`, this is how we can access that specific field:
@@ -77,10 +85,6 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
 - Then, we can add `.value` to access the value entered into that field!
 - We can **focus** on a specific element with `focus()`.
   - We can target a focussed element using `document.activeElement.tagName`.
-
-
-
-
 
 
 ## Decisions
