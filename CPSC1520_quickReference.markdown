@@ -20,10 +20,11 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
   - By **tag**: we use `document.getElementsByTagName("xyz")` where `xyz` is the tag (like `p` or `h2`). Since we may have many elements of the same, this returns all the elements that match, and we will use the `[]` syntax here too.
   - By **ID**, **class**, or **tag**: use `querySelector()` or `querySelectorAll()`. Make sure to include `#` before ID names and `.` before class names. `queryselector` will return the **first** element that matches, and `querySelectorAll` will return all the elements that match.
 - `innerHTML` lets us view and edit the contents of a specific element. e.g. `elementX.innerHTML = "<p>hello</p>"`
-- `innerText` is similar, but it doesn't include the HTML tags. e.g. `elementX.innerHTML = "hello"`
+- `innerText` is similar, but it doesn't include the HTML tags. e.g. `elementX.innerText = "hello"`
 - We can target styles using the `style` property: e.g. `elementName.style.color = 'blue'`.
 
 ## Functions & Events
+### Functions
 - `prompt()`: built-in function to prompt user for input.
 - `alert()`: built-in function to create a pop-up message.
 - There are a few different way to create a function.
@@ -54,6 +55,7 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
 - Strings can be concatenated with variables in a few different ways.
   - `"Hello, " + userName + "."`
   - `` `Hello, ${userName}.` ``
+### Events
 - To add an event listener to an element named `bob`:
   - `bob.addEventListener(eventType, functionName)` where `eventType` is something like `"click"` or `"submit"`, and `functionName` is a previously defined function.
   - & if the function wasn't previously defined, replace `functionName` with this syntax:
@@ -75,6 +77,9 @@ This page is meant to be a cheat sheet of the key pieces of JavaScript we've lea
 - Then, we can add `.value` to access the value entered into that field!
 - We can **focus** on a specific element with `focus()`.
   - We can target a focussed element using `document.activeElement.tagName`.
+
+
+
 
 
 
