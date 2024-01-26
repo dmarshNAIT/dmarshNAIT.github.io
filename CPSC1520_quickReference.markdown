@@ -18,9 +18,9 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
 
   Function (all preceded with `document.`)  | parameter      | used for  | returns
   ---                                       | ---             | ---       | ---
-  `getElementByID("xyz")`          | name of the ID | IDs       | a single element
-  `getElementsByClassName("xyz")`  | class name      | classes   | all elements that match
-  `getElementsByTagName("xyz")`    | tag (e.g. `h2`) | tags      | all elements that match
+  `getElementByID()`          | name of the ID | IDs       | a single element
+  `getElementsByClassName()`  | class name      | classes   | all elements that match
+  `getElementsByTagName()`    | tag (e.g. `h2`) | tags      | all elements that match
   `querySelector()`                | tag, class name (including the `.`), or ID (including the `#`) | all of the above | the **first** element that matches
   `querySelectorAll()`             | tag, class name (including the `.`), or ID (including the `#`) | all of the above | all elements that match
 
