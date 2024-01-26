@@ -10,7 +10,7 @@ While not an exhaustive list, here are some often-used events.
 
 event name  | description 
 --- | ---
-**mouse events**
+**mouse events** |
 `mouseover` | pointer enters an element, or its descendants
 `mouseenter` | pointer enters an element
 `mouseout` | pointer leaves an element or its descendants
@@ -19,7 +19,7 @@ event name  | description
 `mousedown` | mouse is clicked inside the element
 `mouseup` | mouse is released
 `click` | after `mousedown` and `mouseup`
-**touchscreen events**
+**touchscreen events** |
 `touchstart` | a touchpoint is placed on a touch surface
 `touchend` | a touchpoint is removed from a touch surface
 `touchmove` | a touchpoint is moved along the touch surface
