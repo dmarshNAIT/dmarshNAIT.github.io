@@ -16,13 +16,13 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
 - `const` should be used instead if we know the contents shouldn't change.
 - Variables that reference an HTML element can be created a few different ways:
 
-  Function                                  | parameter      | used for  | returns
+  Function (all preceded with `document.`)  | parameter      | used for  | returns
   ---                                       | ---             | ---       | ---
-  `document.getElementByID("xyz")`          | name of the ID | IDs       | a single element
-  `document.getElementsByClassName("xyz")`  | class name      | classes   | all elements that match
-  `document.getElementsByTagName("xyz")`    | tag (e.g. `h2`) | tags      | all elements that match
-  `querySelector()`                         | tag, class name (including the `.`), or ID (including the `#`) | all of the above | the **first** element that matches
-  `querySelectorAll()`                         | tag, class name (including the `.`), or ID (including the `#`) | all of the above | all elements that match
+  `getElementByID("xyz")`          | name of the ID | IDs       | a single element
+  `getElementsByClassName("xyz")`  | class name      | classes   | all elements that match
+  `getElementsByTagName("xyz")`    | tag (e.g. `h2`) | tags      | all elements that match
+  `querySelector()`                | tag, class name (including the `.`), or ID (including the `#`) | all of the above | the **first** element that matches
+  `querySelectorAll()`             | tag, class name (including the `.`), or ID (including the `#`) | all of the above | all elements that match
 
 ### Built-in Functions & Properties
 - `console.log()` prints to the console, and is used primarily for debugging.
