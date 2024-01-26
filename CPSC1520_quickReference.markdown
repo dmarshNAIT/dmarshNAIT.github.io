@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CPSC 1520
+title: CPSC 1520 Quick Reference
 permalink: /cpsc1520/QuickReference
 ---
 

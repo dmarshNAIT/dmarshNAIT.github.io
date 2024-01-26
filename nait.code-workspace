@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../OneDrive - NAIT/CPSC 1520"
+		},
+		{
+			"path": "../../../OneDrive - NAIT/DMIT 1530"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CPSC 1520",
+		"dotnet.defaultSolution": "disable"
+	}
+}
