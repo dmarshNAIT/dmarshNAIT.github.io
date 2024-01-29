@@ -8,6 +8,9 @@
 		},
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../../source/repos/master-course"
 		}
 	],
 	"settings": {

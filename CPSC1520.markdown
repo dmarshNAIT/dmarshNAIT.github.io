@@ -8,4 +8,5 @@ permalink: /cpsc1520/
 
 # CPSC 1520 Resources
 - [Quick Reference](./QuickReference)
+- [Style Guide](./styleguide)
 - [Events Reference](./events)
