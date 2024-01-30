@@ -7,13 +7,16 @@ permalink: /about/
 Dana Marsh (they/she) is an instructor in the Digital Media and IT program.
 
 They teach topics including:
+
 #### Sofware Development
 - CPSC 1012 (Programming Fundamentals)
 - ANAP 1525 (Systems Analysis & Design I)
 - DMIT 2028 (Systems Analysis & Design II)
+
 #### Data
 - DMIT 1508 (Database Fundamentals)
 - DMIT 2507 (Business Intelligence)
+
 #### Web
 - COMP 1017 (Web Design Fundamentals I)
 - DMIT 1530 (Web Design Fundamentals II)
