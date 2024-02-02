@@ -104,7 +104,38 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
 
 
 ## Decisions
-Coming soon!
+- Conditional operators include:
+  - `<`, `<=`, `>`, `>=`, `==`, `!=`, `===`, `!==`
+- Logical operators include:
+  - `&&`, `||`, `!`
+- Unary operators include:
+  - `++`, `--`, `typeof`
+- `if` statement syntax:
+  ```js
+  if (someCondition) {
+    // do something
+  } else if (someOtherCondition) {
+    // do another thing
+  } else {
+    // default thing
+  }
+  ```
+- `switch` statement syntax:
+  ```js
+  switch (valueOrExpressionToCompare) {
+    case value1:
+      // do stuff;
+      break;
+    case value2:
+      // do different stuff
+      break;
+
+    // other cases
+    
+    default:
+      // if nothing else matches
+    }
+  ```
 
 ## Loops & Arrays
 Coming soon!
