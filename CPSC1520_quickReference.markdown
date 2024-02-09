@@ -181,15 +181,17 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
   ```
 - `for`/`of` loops:
   ```js
-  for (let kitten of cats) {
-    console.log(kitten);
+  for (let kitten of cats) { 
+    // kitten is a variable we name here that represents each element
+    // cats is a collection that already exists
+    // do things
   }
   ```
 - `forEach()`:
   ```js
   myArray.forEach( 
-    (element) => {
-      console.log(element);
+    (element) => { // we can pass in element, index, and array
+      // do things
     }
   );
   ```
