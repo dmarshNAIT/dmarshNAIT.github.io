@@ -7,6 +7,9 @@ permalink: /cpsc1012/cheatsheet
 This is meant to be a quick-reference of the methods & data types we've learned so far.
 If you notice any gaps or errors, please let me know!
 
+> **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
+
+
 # Topic 1: Intro to Programming
 No methods or data types were covered in this section.
 

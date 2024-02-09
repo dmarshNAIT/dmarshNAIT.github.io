@@ -10,6 +10,9 @@ While not an exhaustive list, here are some often-used events.
 
 event name  | description 
 --- | ---
+**keyboard events** |
+`keydown` | a key has been pressed
+`keyup` | a key has been released
 **mouse events** |
 `mouseover` | pointer enters an element, or its descendants
 `mouseenter` | pointer enters an element

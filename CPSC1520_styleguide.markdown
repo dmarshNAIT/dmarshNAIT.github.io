@@ -18,7 +18,7 @@ Adapted from [Google JavaScript Style Guide](https://google.github.io/styleguide
 - Use only letters and digits in your **descriptive** names, with appropriate capitalization:
     - **Classes** in PascalCase.
     - **Methods**, **variables**, and **parameters** in camelCase.
-    - True **constants** in UPPERCASE.
+    - True **constants** in UPPERCASE_LETTERS, also known as SCREAMING_SNAKE_CASE.
 
 # Punctuation
 - **Semicolons** are required for every statement.

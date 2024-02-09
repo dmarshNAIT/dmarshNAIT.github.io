@@ -138,7 +138,62 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
   ```
 
 ## Loops & Arrays
-Coming soon!
+### Arrays
+- Arrays can be created with the following syntax:
+  ```js
+  let cats = ["Lily", "Aïoli", "Spruce"];
+  ```
+- Individual elements can be accessed with square brackets. e.g. `cats[1]` refers to the element at index `1`.
+- Built-in array methods include:
+  Name | Parameter | Description
+  -- | -- | --
+  `length` | | returns largest index + 1
+  `indexOf(x)` | element to find | returns index of that element
+  `push(x)` | new element | adds element to end
+  `unshift(x)` | new element | adds element to start
+  `pop()` | | removes last element
+  `shift()` | | removes 0th element
+  `slice(start, end)` | indexes | copies an array
+  `map()` | `function`(element, index, array) | creates a new array after a specified transformation
+  `filter()` | `function`(element, index, array) |  filters an array based on a specified condition
+  `reduce()` | `function`(accumulator, value, index, array), initial value | reduces the array into a single value.
+
+### Loops
+- `while` loops:
+  ```js
+  while (someCondition) {
+    // do things
+  }
+  ```
+- `do while` loops:
+  ```js
+  do {
+    // do things
+  }
+  while (someCondition);
+  ```
+- `for` loops:
+  ```js
+  for (initialize; condition; increment) {
+    // do things
+  }
+  ```
+- `for`/`of` loops:
+  ```js
+  for (let kitten of cats) {
+    console.log(kitten);
+  }
+  ```
+- `forEach()`:
+  ```js
+  myArray.forEach( 
+    (element) => {
+      console.log(element);
+    }
+  );
+  ```
+- `break` statements exit the loop.
+- `continue` skips to the next iteration.
 
 ## Objects
 Coming soon!
