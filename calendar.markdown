@@ -54,7 +54,7 @@ Please include:
         <td rowspan="2">n/a</td>
         <td>n/a</td>
         <td>n/a</td>
-        <td>n/a</td>
+        <td rowspan="2">n/a</td>
         <td class="dmit1530-a01" rowspan="2">DMIT 1530<br>(Web Dev 2)</td>
       </tr>
       <tr>
@@ -62,7 +62,7 @@ Please include:
         <!-- skip Monday -->
         <td rowspan="6" class="appointment">available by appointment</td>
         <td rowspan="6" class="appointment">available by appointment</td>
-        <td class="appointment">available online</td>
+        <!-- skip Friday -->
         <!-- skip Friday -->
       </tr>
       <tr>
