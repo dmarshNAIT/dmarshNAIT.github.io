@@ -145,6 +145,7 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
   ```
 - Individual elements can be accessed with square brackets. e.g. `cats[1]` refers to the element at index `1`.
 - Built-in array methods include:
+
   Name | Parameter | Description
   -- | -- | --
   `length` | | returns largest index + 1
