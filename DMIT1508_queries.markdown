@@ -6,9 +6,9 @@ permalink: /dmit1508/queries
 
 ## Queries
 
-Queries are used to retrieve data from the database.
+Queries are used to **retrieve data** from the database.
 
-We can choose which columns we want to see, which rows we want, and which aggregate calculations we want.
+We can choose **which columns** we want to see, **which rows** we want, and which **aggregate** calculations we want.
 
 Queries are written with a `SELECT` statement:
 ```sql
@@ -54,7 +54,7 @@ Operator | Usage
 
 ### UNION
 
-The union operation lets you combine the data retrieved by multiple `SELECT` statements. It's basically just gluing together the results of 2 or more queries, combining them into one output.
+The union operation lets you **combine** the data retrieved by **multiple** `SELECT` statements. It's basically just gluing together the results of 2 or more queries, combining them into one output.
 ```sql
 SELECT ...
 UNION [ALL]
@@ -64,14 +64,14 @@ SELECT ...
 ### Aggregate Functions
 
 Syntax: `aggregate_function_name([ ALL | DISTINCT] expression)`
-- `AVG` returns the average of numeric values (ignoring any `NULL` values)
-- `SUM` returns the sum of a column containing numeric values
-- `MIN` and `MAX` return the minimum and maximum values from a column of numeric, date, or character values
-- `COUNT` returns the number of non-null values OR the number of records that match the `WHERE` criteria
+- `AVG` returns the **average** of numeric values (ignoring any `NULL` values)
+- `SUM` returns the **sum** of a column containing numeric values
+- `MIN` and `MAX` return the **minimum** and **maximum** values from a column of numeric, date, or character values
+- `COUNT` returns the number of **non-null values** OR the **number of records** that match the `WHERE` criteria
 - `ALL` and `DISTINCT` can be in a query or with a `COUNT` function. `ALL` is the default and usually not explicitly declared.
-  - When `DISTINCT` is used with the `COUNT` function it only counts the unique values.
+  - When `DISTINCT` is used with the `COUNT` function it only counts the **unique** values.
 
-The `GROUP BY` clause is used with aggregate functions to provide subtotals. For example:
+The `GROUP BY` clause is used with **aggregate** functions to provide subtotals. For example:
 ```sql
 SELECT CourseID, AVG(Mark) AS AverageMark
 FROM Registration
@@ -82,7 +82,7 @@ This can be read as: *for each course ID, select courseID and the average mark*
 
 ### HAVING Clause
 
-`HAVING` is like the `WHERE` clause, except it applies its criteria *after* `GROUP BY`. For example:
+`HAVING` is like the `WHERE` clause, except it applies its criteria ***after*** `GROUP BY`. For example:
 ```sql
 SELECT CourseID, AVG(Mark) as AverageMark
 FROM Registration
@@ -102,7 +102,7 @@ HAVING AVG(Mark) > 80
 
 ### ORDER BY
 
-The `ORDER BY` clause sorts one or more columns, in `ASC`ending or `DESC`ending order (`ASC` is the default).
+The `ORDER BY` clause **sorts** one or more columns, in `ASC`ending or `DESC`ending order (`ASC` is the default).
 
 ```sql
 SELECT FirstName, LastName
@@ -112,27 +112,27 @@ ORDER BY FirstName ASC, LastName DESC
 
 ### String Functions
 Some useful functions include:
-- `LEN(column | expression)` returns the length of a string or expression
+- `LEN(column | expression)` returns the **# of characters** in a string or expression
 - `LEFT(column | expression, length)` returns `length` number of characters, starting at the left
 - `RIGHT(column | expression, length)` returns `length` number of characters, starting at the right
-- `SUBSTRING(column | expression, start, length)` returns a subset of characters from a string or expression
-- `REVERSE(column | expression)` returns the string in reverse order
-- `UPPER(column | expression)` returns the string in UPPERCASE
-- `LOWER(column | expression)` returns the string in lowercase
-- `LTRIM(column | expression)` trims any leading whitespace
-- `RTRIM(column | expression)` trims any trailing whitespace
+- `SUBSTRING(column | expression, start, length)` returns a **subset** of characters from a string or expression
+- `REVERSE(column | expression)` returns the string in **reverse** order
+- `UPPER(column | expression)` returns the string in **UPPERCASE**
+- `LOWER(column | expression)` returns the string in **lowercase**
+- `LTRIM(column | expression)` trims any leading **whitespace**
+- `RTRIM(column | expression)` trims any trailing **whitespace**
 
 ### Date Functions
-- `GETDATE()` returns the current system date
-- `DATEADD(xx, n, date1)` adds `n` `xx` to `date1` (n may be negative)
+- `GETDATE()` returns the **current system date**
+- `DATEADD(xx, n, date1)` **adds** `n` `xx` to `date1` (n may be negative)
 - `DATEDIFF(xx, date1, date2)` returns the number of `xx` from `date1` to `date2`
-- `DATENAME(xx, date1)` returns string representation of the `xx` of `date1`
-- `DATEPART(xx, date1)` returns integer representation of the `xx` of `date1`
+- `DATENAME(xx, date1)` returns **string representation** of the `xx` of `date1`
+- `DATEPART(xx, date1)` returns **integer representation** of the `xx` of `date1`
   - `YEAR(date1)` functions the same as `DATEPART(yy, date1)`
   - `MONTH(date1)` functions the same as `DATEPART(mm, date1)`
   - `DAY(date1)` functions the same as `DATEPART(dd, date1)`
 
-where `xx` represents datepart:
+where `xx` represents some unit of time:
 
 Datepart | Abbreviation | Minimum | Maximum
 --- | --- | --- | ---
@@ -150,7 +150,7 @@ Millisecond | `ms` | 0 | 999
 
 ### JOINs
 
-How do we connect data in one table to its related record(s) in another?
+How do we **connect** data in one table to its related record(s) in another?
 ```sql
 SELECT Field1, Field2, ... 
 FROM Table1
@@ -164,11 +164,12 @@ To see what that looks like with real fields/columns:
 SELECT FirstName, LastName, Mark
 FROM Student 
 INNER JOIN Registration ON Student.StudentID = Registration.StudentID
+-- studentID is the FK
 ```
 
 #### Types of Joins
-- `INNER JOIN` returns only records that exist in both tables
-- `FULL OUTER JOIN` returns all records that exist in either table (if we're `JOIN`ing on our FK, which we always do in DMIT 1508, this type of `JOIN` isn't used)
+- `INNER JOIN` returns only records that exist in **both** tables
+- `FULL OUTER JOIN` returns all records that exist in **either** table (if we're `JOIN`ing on our FK, which we always do in DMIT 1508, this type of `JOIN` isn't used)
 - `Table1 LEFT JOIN Table2` returns all records in `Table1`, regardless of whether they exist in `Table2`
 - `Table1 RIGHT JOIN Table2` returns all tables in `Table2`, regardless of whether they exist in `Table1`
 
@@ -189,9 +190,10 @@ INNER JOIN table4
 ```
 
 ### Subqueries
-A subquery is a `SELECT` statement inside of another statement.
-It's a full and complete `SELECT` statement that could execute on its own.
-There are nested and correlated subqueries, and in this course we will focus on nested subqueries only.
+A subquery is a `SELECT` statement **inside** of another statement.
+
+There are **nested** and correlated subqueries, and in this course we will focus on nested subqueries only, which are full and complete `SELECT` statements that could execute on their own.
+
 
 They are especially useful for finding records that are in one table but not another: for example, staff who have never taught a course:
 ```sql

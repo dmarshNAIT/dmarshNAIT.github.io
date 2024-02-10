@@ -3,12 +3,13 @@ layout: page
 title: DML
 permalink: /dmit1508/DML
 ---
+# DML
 
 ## INSERT
 
 The `INSERT` statement adds 1+ rows to a table.
 
-It can include hard-coded values, or can use subqueries to retrieve data from other tables.
+It can include **hard-coded values**, or can use **subqueries** to retrieve data from other tables.
 
 ```sql
 INSERT INTO TableName (Column1, Column2, ...)
@@ -23,7 +24,7 @@ SELECT Column1, Column2, ...
 FROM ...
 ```
 
-If the statement supplies data that does not comply with constraints, or the data is incompatible with the data type of the column, the statement fails.
+If the statement supplies data that does not comply with constraints, or the data is incompatible with the data type of the column, the statement **fails**.
 
 Example:
 ```sql
@@ -41,7 +42,7 @@ VALUES ('Jason'
     , NULL)
 ```
 
-Example using subquery:
+Example using **subquery**:
 ```sql
 INSERT INTO Staff (FirstName
     , LastName
@@ -57,7 +58,7 @@ VALUES ('Jason'
     , NULL)
 ```
 
-Examples using default values:
+Examples using **default** values:
 ```sql
 INSERT INTO Staff (FirstName
     , LastName
@@ -87,7 +88,8 @@ VALUES ('Jason'
 ```
 
 ## UPDATE
-The `UPDATE` statement updates existing data in the table. It can update one or more columns.
+The `UPDATE` statement updates **existing rows** in the table. It can update one or more columns.
+
 Data can be updated by providing new values for columns or using subqueries to provide the data.
 ```sql
 UPDATE	TableName
@@ -109,7 +111,7 @@ Examples:
     SET Cost = Cost * 1.1
     WHERE CourseID = 'DMIT108'
     ```
-- Update the `Course` table and set the cost of DMIT170 to be the same as DMIT254:
+- Update the `Course` table and set the `cost` of DMIT170 to be the same as DMIT254:
     ```sql
     UPDATE Course
     SET Cost = (	SELECT Cost 

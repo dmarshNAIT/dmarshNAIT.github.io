@@ -7,12 +7,12 @@ permalink: /dmit1508/storedprocedures-checklist
 ## Checklist
 There are a few things we will always do when creating a stored procedure.
 
-1. Initialize *all* parameters to `NULL`.
+1. **Initialize** *all* parameters to `NULL`.
 1. Check for **missing parameters** before doing any other logic.
-1. Make sure to assign a value to variables before using them.
-1. Check `@@error` after *every* DML statement.
+1. Make sure to **assign** a value to variables before using them.
+1. Check **`@@error`** after *every* DML statement.
 1. Before running an `UPDATE` or `DELETE`, make sure there exists something to `UPDATE` or `DELETE`.
-1. If you have more than one DML statement that needs to run, you need a `TRANSACTION`. 
+1. If you have more than one DML statement that needs to run, you need a **`TRANSACTION`**. 
     + `BEGIN` the transaction before the 1st DML statement, `ROLLBACK` if any branch fails, and `COMMIT` if they all worked.
 
 

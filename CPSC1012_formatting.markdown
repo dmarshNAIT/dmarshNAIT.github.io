@@ -17,11 +17,11 @@ double secondNum = 1234.56789;
     Console.WriteLine("firstNum: " + firstNum + "  secondNum: " + secondNum);
     ```
 
-- Or using substitution parameters:
+- Or using **substitution parameters**:
     ```csharp
     Console.WriteLine("firstNum: {0}  secondNum: {1}", firstNum, secondNum);
     ```
-- Or with string interpolation:
+- Or with **string interpolation**:
     ```csharp
     Console.WriteLine($"firstNum: {firstNum}  secondNum: {secondNum}");
     ```
@@ -40,6 +40,7 @@ For example, let's say I want my first number to be **four digits** long, **no d
 ```csharp
 // substitution parameters:
 Console.WriteLine("firstNum: {0:0000}  secondNum: {1:0.00}", firstNum, secondNum);
+
 // string interpolation:
 Console.WriteLine($"firstNum: {firstNum:0000}  secondNum: {secondNum:0.00}");
 ```
@@ -54,9 +55,9 @@ firstNum: 0150  secondNum: 1234.57
 For example, what if I want to format a number to add commas, but I don't want to force any leading or trailing zeros? I'll use the same format string (`#,##0.00`) for both variables:
 ```csharp
 // substitution parameters:
-Console.WriteLine("firstNum: {0:#,##0.00}  secondNum: {1:#,##0.00}", 
-    firstNum, secondNum);
+Console.WriteLine("firstNum: {0:#,##0.00}  secondNum: {1:#,##0.00}", firstNum, secondNum);
 
+// string interpolation:
 Console.WriteLine($"firstNum: {firstNum:#,##0.00}  secondNum: {secondNum:#,##0.00}");
 ```
 
@@ -76,6 +77,7 @@ Let's say I have a **table** of values that I want to display. Using what we kno
 Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", 0, 0);
 
+// string interpolation:
 Console.WriteLine($"firstNum: {0:0.00}  secondNum: {0:0.00}");
 Console.WriteLine($"firstNum: {firstNum:0.00}  secondNum: {secondNum:0.00}");
 ```
@@ -96,6 +98,7 @@ The contents of our braces will now be: `{variable or expression to display, ali
 Console.WriteLine("firstNum: {0, 10:0.00}  secondNum: {1, 10:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0, 10:0.00}  secondNum: {1, 10:0.00}", 0, 0);
 
+// string interpolation:
 Console.WriteLine($"firstNum: {0, 10:0.00}  secondNum: {0, 10:0.00}");
 Console.WriteLine($"firstNum: {firstNum, 10:0.00}  secondNum: {secondNum, 10:0.00}");
 ```
@@ -114,6 +117,7 @@ If I wanted my columns to be left-aligned, we simply make the width negative:
 Console.WriteLine("firstNum: {0,-10:0.00}  secondNum: {1,-10:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0,-10:0.00}  secondNum: {1,-10:0.00}", 0, 0);
 
+// string interpolation:
 Console.WriteLine($"firstNum: {0,-10:0.00}  secondNum: {0,-10:0.00}");
 Console.WriteLine($"firstNum: {firstNum,-10:0.00}  secondNum: {secondNum,-10:0.00}");
 ```

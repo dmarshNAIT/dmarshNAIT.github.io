@@ -13,13 +13,13 @@ For example, we could create a trigger that's associated with an `INSERT` operat
 **Triggers cannot be explicitly executed, and cannot accept parameters.**
 
 Triggers can help us to
-- Enforce referential integrity across databases
+- Enforce **referential integrity** across databases
     - e.g. Every time I `INSERT` or `UPDATE` a specific table, I can check the values against another table or database to make sure they are valid.
-- Enforce business rules
+- Enforce **business rules**
     - e.g. something too complicated for a `CHECK` constraint like "cannot increase this field by more than 25% at a time".
-- Automate an operation
+- **Automate** an operation
     - e.g. automatically `UPDATE` associated records when a new record is added, like updating the total Job cost when a new Service is added to the Job.
-- Create an audit trail
+- Create an **audit** trail
     - e.g. automatically log the changes when a value is changed, like the cost of an item.
 
 For example: 
@@ -30,24 +30,24 @@ For example:
 
 ### When *exactly* do triggers execute?
 Triggers happen at a **specific** point in a series of events, most of which that are happening *automatically* behind-the-scenes. Here's what the whole series looks like:
-1. The process kicks off when a DML operation is executed: `INSERT`, `UPDATE`, or `DELETE`.
-1. Next, the server will check if any `CONSTRAINT`s were violated by the DML statement. If so, an error is raised and the process ends without executing our trigger.
-1. Then, the server will check for any issues with data types. If there are, an error is raised and the process ends without executing our trigger.
-1. The server then `BEGIN`s a `TRANSACTION`, and creates 2 temporary tables (more on those below).
-1. The DML operation occurs, which will mean changes *may* occur on the base table and the temporary tables.
+1. The process kicks off when a **DML operation is executed**: `INSERT`, `UPDATE`, or `DELETE`.
+1. Next, the server will check if any **`CONSTRAINT`s were violated** by the DML statement. If so, an error is raised and the process ends without executing our trigger.
+1. Then, the server will check for any **issues with data types**. If there are, an error is raised and the process ends without executing our trigger.
+1. The server then `BEGIN`s a `TRANSACTION`, and creates **2 temporary tables** (more on those below).
+1. The **DML operation occurs**, which will mean changes *may* occur on the base table and the temporary tables.
 1. Then, **the trigger will execute**. In that trigger, we may `ROLLBACK` the `TRANSACTION` that was started by the server, but will never `COMMIT TRANSACTION`. We may do other DML operations, or `RAISERROR`s.
-    + Note: It's possible that we have multiple triggers on a single table. In this case, we have very little control over what order they occur in... we will generally ignore this within the scope of this class.
-1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server automatically `COMMIT`s the `TRANSACTION`.
-1. Finally, the `inserted` and `deleted` tables are dropped.
+    + Note: It's possible that we have *multiple* triggers on a single table. In this case, we have very little control over what order they occur in... we will generally ignore this within the scope of this class.
+1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server **automatically `COMMIT`s** the `TRANSACTION`.
+1. Finally, the `inserted` and `deleted` tables are **dropped**.
 
 
 ### More about temporary tables...
-Two temporary tables are created and used by the server when executing a DML operation.
-- `deleted`: contains the "before" image of all rows affected
-- `inserted`: contains the "after" image of all rows affected
-- We'll use the term "base table" to refer to the table the trigger is associated with.
+Two **temporary tables** are created and used by the server when executing a DML operation.
+- `deleted`: contains the "**before**" image of all rows affected
+- `inserted`: contains the "**after**" image of all rows affected
+- We'll use the term "**base table**" to refer to the table the trigger is associated with.
 
-The contents of each temporary table depend on which DML statement the trigger is associated with:
+The **contents** of each temporary table depend on which DML statement the trigger is associated with:
 
 | |  `deleted` table | `inserted` table | base table
 --- | --- | --- | --- 
@@ -78,7 +78,7 @@ RETURN
 ```
 
 Example:
-- To create a trigger for the `INSERT` and `UPDATE` operations associated with the `Staff` table:
+- To **create** a trigger for the `INSERT` and `UPDATE` operations associated with the `Staff` table:
     ```sql
     CREATE TRIGGER TR_Staff_Insert_Update
         ON Staff 
@@ -88,7 +88,7 @@ Example:
     RETURN
     ```
 
-- To create a trigger for the `DELETE` operation associated with the `Student` table:
+- To **create** a trigger for the `DELETE` operation associated with the `Student` table:
     ```sql
     CREATE TRIGGER TR_Student_Delete
         ON Student 

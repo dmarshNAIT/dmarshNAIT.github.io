@@ -4,20 +4,23 @@ title: DMIT1508
 permalink: /dmit1508/
 ---
 
-## Main Topics
+# DMIT 1508
+*Looking for the [class examples GitHub repo](https://github.com/dmarshNAIT/dmit1508)?*
 
-*Looking for the [course GitHub repo](https://github.com/dmarshNAIT/dmit1508)?*
+## Course Resources
 
-- [Glossary](./glossary)
-- *NEW*: [Quick reference cheatsheet](./cheatsheet)
-- [Normalization](./normalization)
-- [DDL](./DDL)
+- [**Glossary**](./glossary): terms used in DMIT 1508
+- [**Quick reference cheatsheet**](./cheatsheet): all the SQL we've used
+
+## Topics
+- [**Normalization**](./normalization)
+- [**DDL**](./DDL)
   - Creating tables
   - Constraints
   - The `LIKE` operator
   - Altering tables
   - Indexes
-- [Queries](./queries)
+- [**Queries**](./queries)
   - `WHERE`
   - Search Criteria operators
   - `UNION`
@@ -29,20 +32,20 @@ permalink: /dmit1508/
   - `JOIN`s
   - Subqueries
   - `ANY`, `SOME`, and `ALL` operators
-- [Views](./views)
-- [DML](./DML)
+- [**Views**](./views)
+- [**DML**](./DML)
   - `INSERT`
   - `UPDATE`
   - `DELETE`
-- [Stored Procedures](./storedprocedures)
+- [**Stored Procedures**](./storedprocedures)
   - Variables
   - Flow control
   - Parameters
   - Raising errors
   - Global variables
   - Transactions
-  - *NEW:* [SP checklist](./storedprocedures-checklist)
-- [Triggers](./triggers)
+  - [SP checklist](./storedprocedures-checklist): everything you need to write an SP
+- [**Triggers**](./triggers)
   - Temporary tables
 
 
