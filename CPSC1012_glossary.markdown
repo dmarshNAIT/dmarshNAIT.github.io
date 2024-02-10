@@ -4,6 +4,8 @@ title: Glossary
 permalink: /cpsc1012/glossary
 ---
 
+> Tip: Use Ctrl-F (or Command-F on a Mac) to search for a specific term within this page.
+
 ## A
 + **Arithmetic operators** are operators we use to do math. Some common operators are:
 

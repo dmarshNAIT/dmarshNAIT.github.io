@@ -4,10 +4,12 @@ title: CPSC1012
 permalink: /cpsc1012/
 ---
 
-## Main Topics
+## CPSC 1012
 - [Glossary](./glossary)
 - [Cheatsheet](./cheatsheet) (****under construction****)
 - [Coding Standards](./standards) (****NEW****)
+
+### Topics
 - [Decision Structures](./decisionstructures)
   - `if` statements
   - `switch` statements

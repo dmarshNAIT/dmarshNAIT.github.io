@@ -87,21 +87,22 @@ Here are some block-level elements we'll be using in COMP 1017:
 		</ol>
 		```
 		which would render a list like this:
-			<html>
-			<style type="text/css" media="screen">
-				ol {
-					margin: 0 0 1rem 2rem;
-					border: 1px solid grey;
-					box-shadow: 0 2px 5px 0;
-					width: 20%;
-				}
-			</style>
-			<ol>
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-			</ol>
-			</html>
+
+		<html>
+		<style type="text/css" media="screen">
+			ol {
+				margin: 0 0 1rem 2rem;
+				border: 1px solid grey;
+				box-shadow: 0 2px 5px 0;
+				width: 20%;
+			}
+		</style>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		</html>
 	+ `<ul>` lets us created unordered, or bullet, lists:
 		```html
 		<ul>
