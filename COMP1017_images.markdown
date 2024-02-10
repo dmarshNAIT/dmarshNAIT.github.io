@@ -4,6 +4,7 @@ title: Web Image Formats
 permalink: /comp1017/web-image-formats
 ---
 
+# Image Formats
 ## .JPG / .JPEG ##
 + .JPEG is an initialism/acronym for Joint Photographic Experts Group.
 + Every time you save a .JPG, it gets **compressed**. 
@@ -25,4 +26,4 @@ permalink: /comp1017/web-image-formats
 + However, it only supports 8-bit images (i.e. a palette of **256 or fewer colours**). 
 + It also allows for one transparent colour. This is great for things like logos, text, or simple cartoons.
 
-Generally: we want the best looking image at the smallest size.
+> Generally: we want the best looking image at the smallest size.

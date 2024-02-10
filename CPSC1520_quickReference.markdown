@@ -155,6 +155,7 @@ This page is a cheat sheet of the key pieces of JavaScript we've learned so far.
   `pop()` | | removes last element
   `shift()` | | removes 0th element
   `slice(start, end)` | indexes | copies an array
+  `includes` | element to find | returns true if that element is in the array
   `map()` | `function`(element, index, array) | creates a new array after a specified transformation
   `filter()` | `function`(element, index, array) |  filters an array based on a specified condition
   `reduce()` | `function`(accumulator, value, index, array), initial value | reduces the array into a single value.
