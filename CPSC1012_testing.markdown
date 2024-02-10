@@ -14,5 +14,5 @@ This is a collection of resources related to unit testing in C#.
 + [A Beginner’s Guide To Testing Your Code](https://skillcrush.com/blog/a-beginners-guide-to-testing-your-code/)
 
 ## Defensive Coding ##
-While defensive coding is a big topic on its own, part of it is being prepared for anything that can go wrong: which means we should also be testing what happens when e.g. user provides bad data, when the a file to be read does not exist, etc.
+While **defensive coding** is a big topic on its own, part of it is being prepared for **anything that can go wrong**: which means we should also be testing what happens when e.g. user provides bad data, when the a file to be read does not exist, etc.
 + [The Secrets of Defensive Coding and How They Will Keep Your Software Safe](https://www.linkedin.com/pulse/secrets-defensive-coding-how-keep-your-software-safe-vinay-gupta)

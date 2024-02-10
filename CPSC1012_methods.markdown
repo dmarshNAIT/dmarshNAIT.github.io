@@ -6,9 +6,9 @@ permalink: /cpsc1012/methods
 
 # Methods
 
-Methods let us re-use pieces of code, break down large tasks into a number of smaller tasks, and help us keep our code organized.
+Methods let us **re-use** pieces of code, break down large tasks into a number of smaller tasks, and help us keep our code organized.
 
-Some methods we might want to start collecting for our own personal method libraries are:
+Some methods we might want to start collecting for our own personal **method libraries** are:
 - methods to read and validate input from a user
 - displaying a list of options
 - displaying an array
@@ -18,20 +18,20 @@ Some methods we might want to start collecting for our own personal method libra
 If we write the methods in our method libraries well, we can reuse them over and over and over again!
 
 A few definitions before we get into examples:
-- A *parameter* is a way to pass values or references into a method. Parameters are defined in the method header.
-- An *argument* is the value we supply to the method when we call it.
-- Methods can also *return* values to the caller (e.g. `ReadLine()` returns a `string`), but they do not have to. We call those (methods that don't return anything) `void` methods.
+- A **parameter** is a way to pass values or references into a method. Parameters are defined in the method header.
+- An **argument** is the value we supply to the method when we call it.
+- Methods can also **return** values to the caller (e.g. `ReadLine()` returns a `string`), but they do not have to. We call those (methods that don't return anything) `void` methods.
 
 
 ## Arguments
 
 ### Passing by value:
-- Passing an argument as a value passes a copy of the value. It doesn't change the original variable/value. For example, when I pass an `int` variable as an argument to the method, that  method can use that value, but cannot *change* the value of that variable.
+- Passing an argument as a **value** passes a **copy** of the value. It doesn't change the original variable/value. For example, when I pass an `int` variable as an argument to the method, that  method can use that value, but cannot *change* the value of that variable.
 
 ### Passing by reference:
-- This means passing in the actual memory location where that value is stored. This can change the original value of the variable. Arrays are reference types, so they are always passed in as a reference, which means the called method has the ability to view and change its elements.
-- If I want to pass in an `int` (or any other non-reference type) by reference, I need to preface the datatype with `ref` in both the method header and the method call.
-  - There is a special kind of reference called an `out` reference: this means the called method can change the value of the referenced variable, but it cannot view the current value. To use an `out` reference, we preface the datatype with `out` in both the method header and the method call.
+- This means passing in the actual memory location where that value is stored. This can change the original value of the variable. Arrays are **reference** types, so they are always passed in as a reference, which means the called method has the ability to view and change its elements.
+- If I want to pass in an `int` (or any other non-reference type) by reference, I need to preface the datatype with `ref` in both the method header (i.e. the **parameter**) and the method call (i.e. the **argument**).
+  - There is a special kind of reference called an `out` reference: this means the called method can *change* the value of the referenced variable, but it cannot *view* the current value. To use an `out` reference, we preface the datatype with `out` in both the method header and the method call.
   - An example of a `System` method that uses an `out` reference is `TryParse`:
     ```csharp
     string userInputString;

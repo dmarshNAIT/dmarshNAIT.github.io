@@ -5,9 +5,9 @@ permalink: /cpsc1012/
 ---
 
 ## CPSC 1012
-- [Glossary](./glossary)
-- [Cheatsheet](./cheatsheet) (****under construction****)
-- [Coding Standards](./standards) (****NEW****)
+- [Glossary](./glossary): key terms used in CPSC 1012
+- [Cheatsheet](./cheatsheet): speed-run of the entire course!
+- [Coding Standards](./standards): the best practices for organizing and writing your code
 
 ### Topics
 - [Decision Structures](./decisionstructures)
@@ -43,8 +43,7 @@ permalink: /cpsc1012/
 
 - ### Code Samples from class
 
-   Available in my [other repo](https://github.com/dmarshNAIT/cpsc1012)
-
+   Available in my [other repo](https://github.com/dmarshNAIT/cpsc1012).
 
 
 

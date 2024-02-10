@@ -6,7 +6,7 @@ permalink: /cpsc1012/exceptions
 
 # Exceptions
 
-Exceptions are unexpected conditions or errors in our program (data is not valid, arithmetic error, parsing error, etc.)
+Exceptions are **unexpected** conditions or errors in our program (data is not valid, arithmetic error, parsing error, etc.)
 
 For example:
 ```csharp
@@ -75,12 +75,13 @@ userAge = int.Parse(Console.ReadLine());
 ```
 This works perfectly if the user enters a number. But what if the user enters something else, like the word "eight"?
 
-An exception!
+An **exception**!
 
-We can move this into a try/catch block:
+We can move this into a `try`/`catch` block:
 ```csharp
 int userAge;
 Console.WriteLine("How old are you?");
+
 try
 {
     userAge = int.Parse(Console.ReadLine());
@@ -116,7 +117,7 @@ while (!validInput)
 Console.WriteLine("We got to the end!");
 ```
 
-An alternative way to deal with parsing exceptions would be to use the `.TryParse()` method. This returns a `bool` that is true if the parsing was successful, and false otherwise, and when we call this method, we pass in a `string` that we want to parse, and an `out` reference of the variable where the parsed data should be stored.
+An alternative way to deal with parsing exceptions would be to use the `.TryParse()` method. This returns a `bool` that is `true` if the parsing was successful, and `false` otherwise, and when we call this method, we pass in a `string` that we want to parse, and an `out` reference of the variable where the parsed data should be stored.
 
 For example:
 ```csharp
