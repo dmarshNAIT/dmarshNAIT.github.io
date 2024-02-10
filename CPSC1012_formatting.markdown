@@ -55,7 +55,8 @@ firstNum: 0150  secondNum: 1234.57
 For example, what if I want to format a number to add commas, but I don't want to force any leading or trailing zeros? I'll use the same format string (`#,##0.00`) for both variables:
 ```csharp
 // substitution parameters:
-Console.WriteLine("firstNum: {0:#,##0.00}  secondNum: {1:#,##0.00}", firstNum, secondNum);
+Console.WriteLine("firstNum: {0:#,##0.00}  secondNum: {1:#,##0.00}", 
+    firstNum, secondNum);
 
 // string interpolation:
 Console.WriteLine($"firstNum: {firstNum:#,##0.00}  secondNum: {secondNum:#,##0.00}");
