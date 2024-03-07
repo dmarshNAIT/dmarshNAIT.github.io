@@ -114,8 +114,8 @@ Here is a (hopefully) exhaustive list of all the SQL keywords and functions we'v
     |  | joining Parent to Child | joining Child to Parent
     | -----  |  ----- | -----
     | `INNER` | only records for parents that have child records | only records for parents that have child records
-    | `LEFT`  |  parents regardless of whether they have child records | *use `INNER JOIN` instead*
-    | `RIGHT`  |  *use `INNER JOIN` instead* | parents regardless of whether they have child records
+    | `LEFT`  |  all parents regardless of whether they have child records | *use `INNER JOIN` instead*
+    | `RIGHT`  |  *use `INNER JOIN` instead* | all parents regardless of whether they have child records
     | `FULL OUTER`  |  *use `LEFT JOIN` instead* | *use `RIGHT JOIN` instead*
 
 
