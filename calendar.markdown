@@ -4,9 +4,7 @@ title: Calendar
 permalink: /calendar/
 ---
 
-Please use [my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=) to set up a meeting outside of scheduled class times.
-
-Outside of **emergency situations**, I generally do not honour same-day requests to meet.
+Please use **[my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)** to set up a meeting outside of scheduled class times, or **[send me a calendar invite](https://support.microsoft.com/en-us/topic/schedule-and-join-a-meeting-fe1bd922-c9f6-4075-ba04-fcbad203899c)** for a time I appear to be available. 
 
 Please include:
 
@@ -14,6 +12,9 @@ Please include:
 - your class section (e.g. A04)
 - what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 - whether you'd like to meet in-person, online, or have no preference
+
+Outside of **emergency situations**, I generally do not honour same-day requests to meet.
+
 
 #### Winter 2024 Schedule
 
