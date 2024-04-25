@@ -150,10 +150,11 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
     .col-header { width: 18%; }
     /* cell-formatting */
     .appointment { color: black; background-color: #d3d3d3; /* grey */  } 
-    .cpsc1012-a04 { background-color: #ed6495; } /* pink */
-    .cpsc1012-a05 { background-color: #bc64ed; } /* purple */
-    .xyz { background-color: #95ed64; } /* green */
+    .xyz{ background-color: #ed6495; } /* pink */
+    .abc { background-color: #bc64ed; } /* purple */
+    .cpsc1012-a04 { background-color: #95ed64; } /* green */
     .dmit1508 { background-color: #6495ed; } /* blue */
+    .cpsc1012-a05 { background-color: #edbc64; } /* orange */
   </style>
   <table style="width: 100%">
     <thead>
