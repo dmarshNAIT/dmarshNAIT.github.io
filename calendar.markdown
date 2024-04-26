@@ -141,7 +141,7 @@ Outside of **emergency situations**, I generally do not honour same-day requests
 
 All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
 
-#### Spring/Summer 2024 Schedule:
+#### Spring/Summer 2024 Schedule
 
 <html>
   <style>
