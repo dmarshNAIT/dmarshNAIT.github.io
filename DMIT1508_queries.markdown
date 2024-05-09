@@ -173,6 +173,16 @@ INNER JOIN Registration ON Student.StudentID = Registration.StudentID
 - `Table1 LEFT JOIN Table2` returns all records in `Table1`, regardless of whether they exist in `Table2`
 - `Table1 RIGHT JOIN Table2` returns all tables in `Table2`, regardless of whether they exist in `Table1`
 
+Here are the questions we can ask ourselves when choosing a `JOIN` type:
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 #### Selecting from 3+ tables
 We can add additional `JOIN` statements:
 ```sql
