@@ -4,6 +4,8 @@ title: Decision Structures
 permalink: /cpsc1012/decisionstructures
 ---
 
+# Decision Structures
+
 Programs can decide which statements to execute based on a condition.
 
 ```csharp
@@ -16,11 +18,11 @@ else {
 } // end else
 ```
 
-C# has several types of selection statements: one-way `if` statements, two-way `if-else` statements, nested `if` statements, multi-way `if-else-if` statements, `switch` statements, and conditional operators.
+C# has several types of selection statements: **one-way** `if` statements, **two-way** `if-else` statements, **nested** `if` statements, **multi-way** `if-else-if` statements, `switch` statements, and **conditional** operators.
 
 # **One-way `if` statements**
 
-Executes an action if the specified condition is `true`. Otherwise, do nothing.
+Executes an action `if` the specified condition is `true`. Otherwise, do nothing.
 
 The syntax is:
 ```csharp
@@ -67,12 +69,15 @@ An `if` statement can be inside another `if` statement to form a nested `if` sta
 
 ```csharp
 if (isHungry) {
+
     if (money > 10) {
         Console.WriteLine("I’ll buy lunch.");
+        // this code only runs if both conditions were true.
     } // end inner if
     else {
         Console.WriteLine("no lunch for me");
     } // end inner else
+
 } // end outer if
 else {
     Console.WriteLine("no lunch for me");
@@ -88,28 +93,16 @@ switch (variable or expression to check) {
     case value1:        // if (the expression we're checking == value1)
         statements(s);  // then we execute these statements
         break;          // then break out of the structure
+
     case value2:
         statements(s);
         break;
-    ...
+
+    ...                 // we can have many cases
+
     default:            // if none of the above cases matched
         statement(s)-for-default;
         break;
 } // end switch
 ```
-
-
-# Common errors:
-- Using `=` instead of `==` to compare primitive values
-- Forgetting to enclose an `if` statement’s boolean expression in parentheses
-- Writing a semicolon at the end of an `if` clause
-- Forgetting to enclose multiple conditionally executed statements in braces
-- Omitting the trailing `else` in an `if-else-if` statement
-- Not writing complete Boolean expressions on both sides of a logical `&&` or `||` operator
-- Using a `switch` expression that is not an `int`, `char`, or `string`
-- Using a `case` expression that is not a literal or `const` variable
-- Forgetting to write a colon at the end of a `case` statement
-- Forgetting to write a `default` section in a `switch` statement
-- Reversing the `?` and the `:` when using the conditional operator
-
 

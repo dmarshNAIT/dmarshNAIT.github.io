@@ -16,11 +16,12 @@ double secondNum = 1234.56789;
     ```csharp
     Console.WriteLine("firstNum: " + firstNum + "  secondNum: " + secondNum);
     ```
-- Or using substitution parameters:
+
+- Or using **substitution parameters**:
     ```csharp
     Console.WriteLine("firstNum: {0}  secondNum: {1}", firstNum, secondNum);
     ```
-- Or with string interpolation:
+- Or with **string interpolation**:
     ```csharp
     Console.WriteLine($"firstNum: {firstNum}  secondNum: {secondNum}");
     ```
@@ -32,13 +33,14 @@ firstNum: 150  secondNum: 1234.56789
 
 # Adjusting number precision
 
-If I'm using string interpolation or substitution parameters, I can add a format string inside the braces, after a `:` symbol.
+If I'm using string interpolation or substitution parameters, I can add a **format string** inside the braces, after a `:` symbol.
 
-For example, let's say I want my first number to be four digits long, no decimals, and my second number to be 1 digit before the decimal and 2 digits after the decimal. i.e. The first number would be in the format `0000` and the second number would be in the format `0.00`.
+For example, let's say I want my first number to be **four digits** long, **no decimals**, and my second number to have **1 digit before** the decimal and **2 digits after** the decimal. i.e. The first number would be in the format `0000` and the second number would be in the format `0.00`.
 
 ```csharp
 // substitution parameters:
 Console.WriteLine("firstNum: {0:0000}  secondNum: {1:0.00}", firstNum, secondNum);
+
 // string interpolation:
 Console.WriteLine($"firstNum: {firstNum:0000}  secondNum: {secondNum:0.00}");
 ```
@@ -52,13 +54,16 @@ firstNum: 0150  secondNum: 1234.57
 
 For example, what if I want to format a number to add commas, but I don't want to force any leading or trailing zeros? I'll use the same format string (`#,##0.00`) for both variables:
 ```csharp
+// substitution parameters:
 Console.WriteLine("firstNum: {0:#,##0.00}  secondNum: {1:#,##0.00}", 
     firstNum, secondNum);
-// or:
+
+// string interpolation:
 Console.WriteLine($"firstNum: {firstNum:#,##0.00}  secondNum: {secondNum:#,##0.00}");
 ```
 
-The `#` basically means *show a number in this place if it exists* and the `0` means *show a digit in this place no matter what*.
+- The `#` means *show a number in this place **if it exists***.
+- The `0` means *show a digit in this place **no matter what***.
 
 Thus, our output is:
 ```csharp
@@ -67,10 +72,13 @@ firstNum: 150.00  secondNum: 1,234.57
 
 # Printing in columns
 
-Let's say I have a table of values that I want to display. Using what we know so far, I could code the following:
+Let's say I have a **table** of values that I want to display. Using what we know so far, I could code the following:
 ```csharp
+// substitution parameters:
 Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0:0.00}  secondNum: {1:0.00}", 0, 0);
+
+// string interpolation:
 Console.WriteLine($"firstNum: {0:0.00}  secondNum: {0:0.00}");
 Console.WriteLine($"firstNum: {firstNum:0.00}  secondNum: {secondNum:0.00}");
 ```
@@ -83,13 +91,15 @@ firstNum: 0.00  secondNum: 0.00
 firstNum: 150.00  secondNum: 1234.57
 ```
 
-That's pretty ugly. Our numbers are not very nicely aligned. So, let's add an alignment expression! The alignment expression will be the width of our column, and it will be positive or negative depending on how we want our text to be aligned.
+That's pretty ugly. Our numbers are not very nicely aligned. So, let's add an **alignment** expression! The alignment expression will be the **width** of our column, and it will be positive or negative depending on how we want our text to be aligned.
 
 The contents of our braces will now be: `{variable or expression to display, alignment : format string}`. For example, let's set each column to be 10 characters wide and right-aligned:
 ```csharp
-Console.WriteLine("firstNum: {0, 10:0.00}  secondNum: {1, 10:0.00}", 
-    firstNum, secondNum);
+// substitution parameters:
+Console.WriteLine("firstNum: {0, 10:0.00}  secondNum: {1, 10:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0, 10:0.00}  secondNum: {1, 10:0.00}", 0, 0);
+
+// string interpolation:
 Console.WriteLine($"firstNum: {0, 10:0.00}  secondNum: {0, 10:0.00}");
 Console.WriteLine($"firstNum: {firstNum, 10:0.00}  secondNum: {secondNum, 10:0.00}");
 ```
@@ -104,9 +114,11 @@ firstNum:     150.00  secondNum:    1234.57
 
 If I wanted my columns to be left-aligned, we simply make the width negative:
 ```csharp
-Console.WriteLine("firstNum: {0,-10:0.00}  secondNum: {1,-10:0.00}", 
-    firstNum, secondNum);
+// substitution parameters:
+Console.WriteLine("firstNum: {0,-10:0.00}  secondNum: {1,-10:0.00}", firstNum, secondNum);
 Console.WriteLine("firstNum: {0,-10:0.00}  secondNum: {1,-10:0.00}", 0, 0);
+
+// string interpolation:
 Console.WriteLine($"firstNum: {0,-10:0.00}  secondNum: {0,-10:0.00}");
 Console.WriteLine($"firstNum: {firstNum,-10:0.00}  secondNum: {secondNum,-10:0.00}");
 ```
@@ -195,19 +207,12 @@ Output:
 
 <html>
 <font face="Lucida Console">
- <table>
-  <tbody>
-    <tr>
-      <td><span style="color:red">Like this one.</span></td>
-    </tr>
-    <tr>
-      <td style="background-color:#00ffff"><span style="color:red">Now this line will be red with a cyan highlight. Beautiful.</span></td>
-    </tr>
-    <tr>
-      <td><span style="color:black">Now this line is in my regular colours again.</span></td>
-    </tr>
-  </tbody>
- </table>
+  <p style="color:red;">Like this one.</p>
+
+  <p style="background-color:#00ffff; color:red">Now this line will be red with a cyan highlight. Beautiful.</p>
+
+  <p style="color:black;">Now this line is in my regular colours again.</p>
+
 </font>
 </html>
 

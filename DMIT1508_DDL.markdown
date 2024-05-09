@@ -11,17 +11,17 @@ Data are stored in tables, which are 2D arrays where
 - each row records the attributes for an instance.
 
 We use a `CREATE TABLE` statement to create a table object, which includes:
-- the name of the table
-- the name of each column
-- the data type of each column
+- the **name** of the **table**
+- the **name** of each **column**
+- the **data type** of each column
 - whether `NULL` is an acceptable value for the column
-- any other constraints that must hold true
+- any other **constraints** that must hold true
 
 ```sql
 CREATE TABLE tablename (
-    column1 datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
-  , column2 datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
-  , column3 datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+    column1Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+  , column2Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+  , column3Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
     ...  
     [<table constraints>]
 ) 
@@ -31,9 +31,9 @@ A lot of that is optional, so here's what it looks like with just some of the re
 
 ```sql
 CREATE TABLE tablename (
-    Column1 datatype
-  , Column2 datatype
-  , Column3 datatype
+    Column1Name datatype
+  , Column2Name datatype
+  , Column3Name datatype
     ...  
 ) 
 ```
@@ -73,7 +73,7 @@ DROP TABLE dbo.Items
 If I try to run `DROP TABLE` on a table that doesn't exist, I will get an error.
 
 We can add in a check to say: *if the table exists, drop it.*
-That way, if the table doesn't exist, I won't see an error.
+That way, if the table doesn't exist, we won't see an error.
 
 An example of what this would look like for a table called `dbo.Activity` follows:
 
@@ -90,15 +90,15 @@ DROP TABLE IF EXISTS Activity -- drop Activity table IF it exists
 # Constraints
 
 Constraints are used to:
-1. Define primary keys (this is defined by the *primary key constraint*).
-2. Define relationships (this is defined by the *foreign key constraint*).
-3. Define default values (this is defined by the *default constraint*).
-4. Define a domain of valid values (this is defined by the *check constraint*).
-5. Ensure that all values in a column are unique.
+1. Define **primary keys** (this is defined by the *primary key constraint*).
+2. Define **relationships** (this is defined by the *foreign key constraint*).
+3. Define **default values** (this is defined by the *default constraint*).
+4. Define a domain of **valid values** (this is defined by the *check constraint*).
+5. Ensure that all values in a column are **unique**.
 
-Constraints can be set when creating a table (i.e. using the `CREATE TABLE` syntax) or can be added to an already-existing table using `ALTER TABLE`.
+Constraints can be set when **creating** a table (i.e. using the `CREATE TABLE` syntax) or can be **added** to an already-existing table using `ALTER TABLE`.
 
-Each constraint must have a unique name within the database, and will use a prefix to identify its type:
+Each constraint must have a **unique name** within the database, and will use a prefix to identify its type:
 - **PK_** for primary key constraints
 - **FK_** for foreign key constraints
 - **CK_** for check constraints
@@ -122,7 +122,7 @@ CREATE TABLE Student (
 )
 ```
 
-If the table has a composite key, the primary key constraint will be on the table level rather than the column level. Instead of putting it beside the column definition, it's comma separated from the columns like this:
+If the table has a **composite key**, the primary key constraint will be on the **table level** rather than the **column level**. Instead of putting it **beside** the column definition, it's **comma separated** from the columns like this:
 ```sql
 CREATE TABLE Marks (
     StudentID   CHAR(9)     NOT NULL
@@ -134,12 +134,12 @@ CREATE TABLE Marks (
 
 ## Foreign key constraints
 
-The FK constraint defines relationships between rows, and defines a parent-child relationship between tables. This affects:
-1. Dropping tables (e.g. cannot drop a parent table before its child)
-2. Creating table (e.g. cannot create a child table before its parent)
-3. Inserting/updating/deleting rows in tables (e.g. cannot insert an FK in a child table if there isn't an corresponding PK in its parent, can't delete a PK in a parent it has a corresponding child record)
+The FK constraint defines **relationships** between rows, and defines a **parent-child relationship** between tables. This affects:
+1. **Dropping tables** (e.g. cannot drop a parent table before its child)
+2. **Creating tables** (e.g. cannot create a child table before its parent)
+3. **Inserting/updating/deleting** rows in tables (e.g. cannot insert an FK in a child table if there isn't an corresponding PK in its parent, can't delete a PK in a parent it has a corresponding child record)
 
-Foreign keys must have the same datatype as its associated PK.
+Foreign keys must have the **same datatype** as its associated PK.
 
 ### Syntax:
 ```sql
@@ -267,16 +267,16 @@ CONSTRAINT DF_ConstraintName DEFAULT constant | function | NULL
 
 # Altering Tables
 The `ALTER TABLE` statement is used to:
-- Add a column to an existing table
-- Modify the datatype or null status of an existing column
-- Modify the seed and increment value of an existing identity property
-- Drop an existing column
-- Add a constraint to an existing column / table
-- Drop an existing constraint
-- Disable or enable an existing constraint (foreign key or check only: you cannot disable/enable a default or primary key constraint)
-- Disable or enable an existing database trigger
+- **Add** a **column** to an existing table
+- **Modify** the **datatype** or **null** status of an existing column
+- **Modify** the seed and increment value of an existing **`identity`** property
+- **Drop** an existing **column**
+- **Add** a **constraint** to an existing column / table
+- **Drop** an existing **constraint**
+- **Disable** or **enable** an existing **constraint** (foreign key or check only: you cannot disable/enable a default or primary key constraint)
+- **Disable** or **enable** an existing database **trigger**
 
-A note on adding new columns to an existing table with data: your new column must accept `NULL` or have a default constraint.
+> A note on adding **new columns** to an **existing table with data**: your new column **must** accept `NULL` or have a `default` constraint.
 If the table is empty, you can add a column that is `NOT NULL`.
 
 ## Syntax:
@@ -296,52 +296,52 @@ If the table is empty, you can add a column that is `NOT NULL`.
 ```
 
 ### Examples:
-1. To add a `Semester` column to the `Marks` table:
+1. To **add** a **Semester** column to the **Marks** table:
 	```sql
 	ALTER TABLE Marks ADD Semester CHAR(1) NULL
 	```
 
-2. To add the Semester column to the Marks table and make it a FK referencing the Schedule table:
+2. To **add** the **Semester** column to the **Marks** table and make it a **FK** referencing the **Schedule** table:
 	```sql
 	ALTER TABLE Marks
 		ADD Semester	CHAR(1)	NULL
 			CONSTRAINT FK_MarksToSchedule REFERENCES Schedule (Semester)
 	```
 
-3. To add a FK constraint to the existing CourseID column in the Marks table, making it reference the Courses table:
+3. To add a **FK** constraint to the **existing** CourseID column in the **Marks** table, making it reference the **Courses** table:
 	```sql
 	ALTER TABLE Marks
 		ADD CONSTRAINT FK_CourseId 
 		FOREIGN KEY (CourseId)  REFERENCES Courses (CourseId)
 	```
 
-4. To add a check constraint to the existing PhoneNo column in the Student table to ensure the phone number is in the format (nnn) nnn-nnnn:
+4. To **add** a **check** constraint to the **existing** PhoneNo column in the **Student** table to ensure the phone number is in the format (nnn) nnn-nnnn:
 	```sql
 	ALTER TABLE Student
 		ADD CONSTRAINT CK_PhoneNo
 			CHECK ( PhoneNo LIKE '([0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]' )
 	```
 
-5. To add a default constraint to the existing OrderDate column in the Sales table to default to the current date:
+5. To add a **default constraint** to the existing OrderDate column in the Sales table to default to the current date:
 	```sql
 	ALTER TABLE Sales
 		ADD	CONSTRAINT DF_OrderDate 
 		DEFAULT GetDate() FOR OrderDate
 	```
 
-6. To disable the default constraint named CK_PhoneNo in the Student table:
+6. To **disable** the **default constraint** named CK_PhoneNo in the Student table:
 	```sql
 	ALTER TABLE Student
 		NOCHECK CONSTRAINT CK_PhoneNo
 	```
 
-7. To enable the default constraint named CK_PhoneNo in the Student table:
+7. To **enable** the **default constraint** named CK_PhoneNo in the Student table:
 	```sql
 	ALTER TABLE Student
 		CHECK CONSTRAINT CK_PhoneNo
 	```
 
-8. To delete the default constraint named DF_Mark from the Marks table:
+8. To **delete** the **default constraint** named DF_Mark from the Marks table:
 	```sql
 	ALTER TABLE Marks
 		DROP CONSTRAINT DF_Mark
@@ -349,11 +349,9 @@ If the table is empty, you can add a column that is `NOT NULL`.
 
 # Indexes
 
-An index is an object stored in the db.
+An index is an object stored in the db that helps the DBMS look up data more quickly.
 
 It's associated with 1 or more columns, in a specific table, that act as the key for the index.
-
-This helps the DBMS look up the data quicker.
 
 For example:
 - We could create an index for the Employee table, using the EmployeeID column as the key.
@@ -361,10 +359,10 @@ For example:
 - Each entry in the index contains info (pointers) to where the associated row in the Employee table is located. The DBMS uses this info to speed up its retrieval of data.
 
 There are 2 types of indices:
-- Clustered:
+- **Clustered**:
   - A table has its rows physically stored in the same order as the order of the entries. (Therefore, one clustered index per table.)
   - The PK is often the key.
-- Non-clustered:
+- **Non-clustered**:
   - Provides a method to use a 2nd-hand criteria for quickly finding/retrieving rows.
   - For example: we could define a non-clustered index for the Employee table that ses the DepartmentNumber as the key. The DBMS uses this to quickly retrieve the rows of employees who work for a specific department. 
   - We can have a max of 249 non-clustered indexes per table.

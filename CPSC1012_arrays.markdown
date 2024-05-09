@@ -77,7 +77,7 @@ for (int index = 0; index < someNumbers.Length; index++) {
 
 ## Sorting arrays
 
-`Array.Sort` will sort the elements in a 1-dimensional array.
+`Array.Sort()` will sort the elements in a 1-dimensional array.
 
 ```csharp
 int[] myArray = new int[5] { 6, 4, 7, 2, 8 };

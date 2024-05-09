@@ -4,8 +4,12 @@ title: CPSC1012
 permalink: /cpsc1012/
 ---
 
-## Main Topics
-- [Glossary](./glossary)
+## CPSC 1012
+- [Glossary](./glossary): key terms used in CPSC 1012
+- [Cheatsheet](./cheatsheet): speed-run of the entire course!
+- [Coding Standards](./standards): the best practices for organizing and writing your code
+
+### Topics
 - [Decision Structures](./decisionstructures)
   - `if` statements
   - `switch` statements
@@ -25,7 +29,7 @@ permalink: /cpsc1012/
 - [Arrays](./arrays)
 - [Lists](./lists)
 - [Objects & Classes](./objects)
-
+- [Testing](./testing) *(bonus content)*
 
 ***
 
@@ -39,8 +43,7 @@ permalink: /cpsc1012/
 
 - ### Code Samples from class
 
-   Available in my [other repo](https://github.com/dmarshNAIT/cpsc1012)
-
+   Available in my [other repo](https://github.com/dmarshNAIT/cpsc1012).
 
 
 

@@ -5,7 +5,7 @@ permalink: /comp1017/glossary
 ---
 
 ## C
-+ In this snippet, `<h2>` and `<p>` are **children** of `<main>`:
++ "Children" are any elements which have the same direct parent. In this snippet, `<h2>` and `<p>` are **children** of `<main>`:
     ```html
     <main>
         <h2>This is a heading.</h2>
@@ -15,7 +15,7 @@ permalink: /comp1017/glossary
 + A **client** is an internet-connected device and its web-accessing software.
 
 ## D
-+ The **DOM** is the Document Outline Model and is how your browser interprets and renders any HTML document.
++ The **DOM** is the Document Object Model and is how your browser interprets and renders any HTML document.
 + **Dynamic pages** use code to pull content from servers or databases. For example, YouTube isn't getting re-coded every time we view the page, but it will look different. This is because back-end languages (like PHP, Python, or others) are doing something behind the scenes to update the page.
 
 ## F
@@ -23,7 +23,7 @@ permalink: /comp1017/glossary
 	+ a file named *index.html*
 	+ a folder named *css* which will contain our stylesheets
 	+ a folder named *img* which will contain pictures and images
-	+ a folder named *js*
+	+ a folder named *js* which would contain JavaScript files (which are out of scope for COMP 1017)
 	+ optionally additional files and folders, all semantically named with no spaces or uppercase letters in their names
 + **FTP** stands for *File Transfer Protocol* and is a way to transfer files over the web. In our case, we use FTP to put our files on a web server.
 + The **front end** is the client-side: it's what the user sees. Some common front-end languages are HTML, CSS, and JS.

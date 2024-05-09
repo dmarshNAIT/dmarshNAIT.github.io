@@ -4,6 +4,7 @@ title: CSS
 permalink: /comp1017/css
 ---
 
+# Module 1
 
 **Cascading Style Sheets** are how we tell the browser how everything should look. 
 
@@ -22,10 +23,10 @@ This means: *in each paragraph, set the color to red (i.e. change the colour of 
 + `p` is an example of a **selector**: the thing we want to change.
 + `color` is an example of a **property**: the type of style we want to change.
 + `red` is an example of a **value**: what we want to set that property to.
-+ The combination of `property: value;` is called a declaration.
-+ We can have 1 or more declarations per selector.
++ The combination of `property: value;` is called a **declaration**.
++ We can have multiple declarations per selector, or in regular English: can apply many rules to the same HTML element.
 
-We can leave comments in CSS like this:
+We can leave **comments** in CSS like this:
 ```css
 /* This is a comment for humans */
 ```
@@ -54,12 +55,14 @@ We have 3 options: linking, embedding, or inline styles.
 ## Types of Selectors
 + **Element selectors**. That's when we target `<p>` or `<body>` or any of the other HTML elements we've learned.
 
-+ A **multiple element selector** is when we target multiple elements with the same declaration(s). For example, this will make both my 1st and 2nd level headings blue, by listing all the elements I want to select, separated by commas:
-    ```css
-    h1, h2 {
-        color: blue;
-    }
-    ```
++ A **multiple element selector** is when we target multiple elements with the same declaration(s). 
+    + For example, this will make both my 1st and 2nd level headings blue, by listing all the elements I want to select, separated by commas:
+        ```css
+        h1, 
+        h2 {
+            color: blue;
+        }
+        ```
 + **IDs**. We won't be using them for CSS in this class, but they look like this: `#jumbotron`
 
 + **Class selectors** are selectors we make up. In CSS, they'll have a dot in their name:
@@ -72,13 +75,13 @@ We have 3 options: linking, embedding, or inline styles.
     ```html
     <div class="container">...</div>
     ```
-    If an element has multiple classes applied to it in HTML, they are separated by spaces:
+    If an element has **multiple classes** applied to it in HTML, they are separated by spaces:
     ```html
     <div class="class-one class-two">...</div>
     <!-- these are terrible class names btw -->
     ```
-    Class names should be lowercase and use dashes or underscores if their name contains more than one word. Names should be meaningful.
-+ I can also combine element and class selectors. This CSS:
+    **Class names** should be lowercase and use dashes or underscores if their name contains more than one word. Names should be **meaningful**.
++ We can also **combine** element and class selectors. This CSS:
     ```css
     p.red-text {
         font-size: 56px;
@@ -92,7 +95,7 @@ We have 3 options: linking, embedding, or inline styles.
         color: blue;
     }
     ```
-    This will only target `<h2>` tags that are in the `<header>`.
+    This will only target `<h2>` tags that are **inside of** the `<header>`.
 + A **descendant combinator** combines these ideas. This:
     ```css
      ul.my-things li {
@@ -112,11 +115,11 @@ We have 3 options: linking, embedding, or inline styles.
     </ul>
     ```
 + **Pseudo-class selectors** target an element based on their current state. A few we've covered in class:
-    + `a:hover` targets links when we mouse over them.
-    + `a:visited` targets links that have already been visited.
-    + `a:active` targets links *while* you are clicking them.
-    + `a:link` targets links that have not yet been visited.
-    + `:nth-child()` targets an element based on its position within its group of siblings.
+    + `a:hover` targets links when we **mouse over** them.
+    + `a:visited` targets links that have **already been visited**.
+    + `a:active` targets links ***while*** you are clicking them.
+    + `a:link` targets links that have **not yet been visited**.
+    + `:nth-child()` targets an element based on its **position** within its group of siblings.
         + `nth-child(7)` targets the 7th element
         + `li:nth-child(2)` targets the 2nd `<li>` in a list
         + `:nth-child(4n)` targets every 4th element
@@ -148,12 +151,12 @@ Everything on our page is rendered as a box, with 4 parts:
 1. Space *between* the content and the border, called **padding**
 1. Space *outside* the border, called **margin**
 
-[More on the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) on MDN.
+[Learn more about the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) on MDN.
 
-We will need to make sure that the total width of all the content, `border`, `padding`, and `margin`s within our page add up to a total width of *exactly* 960px.
+In COMP 1017, we are making fixed-width pages, so will need to make sure that the total width of all the **content**, `border`, `padding`, and `margin`s within our page add up to a total width of *exactly* 960px.
 
 ### Border
-By default, has a `width` of 0. In addition to `width` we can also control its `style` and `color`.
+By default, all items have a border with a `width` of 0. In addition to `width` we can also control its `style` and `color`.
 ```css
 border-width: 2px;
 border-style: dashed;
@@ -165,7 +168,7 @@ border: 2px dashed olive;
 ```
 
 ### Margin
-This is how we move things around on our page.
+This is how we move things around on our page. Margin is the space **around** or **outside** of an element.
 We can control the `margin` on each side of the box individually:
 ```css
 margin: 5px 10px 5px 10px; 
@@ -174,10 +177,10 @@ margin: 5px 10px 5px 10px;
 /* If you don't specify bottom, it'll be the same as top. */
 /* If you don't specify right, it'll be the same as top. */
 ```
-Sometimes adjacent elements will essentially "share" their margin. This is called margin collapsing, and means we can't always just add together margins to figure out how much space they take up. More on this phenomenon is available on [this page on mastering_margin_collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing).
+Sometimes adjacent elements will essentially "share" their margin. This is called **margin collapsing**, and means we can't always just add together margins to figure out how much space they take up. More on this phenomenon is available on [this page](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing).
 
 ### Padding
-This is how we increase the space inside an element.
+This is how we increase the space **inside** an element.
 Just like `margin` and `border`, we can control each side individually. The same 'round-the-clock rules apply.
 
 
@@ -215,6 +218,68 @@ Just like turning on word-wrap in a text editor means that lines will `wrap` ont
 In other words: **we'll only use `flex-wrap` on elements that are flex boxes.**
 
 Some "bonus" content:
-+ Adding `justify-content: center;` to a flex-container centers items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit.
-+ Adding `align-items: center;` to a flex-container will center items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom.
++ Adding `justify-content: center;` to a flex-container **centers** items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit.
++ Adding `align-items: center;` to a flex-container will **center** items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom.
 + There are helpful examples of both in this [complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
+# Module 3
+
+## Font Styling ##
+Some properties we'll use to style our text include:
+
++ `color` sets the **colour** of the font by name or hexcode.
++ `font` combines: `font-style font-variant font-weight font-size/line-height font-family`. For example:
+    ```css
+    h1 {
+        font: normal 
+        small-caps 700 48px/1 
+        'Lato', sans-serif;
+    }
+    ```
++ `font-family` defines the **font** being applied to an element. We list multiple fonts separated by commas, so if the first font isn't available it uses the next, and so on.
++ `font-size` is the **height** of a font.
++ `font-stretch` can be `condensed`, `normal`, `expanded`, etc.
++ `font-style` can be `normal`, `italic` or `oblique`.
++ `font-variant` can be `normal` or `small-caps`.
++ `font-weight` sets the weight: `100`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `bold`, etc.
++ `letter-spacing` defines the **spacing** between each character.
++ `line-height` defines the **amount of space** above and below inline elements. This creates space that we need to account for when we measure our margins and padding: we need to more than just `font-size` to know how much space our text takes up! In Photoshop, *leading* measures the distance from the baseline of one line of text to the baseline of the next, and that translates to our `line-height` in CSS, which is the `font-size` *plus* a bit of space above and below the text. More about that [on this site.](https://dev.to/lampewebdev/css-line-height-jjp)
++ `list-style-type` can be set to `none` to remove **bullets**.
++ `text-align` defines whether the text is **aligned** to the `left` or `right` or `center`, etc.
++ `text-decoration` can have a value of `underline` or `none`, among [other options](https://www.w3schools.com/cssref/pr_text_text-decoration.asp).
++ `text-transform` can set the text to be `uppercase`.
++ `word-spacing` defines the **spacing** between each word.
+
+## Images ##
++ `background-image` lets us use an image as our background.
+    - e.g. `background-image: url("../img/name-icon.gif");`
++ `background-repeat` lets us repeat the background by setting a value of `repeat-x` or `repeat-y`, or not at all with `no-repeat`.
+
+## Styling nav ##
++ We can set the `display` property to `none` to make the element invisible.
++ We target our pseudo-classes in the following order:
+    + `a:link`
+    + `a:visited`
+    + `a:hover`
+    + `a:active`
+
+# Module 4
+## Styling Forms
+We can target our form elements using classes, and descendant selectors, as well as something new: using the **value** of an **attribute**. e.g. If we wanted to target all the inputs where the `type` is `text`, I could use this declaration:
+
+```css
+input[type=text] {
+    /** CSS goes here **/
+}
+```
+
+This is how we define the size of a `textarea`:
+```css
+textarea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 150px;
+    max-width: 150px;
+}
+```
+

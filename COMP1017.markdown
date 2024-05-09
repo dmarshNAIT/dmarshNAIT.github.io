@@ -1,18 +1,15 @@
 ---
-layout: page
+layout: default
 title: COMP1017
 permalink: /comp1017/
 ---
 
+
+
+
 ## Main Topics
-- [Glossary](./glossary)
-- Module 1:
-    - [HTML](./html)
-- Module 2:
-    - [CSS](./css) - including Flexbox!
-- Module 3:
-    - [CSS properties](./css-properties) - including font styling
-    - [Web image formats](./web-image-formats)
-- Module 4:
-    - [Forms](./forms)
-- [Common Errors](./errors)
+- [Glossary](./glossary): get familiar with the language of web development.
+- [HTML](./html) is the language we use to structure the content on our page.
+- [CSS](./css) is how we style the look and feel of our pages.
+- Learn more about [web image formats](./web-image-formats).
+- Finally, some [common errors](./errors) you may face when working on your assignments.
