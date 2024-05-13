@@ -40,6 +40,7 @@ plugins:
   - jekyll-feed
 
 remote_theme: just-the-docs
+nav_enabled: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
