@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+nav_order: 1
 ---
 
 Dana Marsh [(they/she)](https://www.them.us/story/gender-neutral-pronouns-101-they-them-xe-xem) is an instructor within the [Digital Media and IT](https://www.nait.ca/dmit) program.

@@ -5,7 +5,15 @@ https://pages-themes.github.io/architect/
 
 
 -- make something with a sticky sidebar?
+https://just-the-docs.com/docs/navigation-structure/
+https://just-the-docs.com/docs/navigation-structure/#pages-with-children
 
 
 
-https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+
+colour code:
+https://just-the-docs.com/docs/customization/
+
+
+add icon & figure out mermaid:
+https://just-the-docs.com/docs/configuration/#mermaid-diagrams

@@ -2,9 +2,14 @@
 layout: page
 title: Calendar
 permalink: /calendar/
+nav_order: 2
+nav_enabled: false
 ---
 
-Please use **[my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)** to set up a meeting outside of scheduled class times, or **[send me a calendar invite](https://support.microsoft.com/en-us/topic/schedule-and-join-a-meeting-fe1bd922-c9f6-4075-ba04-fcbad203899c)** for a time I appear to be available. 
+# Booking Time with Dana
+
+Please use **[my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)** to set up a meeting outside of scheduled class times, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/topic/schedule-and-join-a-meeting-fe1bd922-c9f6-4075-ba04-fcbad203899c), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for a time when I appear to be available.
+
 
 Please include:
 
@@ -17,7 +22,7 @@ Outside of **emergency situations**, I generally do not honour same-day requests
 
 
 
-#### Spring/Summer 2024 Schedule
+## Spring/Summer 2024 Schedule
 
 <html>
   <style>
@@ -76,7 +81,7 @@ Outside of **emergency situations**, I generally do not honour same-day requests
 
 All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
 
-#### Tentative Fall 2024 Schedule
+## Tentative Fall 2024 Schedule
 
 <html>
   <style>
@@ -187,7 +192,7 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
   </table>
 </html>
 
-#### Tentative Winter 2025 Schedule
+## Tentative Winter 2025 Schedule
 
 <html>
   <style>

@@ -35,9 +35,11 @@ header_pages:
   - about.markdown
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+
+theme: just-the-docs
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -68,3 +70,8 @@ plugins:
 # remote_theme: pages-themes/architect@v0.2.0
 # plugins:
 # - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"

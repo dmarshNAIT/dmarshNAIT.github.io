@@ -30,3 +30,5 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # fix weird Ruby dependency issue
 gem "webrick" 
+
+gem "just-the-docs"

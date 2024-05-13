@@ -1,0 +1,17 @@
+---
+layout: default
+title: COMP1017
+permalink: /comp1017/
+has_children: true
+has_toc: false
+---
+
+
+
+
+## Main Topics
+- [Glossary](./glossary): get familiar with the language of web development.
+- [HTML](./html) is the language we use to structure the content on our page.
+- [CSS](./css) is how we style the look and feel of our pages.
+- Learn more about [web image formats](./web-image-formats).
+- Finally, some [common errors](./errors) you may face when working on your assignments.
