@@ -1,9 +1,4 @@
 
-
-https://pages-themes.github.io/minimal/
-https://pages-themes.github.io/architect/
-
-
 -- make something with a sticky sidebar?
 https://just-the-docs.com/docs/navigation-structure/
 https://just-the-docs.com/docs/navigation-structure/#pages-with-children

@@ -39,7 +39,7 @@ header_pages:
 plugins:
   - jekyll-feed
 
-theme: just-the-docs
+remote_theme: just-the-docs
 
 # Exclude from processing.
 # The following items will not be processed, by default.
