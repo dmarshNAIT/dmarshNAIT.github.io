@@ -39,7 +39,7 @@ header_pages:
 plugins:
   - jekyll-feed
 
-remote_theme: just-the-docs
+theme: just-the-docs
 nav_enabled: true
 
 # Exclude from processing.
