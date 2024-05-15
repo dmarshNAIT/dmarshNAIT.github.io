@@ -18,7 +18,7 @@ Please include:
 - what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 - whether you'd like to meet in-person, online, or have no preference
 
-Outside of **emergency situations**, I generally do not honour same-day requests to meet.
+Outside of **emergency situations**, I generally do not honour same-day requests to meet, and I only hold office hours on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
 
 
 
