@@ -8,7 +8,7 @@ nav_enabled: false
 
 # Booking Time with Dana
 
-Please use **[my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)** to set up a meeting outside of scheduled class times, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/topic/schedule-and-join-a-meeting-fe1bd922-c9f6-4075-ba04-fcbad203899c), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for a time when I appear to be available.
+Please use **[my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)** to set up a meeting outside of scheduled class times, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for a time when I appear to be available.
 
 
 Please include:
