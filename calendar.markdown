@@ -110,7 +110,7 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
         <th class="row-header"></th>
         <th class="col-header">on-campus</th>
         <th class="col-header">remote</th>
-        <th class="col-header">remote</th>
+        <th class="col-header">on-campus</th>
         <th class="col-header">remote</th>
         <th class="col-header">on-campus</th>
       </tr>
@@ -121,15 +121,15 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
         <td class="dmit1508" rowspan=2>DMIT 1508 (Database Fundamentals)</td>
         <td>n/a</td>
         <td>n/a</td>
-        <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
+        <td>n/a</td>
         <td>n/a</td>
       </tr>
       <tr>
         <th style="text-align: center;">9am</th>
         <!-- skip -->
-        <td class="appointment" rowspan="4">available by appointment</td>
         <td class="appointment" rowspan="7">available by appointment</td>
-        <!-- skip -->
+        <td class="appointment" rowspan="4">available by appointment</td>
+        <td class="appointment">available by appointment</td>
         <td class="appointment">available by appointment</td>
       </tr>
       <tr>
@@ -138,7 +138,7 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
         <!-- skip -->
         <!-- skip -->
         <td class="cpsc1012-a05" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
-        <td class="dmit1508" rowspan=2>DMIT 1508 (Database Fundamentals)</td>
+        <td class="cpsc1012-a05" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
       </tr>
       <tr>
         <th style="text-align: center;">11am</th>
@@ -159,8 +159,8 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
       <tr>
         <th style="text-align: center;">1pm</th>
         <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
-        <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
         <!-- skip -->
+        <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
         <td class="dmit1508" rowspan=2>DMIT 1508 (Database Fundamentals)</td>
         <!-- skip -->
       </tr>
@@ -175,17 +175,17 @@ All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
       <tr>
         <th style="text-align: center;">3pm</th>
         <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
         <!-- skip -->
         <td class="appointment">available by appointment</td>
-        <td class="cpsc1012-a05" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
+        <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
+        <td class="dmit1508" rowspan=2>DMIT 1508 (Database Fundamentals)</td>
       </tr>
       <tr>
         <th style="text-align: center;">4pm</th>
         <td>n/a</td>
         <td>n/a</td>
         <td>n/a</td>
-        <td>n/a</td>
+        <!-- skip -->
         <!-- skip -->
       </tr>
     </tbody>
