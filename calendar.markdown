@@ -24,64 +24,13 @@ Outside of **emergency situations**, I generally do not honour same-day requests
 
 ## Spring/Summer 2024 Schedule
 
-<html>
-  <style>
-    table { font-size: 12.4px; text-align: center; }
-    .row-header { width: 80px; width: 10%; text-align: center; }
-    .col-header { width: 18%; }
-    /* cell-formatting */
-    .appointment { color: black; background-color: #d3d3d3; /* grey */  } 
-    .cpsc1520-a01 { background-color: #ed6495; } /* pink */
-    .cpsc1520-a02 { background-color: #bc64ed; } /* purple */
-    .dmit1530-a01 { background-color: #95ed64; } /* green */
-    .dmit1508 { background-color: #6495ed; } /* blue */
-  </style>
-  <table style="width: 100%">
-    <thead>
-      <tr>
-        <th class="row-header"></th>
-        <th class="col-header">Monday</th>
-        <th class="col-header">Tuesday</th>
-        <th class="col-header">Wednesday</th>
-        <th class="col-header">Thursday</th>
-        <th class="col-header">Friday</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th style="text-align: center;">9am</th>
-        <td rowspan="8" colspan="5" class="appointment">available by appointment</td>
-      </tr>
-      <tr>
-        <th style="text-align: center;">10am</th>
-      </tr>
-      <tr>
-        <th style="text-align: center;">11am</th>
-        <!-- skip all days -->
-      </tr>
-      <tr>
-        <th style="text-align: center;">noon</th>
-      </tr>
-      <tr>
-        <th style="text-align: center;">1pm</th>
-      </tr>
-      <tr>
-        <th style="text-align: center;">2pm</th>
-      </tr>
-      <tr>
-        <th style="text-align: center;">3pm</th>
-      </tr>
-      <tr>
-        <th style="text-align: center;">4pm</th>
-        <!-- skip all -->
-      </tr>
-    </tbody>
-  </table>
-</html>
+I am available between 9am-4pm weekdays by appointment. Please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for your desired meeting time.
 
-All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
+
 
 ## Tentative Fall 2024 Schedule
+
+All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
 
 <html>
   <style>
