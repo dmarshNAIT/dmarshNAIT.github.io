@@ -89,7 +89,7 @@ Methods are blocks of code that do something. There are a few "built-in" methods
     answer = 3 * 3 * 3 * 3 * 3; // returns 3 to the power of 5
     answer = Math.Pow(3, 5);  // also returns 3 to the power of 5
     ```
-- `Math.Sqrt()` returns the square root of a number. 4 squared = 4 * 4 = 16: that means that 4 is the "square root" of 16.
+- `Math.Sqrt()` returns the square root of a number. 4 squared = 4 <sup>2</sup> = 4 * 4 = 16.  That means that 4 is the "square root" of 16.
     ```csharp
     double root = Math.Sqrt(16);       // root has the value of 4
     ```
@@ -98,36 +98,47 @@ Methods are blocks of code that do something. There are a few "built-in" methods
     double number = 123.456789;
     Console.WriteLine("The approximate value is " + Math.Round(number));
         // displays 123
+        // that's because 123 is the nearest integer value
     Console.WriteLine("The approximate value is " + Math.Round(number, 2));
         // displays 123.46
+        // that's the value with 2 digits after the decimal point
     ```
 
 ## Data types
 C# is a strongly typed language: each piece of data we use must have a known data type. This is true for variables, constants, even literals and expressions! The type of the data helps us know what we can do with that data: whether we can do math or change capitalization, etc.
 
 So far we have learned about:
-- `int` which holds integer values between approximately -2 billion and +2 billion. Decimals cannot be stored in an `int`: that additional information will be "lost" if we try to store a number with decimal digits as an `int`.
+- `int` which holds **integer** values between approximately -2 billion and +2 billion. Decimal values cannot be stored in an `int` variable: that additional information will be "lost" if we try to store a number with decimal digits as an `int`.
 - `double` holds numeric values that may or may not have decimal digits. They can be very large: as large as 34 with 37 zeroes after it, or as negative as -34 with 37 zeroes after it. They can also be very, very small: more than 300 zeroes after the decimal place before the first non-zero digit. In total, they can hold up to about 15 digits, so both of these numbers are valid doubles: 123,456,789,012,345 or 0.123456789012345.
 - There are other numeric data types: some hold [integer values](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) and others are designed for [numbers which may have decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types). 
     - e.g. `decimal` numbers can hold up to 15-17 digits and are preferred in situations where we want extremely precise numbers without round errors, like financial data.
-- `string` contains text. That text is a string of characters: could contain letters, digits, punctuation or spaces. We'll deal with `string`s often, as every time we read input from the user using `Console.ReadLine()` it'll initially come in as a `string`. Literal values for `string`s are surrounded by double quotes.
+- `string` contains text. That text is a string of characters: it could contain letters, digits, punctuation, and/or spaces. We'll deal with `string`s often, as every time we read input from the user using `Console.ReadLine()` it'll initially come in as a `string`. Literal values for `string`s must be surrounded by double quotes.
     - e.g. `string myName = "Bob";`
-- `char` holds a single character. Literal values for `char`s are surrounded by single quotes.
+- `char` holds a single character. Literal values for `char`s must be surrounded by single quotes.
     - e.g. `char menuChoice = 'c';`
-- `bool` is short for Boolean. Variables of this type can only hold one of 2 values: `true` or `false`. They are often used to represent logical conditions, and will usually be named  starting with a word like `is` or `has`.
+- `bool` is short for Boolean. Variables of this type can only hold one of 2 values: `true` or `false`. They are often used to represent logical conditions, and will usually be named  starting with a word like `is` or `has`, for improved readability.
     - e.g. 
     ```csharp
     bool isValid = false;
-    // other code
+
+    // ...
+    // other code to change the value of isValid
+    // ...
+
     if (isValid) {
-        // do something
+        // code to do something
     }
     ```
     - or 
     ```csharp
     bool canContinue = true;
+
+    // ...
+    // other code to change the value of isValid
+    // ...
+
     do {
-        // do something
+        // code to do something
     } while (canContinue);
     ```
 
@@ -152,13 +163,13 @@ So far we have learned about:
 
 - **Logical operators** are what we use to create compound Boolean expressions.
 
-    + `!` represents _not_ and is a logical negation. It changes a Boolean value to the opposite value.
+    + `!` represents **NOT** and is a logical negation. It changes a Boolean value to the opposite value.
         - e.g. `!true` has the value of `false`.
-    + `&&` represents _and_ and is a logical conjunction. It is used to connect 2 complete but separate Boolean expressions, and is only `true` if **both** expressions are `true`.
+    + `&&` represents **AND** and is a logical conjunction. It is used to connect 2 complete but separate Boolean expressions, and is only `true` if **both** expressions are `true`.
         - e.g. `true && false` has the value of `false`.
-    + `||` represents _or_ and is a logical disjunction. It is used to connect 2 complete but separate Boolean expressions, and is `true` if **at least one** of the expressions are `true`.
+    + `||` represents **OR** and is a logical disjunction. It is used to connect 2 complete but separate Boolean expressions, and is `true` if **at least one** of the expressions are `true`.
         - e.g. `true && false` has the value of `true`.
-    + `^` represents _exclusive or_ and is a logical exclusion. It is used to connect 2 complete but separate Boolean expressions, and is only `true` if **exactly one** of the expressions are `true`.
+    + `^` represents **exclusive OR** and is a logical exclusion. It is used to connect 2 complete but separate Boolean expressions, and is only `true` if **exactly one** of the expressions are `true`.
         - e.g. `true ^ false` has the value of `true`.
 
 - The **conditional operator** is basically a miniature `if else` structure.
@@ -166,10 +177,12 @@ So far we have learned about:
    Here is an example of how we can use the conditional operator in place of an `if` statement.
    <script src="https://gist.github.com/dmarshNAIT/d0176ca742ae6c36918dd1f951a3b3ca.js"></script>
 
+   > _Note: `i` is not a very good nor descriptive variable name._
+
 # Topic 4: Loops
 Loops are structures that let us repeat commands without re-typing them. We start off with 3 types of loops, each with their own purpose. [Read more on the Loops page.](./loops)
-- `for` loops are used when we know exactly how many times our loop must repat, or iterate. For example, maybe this is hardcoded value in our code (e.g. we always ask for 10 values) or perhaps the user decides. Either way, if we know before entering the loop how many times it must repeat, `for` loops are the best fit.
-- `do while` loops execute once, then check a condition to see if they should continue to execute. This is perfect for code that must run at least once: for example, displaying a main menu or asking for valid input.
+- `for` loops are used when we know **exactly how many times** our loop must repat, or iterate. For example, maybe this is hardcoded value in our code (e.g. we always ask for 10 values) or perhaps the user decides. Either way, if we know before entering the loop how many times it must repeat, `for` loops are the best fit.
+- `do while` loops execute once, then check a condition to see if they should continue to execute. This is perfect for code that must run **at least once**: for example, displaying a main menu or asking for valid input.
 - And finally, `while` loops are used for everything else. The condition is checked first, so it is possible the loop executes once, many times, or maybe not at all!
 
 # Topic 5: File I/O & Exceptions
@@ -178,25 +191,57 @@ Loops are structures that let us repeat commands without re-typing them. We star
 
 # Topic 6: Methods
 In this section we learn how to create our own custom methods.
-- Every method has a `return` type: this tells us essentially what "output" that method will create when we execute it.
+- Every method has a `return` type: this tells us essentially what kind of "output" that method will create when we execute it.
     - Some methods have a `return` type of `void`: this means they don't `return` anything. For example, `Console.WriteLine()`.
-    - Other methods will specify a data type as their `return` type. For example, `Console.ReadLine()` always `return`s a `string`; that means that `string` is its return type, and somewhere in the code that defines that method we will see the keyword `return` followed by the value it is returning. Here is a silly example of a custom method that returns an `int`:
+    - Other methods will specify a data type as their `return` type. For example, `Console.ReadLine()` always `return`s a `string`; that means that `string` is its `return` type, and somewhere in the code that defines that method we will see the keyword `return` followed by the value it is returning. Here is a silly example of a method that returns an `int` value:
         ```csharp
         static int GiveMeFive() {
             return 5;
         }
         ```
-- Methods may or may not have **parameters**: they look and act a lot like variables. They are essentially the "input" into the method: in other words, what values the method needs in order to run. They are defined in between the parenthese in a method header, and just like variables, we must define their data type as well as give them a name.
+- Methods may or may not have **parameters**: which look and act a lot like variables. They are the "input" into the method: in other words, what values the method needs in order to run. They are defined in between the parenthese in a method header, and just like variables, we must define their data type as well as give them a name.
     - Then, when we call that method, we must provide matching arguments. In other words, we must provide values or expressions in between the parentheses that match the data type of the parameters.
 
+    ```csharp
+    // here is a method with no parameters:
+    static void DoSomething() { 
+       Console.WriteLine("hello");
+    } // end method
+
+    // it is called as follows:
+    DoSomething();
+    ```
+    ```csharp
+    // here is a method with one parameter:
+    static void DoSomething(int i) {
+        Console.WriteLine($"You passed in {i}");
+    } // end method
+
+    // we call it with a matching argument:
+    DoSomething(42);
+    ```
+    ```csharp
+    // and here is a method with multiple parameters:
+    static void DoSomething(int i, string message) {
+        Console.WriteLine(message + $"\nYou passed in {i}");
+    } // end method
+
+    // we call it with matching arguments:
+    DoSomething(42, "hello");
+    ```
+
 # Topic 7: Arrays
-- If we think of variables as a box holding a single value, we can think of arrays as a large box split up into separate compartments, each holding its own value. Every compartment within an array must contain the same data type. For example, here is how to create an array that can hold up to 10 `int` values: 
+- If we think of variables as a box holding a single value, we can think of arrays as a large box split up into separate compartments, each compartment holding its own value. Every compartment within an array must contain the same data type. For example, here is how to create an array that can hold up to 10 `int` values: 
     - `int[] myArray = new int[10];`
 - If we provide starting values for each element, we don't need to provide the array size: 
     - `string[] dayOfWeek = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" }; `
 - If we do not provide a starting value, every element has the default value for that data type. For example, `int` defaults to `0` and `bool` defaults to `false`.
 - We can access individual elements of an array using square brackets, where the number within the brackets refers to the element #. Note: the first element is index `0`.
-    - `myArray[7]` refers to the value in element 7 of our array.
+    - `myArray[0]` refers to the value at index 0 of our array: the first element
+    - `myArray[1]` refers to the value at index 1 of our array: the 2nd element
+    - `myArray[2]` refers to the value at index 2 of our array: the 3rd element
+    - ...
+    - `myArray[99]` refers to the value at index 99 of our array: the 100th element
 - The elements within an array can be ordered from smallest to largest using a method called `Array.Sort()`. 
     - `Array.Sort(myArray)` results in `myArray` having its values sorted from smallest to largest. Arrays are a `ref`erence type: this means that when we pass them into a method they can actually be changed by that method!
 
@@ -205,9 +250,9 @@ In this section we learn how to create our own custom methods.
     - `private` means the member is only visible to members of that class. e.g. I can only access a specific field, or call a specific method, from **within** the same class.
     - `public` means that the member is available to anyone, from anywhere.
 - Classes will have methods that fall into a few categories:
-    - accessor methods: these let us *access* a specific field. They are usually named starting with the word Get, like `GetName()`.
-    - mutator methods: these let us mutate, or change, the value of a specific field. They are usually named starting with the word Set, like `SetName()`.
-    - constructor methods: these create a new instance of the Class
+    - **accessor** methods: these let us *access* a specific field. They are usually named starting with the word `Get`, like `GetName()`.
+    - **mutator** methods: these let us mutate, or change, the value of a specific field. They are usually named starting with the word `Set`, like `SetName()`.
+    - **constructor** methods: these create a new instance of the Class
     - any other methods that support the functionality of the Class
 - The keyword `this` lets us refer to the current object.
     - e.g. `return this.Age` means to return the `Age` of the current object.
