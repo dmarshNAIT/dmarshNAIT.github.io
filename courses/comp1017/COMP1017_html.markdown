@@ -55,16 +55,17 @@ HTML elements generally fall into 2 categories, **block-level** and **inline** e
 **Block level elements** start on a new line and take up the full width available. We can set their **height** and **width** using CSS.
 
 Here are some block-level elements we'll be using in COMP 1017:
-- The following are examples of **sectioning elements**. All of the content on our page will be in a sectioning element.
-	+ The `<header>` tag contains **introductory content** (probably a heading) and if it's the page's `<header>`, could contain things like a logo and site nav, and will generally be the same across every page of your site. It could also be *inside* another sectioning element. For example, a `<header>` within an `<article>` might contain the headline and author name.
-	+ The `<main>` element contains, well, the **main content**, and the page's `<main>` contains content unique to that page. This is a crucial element for screen readers: they can skip to the important stuff right away.
-	+ The `<footer>` tag generally contains **repeated info** like copyright or contact info, and is usually the same on every page of your site. There will be a max of one `<footer>` per section/article/body.
-	+ The `<article>` tag is a sectioning element for content that would make sense all on its own: e.g. a **blog post**, **news story**, or, of course, an **article**.
-	+ The `<aside>` tag is a sectioning element for **extra info** that isn't the key content of a page: a glossary, related links, etc. An `<aside>` with a `<nav>` inside is generally how we'd mark up **sidebar** navigation.
-	+ `<nav>` is a sectioning element that wraps our site navigation. It might live in the `<header>` if it's main navigation, in `<main>` for sidebar links (e.g. *"more articles like this!"*) or in the `<footer>` for secondary nav.
-	+ The `<section>` tag is a sectioning element for generic grouping. Basically, if we want to group content but none of the previous options fit.
+- The following are examples of **sectioning elements**. ⚠️ All of the content on our page will be in a sectioning element. In a valid HTML document, NO content should be floating around outside of a sectioning element.
+	+ The `<header>` tag contains **introductory content** (like a heading) for the element it's within.  If it's the page's `<header>`, it could contain things like a logo and site navigation, and will generally be the same across every page of your site. It could also be *inside* another sectioning element. For example, a `<header>` within an `<article>` might contain the headline and author name.
+	+ The `<main>` element contains, well, the **main content** of a page or element, and the page's `<main>` contains content unique to that page. Having `<main>` elements is crucial for those using screen readers: they can skip to the important stuff right away.
+	+ The `<footer>` tag generally contains **repeated info** like copyright or contact info, and is usually the same on every page of your site. There will be a max of one `<footer>` per sectioning element and per page.
+	+ The `<article>` tag is a sectioning element for content that would make sense all on its own: e.g. a **blog post**, a **news story**, or an **article**.
+	+ The `<aside>` tag is a sectioning element for **extra info** that isn't  key content: a glossary, related links, etc. An `<aside>` with a `<nav>` inside is generally how we'd mark up **sidebar navigation**.
+	+ `<nav>` is a sectioning element that wraps our site navigation. It might live in the `<header>` if it's main navigation, in `<main>` for sidebar links (e.g. *"more articles like this!"*), or in the `<footer>` for secondary nav.
+	+ The `<section>` tag is a sectioning element for generic grouping. Basically, if we want to group content but none of the previous options fit, we use a `<section>`.
+
 - The following are examples of elements that can contain **text**:
-	+ `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` are **headings**. We'll only have one top-level heading (`<h1>`) per page.
+	+ `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` are **headings**. We'll only have one top-level heading (`<h1>`) per page. `<h2>` are sub-headings, within those sections we can use `<h3>` as sub-sub-headings, and so on.
 	+ The `<blockquote>` tag is how we mark up a **quotation**.
 		```html
 		<blockquote cite="en.wikipedia.org/wiki/Pee_Pee_Island">
@@ -88,7 +89,7 @@ Here are some block-level elements we'll be using in COMP 1017:
 			<li>Item 3</li>
 		</ol>
 		```
-		which would render a list like this:
+		which would render a list that looks like this:
 
 		<html>
 		<style type="text/css" media="screen">
@@ -142,12 +143,12 @@ Here are some block-level elements we'll be using in COMP 1017:
 			</thead>
 			<tbody>
 				<tr>
-					<td>lorem</td>
-					<td>ipsum</td>
+					<td>first</td>
+					<td>row</td>
 				</tr>
 				<tr>
-					<td>more</td>
-					<td>words</td>
+					<td>second</td>
+					<td>row</td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -171,12 +172,12 @@ Here are some block-level elements we'll be using in COMP 1017:
 			</thead>
 			<tbody>
 				<tr>
-					<td>lorem</td>
-					<td>ipsum</td>
+					<td>first</td>
+					<td>row</td>
 				</tr>
 				<tr>
-					<td>more</td>
-					<td>words</td>
+					<td>second</td>
+					<td>row</td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -187,7 +188,8 @@ Here are some block-level elements we'll be using in COMP 1017:
 			</table>
 		</html>
 
-	> Note: **We only use tables for data, never for layout.***
+	> Note: **We only use tables for data, never for layout.**
+
 - Finally, a few other elements whose jobs revolve around **containing** other elements.
 	+ The `<figure>` tag is how we mark up content that needs a **caption**, like diagrams, and will contain an `<img>` and a `<figcaption>` attribute. It will look like:
 		```html
@@ -198,7 +200,26 @@ Here are some block-level elements we'll be using in COMP 1017:
 			</figcaption>
 		</figure>
 		```
+	That looks like:
+		<html>
+			<figure>
+				<style>
+					figure {
+						margin-left: 3rem; 
+						padding: 0.5rem;
+						border: 1px solid grey; 
+						box-shadow: 0 2px 5px 0 ; 
+						width: 25%;}
+				</style>
+				<img src="../../img/aioli.jpg" alt="a picture of a grey kitten">
+				<figcaption>
+					fig. 1: Aïoli the kitten
+				</figcaption>
+			</figure>
+		</html>
+
 	+ `<div>` is a non-semantic wrapper, and a **generic container** for any content you want to group together so that you can target it with CSS. 
+		- In more simple terms, if the only reason we're grouping content is to style it, we use `<div>`, however if there is meaning to the elements we are grouping together, we should be using `<section>` instead.
 	> It is strongly recommended to add classes to each `div` so they can be easily targeted by your CSS.
 
 ### In-line elements
@@ -208,10 +229,10 @@ Here are some block-level elements we'll be using in COMP 1017:
 	```html
 	<img src="img/cats.png" alt="image of two cats sitting on a bench">
 	```
-	> Note: the `alt` text should sufficiently describe the photo to anyone who cannot view it.*
+	> Note: the `alt` text should sufficiently describe the photo to anyone who cannot view it.
 
-+ `<em>` is what makes text appear in *italics*. We'll use this sparingly because HTML is meant for content and CSS is where we style.
-+ `<strong>` is what makes text appear **bold**. We'll use this sparingly because HTML is meant for content and CSS is where we style.
++ `<em>` is what makes text appear in *italics*. We'll use this sparingly because HTML is meant for content and we should use CSS for styling.
++ `<strong>` is what makes text appear **bold**. We'll use this sparingly because HTML is meant for content and we should use CSS for styling.
 + `<span>` is a non-semantic wrapper, and a **generic container** for any content you want to group together so that you can target it with CSS. It's like `<div>` except it doesn't create a new row.
 
 + The anchor tag (`<a>`) is how we create links. This is what it looks like in HTML:
