@@ -8,9 +8,10 @@ nav_order: 12
 
 # Classes & Objects
 
-Classes define a type, objects model a thing.
+C# is an object-oriented language, so it is essential we understand what an **object** is.
 
-Objects are individual **instances** of a class.
+- Classes define a **type**, objects model a specific **thing**.
+- Objects are individual **instances** of a class.
 
 For example, we might define a class called `Dog`. Every dog will share characteristics (age, breed, colour, etc). Each individual dog (my dog, your dog, that dog over there) is an instance of the class `Dog`, and is therefore an **object**.
 
@@ -27,7 +28,7 @@ This means that I could create a `Dog` object that has the `_name` `"Jasmine"`, 
 
 *Note: These instance fields are different from `static` fields which are associated with the class, not a specific object. The value of a `static` field is shared across all instances of that class.*
 
-When you define a class, you describe its **behaviour** using methods.
+When you define a class, you can also describe its **behaviour** using methods.
 ```csharp
 class Dog {
     private int _age;
@@ -52,16 +53,16 @@ To make an instance (or object) of the Dog class, we must declare the object and
 Dog bowser; // declare bowser to be an instance of Dog
 bowser = new Dog(); // allocate memory
 ```
-Alternatively, we can combine these:
+Usually, we can combine these:
 ```csharp
 Dog bowser = new Dog();
 ```
 
 ## Constructors
 
-When we define a class, we can define a constructor.
+When we define a class, we can define a **constructor** method.
 
-If we don't, the compiler will provide one automatically. Any member variables that weren't explicitly initialized will be set to default values (`int`s to `0`, `bool` to `false`, `string` to null, etc).
+> If we don't, the compiler will provide one automatically, but in this default constructor, any member variables that weren't explicitly initialized will be set to default values (`int`s to `0`, `bool` to `false`, `string` to null, etc).
 
 To create a constructor, we create a method with the same name as the class:
 ```csharp
@@ -83,12 +84,13 @@ class Dog {
     private int _age = 0;                    // instance field
         // this is redundant because the default value for an int is already 0
     private static bool _isGoodBoy = true;     // static field
+
     // other fields and methods go here
 } // end of class
 ```
 
 ## Accessors
-Accessors are a type of `public` method that lets us **get** (or access) the value of a private field. 
+Accessors are a type of `public` method that lets us **get** (or access) the value of a `private` field. 
 
 For example:
 ```csharp
@@ -98,13 +100,13 @@ public int GetAge() {
 ```
 
 ## Mutators
-Mutators are a type of `public` method that lets us **set** (or change or mutate) the value of a private field.
+Mutators are a type of `public` method that lets us **set** (or change or mutate) the value of a `private` field.
 
 For example:
 ```csharp
 public void SetAge(int age) {  
     _age = age;  
-        // assign the value passed in as an argument to the _age instance field
+    // assigns the value passed in as an argument to the _age instance field
 } // end of method
 ```
 
@@ -118,6 +120,8 @@ public class Dog {
     public Dog (string name) { ... }
 } // end class
 ```
+
+This means that I have 2 options when creating a new `Dog`: I can provide both the `Dog`'s `name` & `age`, or just their `name`.
 
 ## Static methods
 

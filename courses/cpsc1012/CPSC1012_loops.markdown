@@ -7,25 +7,21 @@ nav_order: 6
 ---
 
 # Operator Shorthand
-**Incrementing** the value of a variable is a pretty common occurrence, and there are a way different ways we can do so. Here are 3 examples, all of which have the same net effect:
+**Incrementing** the value of a variable is a pretty common occurrence, and there are a way different ways we can do so. Here are a few different examples, all which result in `window_count` increasing in value by `1`.
 ```csharp
 window_count = window_count + 1;
 window_count += 1;
-window_count++;
+window_count++;     // this means "give me the value THEN add 1"
+++window_count;     // this means "add 1 THEN give me the value
 ```
 
-`i++` means “give me the value **before** the increment”
-
-`++i` means “give me the value **after** the increment”
-
-Therefore, in this code snippet:
+Be very careful with the two variations of `++`. For example, here:
 ```csharp
 int i = 2, j;
-j = ++ i;
+j = ++i;           // j has the value of 3
 ```
-`j` is equal to `3`.
 
-> Please note: `i` and `j` are **terrible** variable names. You should use something more descriptive in your actual code.*
+> Please note: `i` and `j` are **terrible** variable names. You should use something more descriptive in your actual code.
 
 # Pre-test loops
 These are loops where the test happens **before** the process, so the process can execute 0 or more times.
@@ -49,7 +45,7 @@ while (!isFull) { // this is the same as: while (isFull == false)
     ...
 } // end while
 ```
-We will keep iterating through the loop until something sets `isFull` to true.
+We will keep iterating through the loop until **something** sets `isFull` to true.
 
 ## for loops
 `for` loops are best used when we (or the user) know **how many times** we will iterate through our loop.
@@ -66,18 +62,18 @@ for (initalize; test; modify)
 For example, we can translate this `while` loop into a `for` loop:
 
 ```csharp
-while (count > 1) {
-    nFactorial *= count;
+int count = 10;
+while (count > 0) {
+    Console.WriteLine(count);
     count--;
 } // end while
 ```
 ```csharp
-nFactorial = 1;
-for (count = n; count > 1; count--) {
-	nFactorial *= count;
+for (int count = 10; count > 0; count--) {
+    Console.WriteLine(count);
 } // end for
 ```
-Both of these have the same net effect.
+Both of these have the same output.
 
 # Post-test loops
 The test happens **after** the process, so the process will always execute **at least once**:
