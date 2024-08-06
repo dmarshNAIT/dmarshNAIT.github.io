@@ -13,13 +13,14 @@ The `INSERT` statement adds 1+ rows to a table.
 
 It can include **hard-coded values**, or can use **subqueries** to retrieve data from other tables.
 
+There are 2 ways to `INSERT` data. Either we supply the exact number of rows directly:
 ```sql
 INSERT INTO TableName (Column1, Column2, ...)
 VALUES (Value1, Value2, ...))
--- Value1 could be DEFAULT, NULL, or an expression or subquery that returns a value
+-- Values could be DEFAULT, NULL, or an expression or subquery that returns a value
 ```
 
-OR 
+Or, we can `INSERT` data from another table, like a copy/paste:
 ```sql
 INSERT INTO TableName (Column1, Column2, ...)
 SELECT Column1, Column2, ...
@@ -28,7 +29,7 @@ FROM ...
 
 If the statement supplies data that does not comply with constraints, or the data is incompatible with the data type of the column, the statement **fails**.
 
-Example:
+Example using hard-coded values:
 ```sql
 INSERT INTO Staff (FirstName
     , LastName
@@ -44,7 +45,7 @@ VALUES ('Jason'
     , NULL)
 ```
 
-Example using **subquery**:
+Example using a **subquery**:
 ```sql
 INSERT INTO Staff (FirstName
     , LastName
@@ -56,7 +57,9 @@ VALUES ('Jason'
     , 'Teachalot'
     , 'Jan 1 2013'
     , NULL
-    , (SELECT PositionID FROM Staff WHERE FirstName = 'Robert' and LastName = 'Smith')
+    , ( SELECT PositionID 
+        FROM Staff 
+        WHERE FirstName = 'Robert' and LastName = 'Smith')
     , NULL)
 ```
 
@@ -90,9 +93,9 @@ VALUES ('Jason'
 ```
 
 ## UPDATE
-The `UPDATE` statement updates **existing rows** in the table. It can update one or more columns.
+The `UPDATE` statement updates **existing rows** in the table. It can update **one or more** columns.
 
-Data can be updated by providing new values for columns or using subqueries to provide the data.
+Data can be updated by providing new values for columns or by using subqueries to provide the data.
 ```sql
 UPDATE	TableName
 SET Column1 = expression[, Column2 = expression ... ]
@@ -113,7 +116,7 @@ Examples:
     SET Cost = Cost * 1.1
     WHERE CourseID = 'DMIT108'
     ```
-- Update the `Course` table and set the `cost` of DMIT170 to be the same as DMIT254:
+- Update the `Course` table and set the `cost` of DMIT170 to be the same as the cost of DMIT254:
     ```sql
     UPDATE Course
     SET Cost = (	SELECT Cost 
@@ -122,7 +125,7 @@ Examples:
     WHERE CourseID = 'DMIT170'
     ```
 
-- Update `CourseHours`, `MaxStudents`, and `Cost` columns for `CourseID` DMIT 101:
+- Update `CourseHours`, `MaxStudents`, and `Cost` columns for `CourseID` DMIT101:
     ```sql
     UPDATE Course
     SET 

@@ -8,7 +8,7 @@ nav_order: 10
 
 ## Triggers
 
-Triggers are objects that are stored in the database, that execute when they are triggered **by a specific DML statement**.
+Triggers are objects that are stored in the database, that execute when they are triggered **by a specific DML statement**. We can think of them like an SP that runs automatically when something specific happens.
 
 For example, we could create a trigger that's associated with an `INSERT` operation on the `Staff` table. Every time we execute an `INSERT` on the `Staff` table, the code in that trigger will execute.
 
@@ -39,7 +39,7 @@ Triggers happen at a **specific** point in a series of events, most of which tha
 1. The **DML operation occurs**, which will mean changes *may* occur on the base table and the temporary tables.
 1. Then, **the trigger will execute**. In that trigger, we may `ROLLBACK` the `TRANSACTION` that was started by the server, but will never `COMMIT TRANSACTION`. We may do other DML operations, or `RAISERROR`s.
     + Note: It's possible that we have *multiple* triggers on a single table. In this case, we have very little control over what order they occur in... we will generally ignore this within the scope of this class.
-1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server **automatically `COMMIT`s** the `TRANSACTION`.
+1. After our trigger finishes, if it didn't `ROLLBACK` the `TRANSACTION`, the server **automatically** `COMMIT`s the `TRANSACTION`.
 1. Finally, the `inserted` and `deleted` tables are **dropped**.
 
 
@@ -107,7 +107,7 @@ DROP TRIGGER TriggerName
     
 If you drop a table that has triggers associated with it, the triggers are dropped as well.
 
-**Triggers cannot exist without the table it is associated with.**
+**A trigger cannot exist without the table it is associated with.**
 
 ### Changing existing triggers:
 ```sql
@@ -128,5 +128,5 @@ WHERE Type = 'TR'
 
 ### To see the source code of a trigger:
 ```sql
-sp_helptext TriggerName
+EXEC sp_helptext TriggerName
 ```
