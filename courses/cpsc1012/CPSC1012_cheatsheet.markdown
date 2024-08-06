@@ -6,21 +6,24 @@ parent: CPSC1012
 nav_order: 2
 ---
 
-This is meant to be a quick-reference of the methods & data types we've learned so far.
+This is meant to be a quick-reference of the **methods** & **data types** we've learned so far.
 If you notice any gaps or errors, please let me know!
+
+* TOC
+{:toc}
 
 > **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
 
 
-# Topic 1: Intro to Programming
+## Topic 1: Intro to Programming
 No methods or data types were covered in this section.
 
-# Topic 2: Arithmetic Operators, Data Types, Programming Standards
-## Methods
+## Topic 2: Arithmetic Operators, Data Types, Programming Standards
+### Methods
 
 Methods are blocks of code that do something. There are a few "built-in" methods that we can use within our programs, including:
 
-### Methods for communicating with our user
+**Methods for communicating with our user**
 
 - `Console.Write()` prints "something" to the user. That "something" is whatever we typed inside the `()` symbols. For example, a `string` of text, the contents of a variable, or an expression that combines text and values.
 
@@ -80,7 +83,7 @@ Methods are blocks of code that do something. There are a few "built-in" methods
     currentTemp = Convert.ToDouble(userResponse);
     ```
 
-### Methods for doing `Math`
+**Methods for doing `Math`**
 
 - `Math.Pow()` lets us calculate the power, which is how many times we use a number when we multiply it by itself. For example, "3 to the power of 5" is taking the number 3 and then multiplying it 5 times: **3 x 3 x 3 x 3 x 3**. This can also be written as **3<sup>5</sup>**.
     ```csharp
@@ -104,7 +107,7 @@ Methods are blocks of code that do something. There are a few "built-in" methods
         // that's the value with 2 digits after the decimal point
     ```
 
-## Data types
+### Data types
 C# is a strongly typed language: each piece of data we use must have a known data type. This is true for variables, constants, even literals and expressions! The type of the data helps us know what we can do with that data: whether we can do math or change capitalization, etc.
 
 So far we have learned about:
@@ -143,7 +146,7 @@ So far we have learned about:
     ```
 
 
-# Topic 3: Decision Structures
+## Topic 3: Decision Structures
 - `if` statements let us make decisions in our code. For example, after answering a math quiz, we may either congratulate the user `if` they achieved a certain score, or `else` we show a different message. [Read more on the Decision Structures page.](./decisionstructures)
 
 - `switch` statements are similar but were designed to check for specific values. [Read more on the Decision Structures page.](./decisionstructures)
@@ -179,17 +182,17 @@ So far we have learned about:
 
    > _Note: `i` is not a very good nor descriptive variable name._
 
-# Topic 4: Loops
+## Topic 4: Loops
 Loops are structures that let us repeat commands without re-typing them. We start off with 3 types of loops, each with their own purpose. [Read more on the Loops page.](./loops)
 - `for` loops are used when we know **exactly how many times** our loop must repat, or iterate. For example, maybe this is hardcoded value in our code (e.g. we always ask for 10 values) or perhaps the user decides. Either way, if we know before entering the loop how many times it must repeat, `for` loops are the best fit.
 - `do while` loops execute once, then check a condition to see if they should continue to execute. This is perfect for code that must run **at least once**: for example, displaying a main menu or asking for valid input.
 - And finally, `while` loops are used for everything else. The condition is checked first, so it is possible the loop executes once, many times, or maybe not at all!
 
-# Topic 5: File I/O & Exceptions
+## Topic 5: File I/O & Exceptions
 - The `StreamReader` class can be used to get information from text files, and the `StreamWriter` class can be used to write (or save) information to a text file. [Read more on the File IO page.](./fileIO)
 - Sometimes problems will occur in our program that cause it to crash. For example, perhaps we ask our user to enter their age and we attempt to save it as an `int`, but they enter a number that contains decimals. We must add something into our code to deal with this problem instead of crashing. One approach we can take is using a `try`/`catch` structure. [Read more on the Exceptions page.](./exceptions)
 
-# Topic 6: Methods
+## Topic 6: Methods
 In this section we learn how to create our own custom methods.
 - Every method has a `return` type: this tells us essentially what kind of "output" that method will create when we execute it.
     - Some methods have a `return` type of `void`: this means they don't `return` anything. For example, `Console.WriteLine()`.
@@ -230,7 +233,7 @@ In this section we learn how to create our own custom methods.
     DoSomething(42, "hello");
     ```
 
-# Topic 7: Arrays
+## Topic 7: Arrays
 - If we think of variables as a box holding a single value, we can think of arrays as a large box split up into separate compartments, each compartment holding its own value. Every compartment within an array must contain the same data type. For example, here is how to create an array that can hold up to 10 `int` values: 
     - `int[] myArray = new int[10];`
 - If we provide starting values for each element, we don't need to provide the array size: 
@@ -245,7 +248,7 @@ In this section we learn how to create our own custom methods.
 - The elements within an array can be ordered from smallest to largest using a method called `Array.Sort()`. 
     - `Array.Sort(myArray)` results in `myArray` having its values sorted from smallest to largest. Arrays are a `ref`erence type: this means that when we pass them into a method they can actually be changed by that method!
 
-# Topic 8: Classes & Objects
+## Topic 8: Classes & Objects
 - Within a class, both methods & fields can be defined as `private` or `public`.
     - `private` means the member is only visible to members of that class. e.g. I can only access a specific field, or call a specific method, from **within** the same class.
     - `public` means that the member is available to anyone, from anywhere.
