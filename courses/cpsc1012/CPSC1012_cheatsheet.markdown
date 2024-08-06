@@ -12,7 +12,7 @@ If you notice any gaps or errors, please let me know!
 * TOC
 {:toc}
 
-> **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
+> 🔥 **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
 
 
 ## Topic 1: Intro to Programming

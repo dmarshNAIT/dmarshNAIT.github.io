@@ -8,7 +8,7 @@ nav_order: 2
 
 Here is a (hopefully) exhaustive list of all the SQL keywords and functions we've learned!
 
-> **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
+> 🔥 **Tip**: Use Ctrl-F (or Command-F on a Mac) to search for specific words on this page.
 
 
 ## A
