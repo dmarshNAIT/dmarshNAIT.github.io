@@ -121,6 +121,7 @@ So far we have learned about:
     - e.g. `char menuChoice = 'c';`
 - `bool` is short for Boolean. Variables of this type can only hold one of 2 values: `true` or `false`. They are often used to represent logical conditions, and will usually be named  starting with a word like `is` or `has`, for improved readability.
     - e.g. 
+
     ```csharp
     bool isValid = false;
 
@@ -133,6 +134,7 @@ So far we have learned about:
     }
     ```
     - or 
+    
     ```csharp
     bool canContinue = true;
 
