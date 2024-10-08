@@ -21,16 +21,7 @@ Please include:
 Outside of **emergency situations**, I generally do not honour same-day requests to meet, and I only hold office hours on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
 
 
-
-## Spring/Summer 2024 Schedule
-
-I am available between 9am-4pm weekdays by appointment. Please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for your desired meeting time.
-
-Please note: I am on vacation and unavailable from August 8-23 inclusive.
-
-
-
-## (Tentative) Fall 2024 Schedule
+## Fall 2024 Schedule
 
 All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
 
@@ -130,7 +121,7 @@ Classes marked with the 🛜 emoji are delivered remotely.
         <th style="text-align: center;">3pm</th>
         <td class="appointment">available by appointment</td>
         <!-- skip -->
-        <td class="appointment">available by appointment</td>
+        <td rowspan="2">n/a</td>
         <td class="cpsc1012-a04" rowspan="2">CPSC 1012 (Programming Fundamentals) 🛜</td>
         <td class="dmit1508" rowspan=2>DMIT 1508 (Database Fundamentals)</td>
       </tr>
@@ -138,7 +129,7 @@ Classes marked with the 🛜 emoji are delivered remotely.
         <th style="text-align: center;">4pm</th>
         <td>n/a</td>
         <td>n/a</td>
-        <td>n/a</td>
+        <!-- skip -->
         <!-- skip -->
         <!-- skip -->
       </tr>
@@ -147,7 +138,7 @@ Classes marked with the 🛜 emoji are delivered remotely.
 </html>
 
 ## (Tentative) Winter 2025 Schedule
-
+This is subject to change.
 <html>
   <style>
     table { font-size: 12.4px; text-align: center; }
