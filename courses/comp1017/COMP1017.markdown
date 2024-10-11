@@ -17,4 +17,4 @@ has_toc: false
 - Finally, some [common errors](./errors) you may face when working on your assignments.
 
 ## Bonus Content
-- [Pseudo-classes](./pseudoclasses) let us be even more specific in how we target specific elements on a webpage.
+- [Pseudo-classes](./pseudo-classes) let us be even more specific in how we target specific elements on a webpage.

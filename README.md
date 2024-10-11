@@ -7,3 +7,6 @@ These are the supporting files for [dmarshNAIT.github.io](https://dmarshnait.git
 To serve locally:
 `gem install jekyll bundler`
 `bundle exec jekyll serve`
+
+Pre-reqs for serving locally:
+- Ruby
