@@ -15,3 +15,6 @@ has_toc: false
 - [CSS](./css) is how we style the look and feel of our pages.
 - Learn more about [web image formats](./web-image-formats).
 - Finally, some [common errors](./errors) you may face when working on your assignments.
+
+## Bonus Content
+- [Pseudo-classes](./pseudoclasses) let us be even more specific in how we target specific elements on a webpage.
