@@ -229,19 +229,19 @@ This is subject to change.
       </tr>
       <tr>
         <th style="text-align: center;">3pm</th>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
+        <td class="appointment" rowspan="2">available by appointment</td>
+        <td class="appointment" rowspan="2">available by appointment</td>
+        <td class="appointment" rowspan="2">available by appointment</td>
+        <td class="appointment" rowspan="2">available by appointment</td>
+        <td class="appointment" rowspan="2">available by appointment</td>
       </tr>
       <tr>
         <th style="text-align: center;">4pm</th>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
-        <td class="appointment">available by appointment</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
     </tbody>
   </table>
