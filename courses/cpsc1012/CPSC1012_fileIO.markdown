@@ -35,7 +35,7 @@ using System.IO;
 StreamReader reader = new StreamReader("test.txt");
 string line;
 
-for (int i = 0; i < 3; i++) {
+for (int i = 0; i < 3; i++) {   // 3 is the # of lines in the file
     line = reader.ReadLine();
     Console.WriteLine(line);
 } // end for
@@ -48,7 +48,7 @@ From a file of unknown length:
 using System.IO;
 
 StreamReader reader = new StreamReader("test.txt");
-while (reader.EndOfStream == false) {
+while (reader.EndOfStream == false) { // this means "read until the end of the file"
   string line = reader.ReadLine();
   Console.WriteLine(line);
 } // end while

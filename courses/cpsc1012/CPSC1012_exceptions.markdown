@@ -8,7 +8,7 @@ nav_order: 8
 
 # Exceptions
 
-Exceptions are **unexpected** conditions or errors in our program (data is not valid, arithmetic error, parsing error, etc.)
+Exceptions are **unexpected** conditions or errors in our program (e.g. data is not valid, arithmetic error, parsing error, etc.)
 
 For example:
 ```csharp
@@ -20,7 +20,9 @@ results in:
 
 `Unhandled Exception: System.DivideByZeroException: Attempted to divide by zero.`
 
-## We can avoid this error with logic:
+> 👎 *It also contains awful variable names, but let's fix one problem at a time.*
+
+We can avoid this error with logic:
 ```csharp
 int i = 5;
 int j = 0;
@@ -33,7 +35,7 @@ else {
 } // end else
 ```
 
-## Or, we can catch the exception!
+Or, we can **catch** the exception!
 ```csharp
 int i = 5;
 int j = 0;
@@ -47,7 +49,8 @@ catch { // this code will only run if there was an exception in the try block.
 } // end catch
 ```
 
-## We can also view the specific exception message:
+## Accessing Exception data
+We can also view the specific exception message:
 ```csharp
 int i = 5;
 int j = 0;
@@ -63,13 +66,14 @@ catch (Exception ex) {
 
 Which returns:
 ```
-Cannot divide by zero.
-Attempted to divide by zero.
+Cannot divide by zero.              // our message
+Attempted to divide by zero.        // the Message in the Exception object
 ```
 
-## We can catch exceptions of many kinds. A common exception is when we parse our user's input.
+## Common Use Cases
+We can catch exceptions of many kinds. A common exception is when we parse our user's input.
 
-For example
+For example:
 ```csharp
 int userAge;
 Console.WriteLine("How old are you?");
@@ -77,7 +81,7 @@ userAge = int.Parse(Console.ReadLine());
 ```
 This works perfectly if the user enters a number. But what if the user enters something else, like the word "eight"?
 
-An **exception**!
+🚨 An **exception**!
 
 We can move this into a `try`/`catch` block:
 ```csharp
@@ -94,9 +98,9 @@ catch (Exception)
 } // end catch
 ```
 
-Now, the program doesn't crash, but instead returns a message back to the Console. 
+Now, the program doesn't crash, but instead returns a nice message back to the Console. 
 
-We can continue to build on this example by moving the code inside of a loop, which we remain in until the user enters a valid number:
+We can continue to build on this example by moving the code inside of a loop, which we remain in **until** the user enters a valid number:
 ```csharp
 int userAge;
 bool validInput = false; // default value, will be set to true if parsing is successful
@@ -147,3 +151,4 @@ else {
 ```
 
 The code calling this method would then need to handle the exception this method has thrown.
+> ⚾ *Everything that is thrown must be caught!*

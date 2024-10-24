@@ -6,7 +6,7 @@ parent: CPSC1012
 nav_order: 1
 ---
 
-> Tip: Use Ctrl-F (or Command-F on a Mac) to search for a specific term within this page.
+> Tip: Use **Ctrl-F** (or **Command-F** on a Mac) to search for a specific term within this page.
 
 ## A
 + **Arithmetic operators** are operators we use to do math. Some common operators are:
@@ -41,8 +41,9 @@ nav_order: 1
    Here is an example of how we can use the conditional operator in place of an `if` statement.
    <script src="https://gist.github.com/dmarshNAIT/d0176ca742ae6c36918dd1f951a3b3ca.js"></script>
 
+    > *Note: `i` isn't a particularly good or descriptive variable name, but for this quick snippet without a real-life meaning I hope you'll accept this deviation from best practices!*
 
-+ **Constants** are variables whose value cannot change.
++ **Constants** are variables whose value cannot change. They should be named in ALL_CAPS.
 
     ```csharp
     const double GST_RATE = 0.05;
@@ -52,7 +53,7 @@ nav_order: 1
 
 + Every variable in C# has a **data type**, which defines what kind of data it can hold (e.g. numbers with or without decimal places, strings of characters, etc). Some common data types are:
 
-    Data type | Size | Range | Suffix
+    Data type | Size | Range of possible values | Suffix
     --- | --- | --- | ---
     `byte` | 1 byte | 0 to 255
     `short` | 2 bytes | -32,768 to 32,767
@@ -79,13 +80,13 @@ nav_order: 1
 
 ## I
 
-+ **Integer division** is what happens when both operands of the division operand are integers: remainders are discarded.
++ **Integer division** is what happens when both operands of the division operand are integers: remainders are discarded, which may result in surprising results.
 
     ```csharp
     double number = 5/2; // results in 2, not 2.5
     ```
 
-    Integer division can be avoided by converting one of the numbers to a floating point number (like a `double`) first.
+    Integer division can be avoided by converting one of the numbers to a floating point number (e.g. a `double`) first.
 
 ## L
 
@@ -107,17 +108,17 @@ nav_order: 1
 + The **Math** class provides us a number of useful methods to perform mathematical operations.
 
     Some handy methods are:
-    + `Math.Pow(x,y)` returns x raised to the power of y.
-    + `Math.Sqrt(x)` returns the square root of x.
+    + `Math.Pow(x,y)` returns `x` raised to the power of `y`.
+    + `Math.Sqrt(x)` returns the square root of `x`.
     + `Math.Round(x)` will round a number to the nearest integer using engineering rounding. We can also pass in a second argument to specify the number of digits we'd like.
 
 ## P
 
-+ **PascalCase** is a type of capitalization where the first letter of every word is capitalized. Generally, we'll use PascalCase to name our namespaces, classes, methods, and member fields (e.g. `DoSomething()`, `Name`).
++ **PascalCase** is a type of capitalization where the first letter of every word is capitalized. Generally, we'll use PascalCase to name our namespaces, classes, methods, and member fields (e.g. `DoSomething()`, `FirstName`).
 
-+ **Precedence** basically tells us the order of operations. For example, unary negation will be evaluated first, then multiplication/division, then addition/subtraction.
++ **Precedence** tells us the order of operations. For example, unary negation will be evaluated first, then multiplication/division, then addition/subtraction...
 
-    The precedence of the operators we've used is:
+    The order of precedence of the operators we've used is:
     1. `-` `!` (unary negation, logical NOT)
     1. `*` `/` `%` (multiplication, division, modulus)
     1. `+` `-` (addition, subtraction)
@@ -138,19 +139,19 @@ nav_order: 1
 
     int randNum1 = numGenerator.Next();
         // generates a random non-negative int
-        // i.e. 0 - 2,147,483,647
+        // i.e. a number between 0 and 2,147,483,647 inclusive
 
     int randNum2 = numGenerator.Next(5); 
         // generates a random non-negative int less than 5 
-        // i.e. 0 - 4
+        // i.e. a number between 0 and 4 inclusive
 
     int randNum3 = numGenerator.Next(2, 6); 
         // generates a random int that's at least 2 and less than 6 
-        // i.e. 2 - 5
+        // i.e. a number between 2 and 5 inclusive
 
     double randNum4 = numGenerator.NextDouble(); 
         // generates a random double that's at least 0 and less than 1
-        // i.e. 0 - .999999999999999
+        // i.e. a number between 0 and .999999999999999 inclusive
     ```
 
 + **Relational operators** allow us to compare values.

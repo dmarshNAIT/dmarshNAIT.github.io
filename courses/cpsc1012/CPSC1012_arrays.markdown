@@ -5,44 +5,57 @@ permalink: /cpsc1012/arrays
 parent: CPSC1012
 nav_order: 10
 ---
+# Arrays
+Arrays are **collections** of items. Each item in an array must be of the same **data type**.
+
+Arrays are also a set size: we can't change our mind and adjust the size later.
 
 ## Creating an array
-When we create an array, we identify the data type, and set the size:
+
+### Default values
+One way to create an array is to simply identify the **data type**, and set the **size**:
     
 ```csharp
 const int ARRAY_SIZE = 5;
 int[] myInts = new int[ARRAY_SIZE];
 ```
-This means all elements in this array will be of type `int`, and there are `5` elements. Unless I initialize the value, they will all hold the default value for that data type.
+This means all elements in this array will be of type `int`, and there are `5` elements. Unless I initialize the value, they will all hold the **default** value for that data type.
 
-`int`s have a default value of 0, so I can think of my array as looking like this:
+`int`s have a default value of `0`, so right now, that array looks like:
 
 | index: | 0 | 1 | 2 | 3 | 4 |
 | :---:|:---:|:---:|:---:|:---:|:---:|
 | value: | `0` | `0` | `0` | `0` | `0` |
 
-We can also load data into the array manually when we create it:
+> 💡 Remember: indexes start at 0, not 1.
+
+***
+
+### Loading data
+Alternatively, we can load data into the array at the same time as we create it:
 
 ```csharp
 string[] dayOfWeek = new string[7] {
         "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };
 ```
 
-Alternatively, we can drop the `new string[7]` part:
+Since we've provided 7 values, we've indirectly already provided the array size, so we can even drop the `new string[7]` part:
 
 ```csharp
-string[] dayOfWeek = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" }; 
+string[] dayOfWeek = { 
+    "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" }; 
 ```
 
-Both will result in an array like this:
+Both will result in an array that can be represented like this:
 
 | index: | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | value: | `"SUN"` | `"MON"` | `"TUE"` | `"WED"` | `"THU"` | `"FRI"` | `"SAT"` | 
 
+***
 
 ## Accessing elements in an array
-Once an array exists, we can view or modify each element by using square brackets and the index of the element:
+Once an array exists, we can view or modify each element by using **square brackets** and the **index** of the element:
 
 ```csharp
 const int ARRAY_SIZE = 10;
@@ -56,24 +69,26 @@ I just set the 0th element of the array to the value `5`. The contents of my arr
 | :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: |
 | value: | `5` | `0` | `0` | `0` | `0` | `0` | `0` | `0` | `0` | `0` |
 
-Because we know exactly how many elements are in the array, I could loop through each element and set each value:
+Because we know exactly how many elements are in the array, I could then **loop** through each element and set each value:
 
 ```csharp
 const int ARRAY_SIZE = 10;
 int[] someNumbers = new int[ARRAY_SIZE];
+
 for (int index = 0; index < ARRAY_SIZE; index++) {
     someNumbers[index] = 6; // set every element to the value 6
 }
 ```
 
-We can assign values to the element using literals (as shown in the previous example), using variable names, or expressions. We can also leverage the `.Length` property, which returns the number of elements in an array.
+We can assign values to the element using **literals** (as shown in the previous example), using **variable** names, or **expressions**. We can also leverage the `.Length` property, which returns the **number of elements** in an array.
 
 ```csharp
 const int ARRAY_SIZE = 10;
 int[] someNumbers = new int[ARRAY_SIZE];
-Random keygen = new Random();
+Random numberGenerator = new Random();
+
 for (int index = 0; index < someNumbers.Length; index++) {
-    someNumbers[index] = keygen.Next(1,11);
+    someNumbers[index] = numberGenerator.Next(1,11);
 }
 ```
 

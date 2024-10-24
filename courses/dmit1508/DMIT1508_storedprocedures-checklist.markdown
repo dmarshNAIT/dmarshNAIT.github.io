@@ -21,18 +21,30 @@ There are a few things we will always do when creating a stored procedure.
 ## Testing your SP
 1.  Make sure you test **every** branch of your flow.
     +  Test with "good" parameters, missing parameters, AND some weird parameters.
-    + The next section has examples of weird parameters that will break DML statements, or you could enter parameters of the wrong data type, or a nonsense value like a negative grade.
+    + ❓ The next section has examples of weird parameters that will break DML statements, or you could enter parameters of the wrong data type, or a nonsense value like a negative grade.
 1. If you make *any* changes to your code, run all your tests again! Sometimes fixing one thing will break something else.
-1.  Remember: testing isn't about proving it works. Testing is about trying to break your code! Then we fix the break, and our code is stronger and more thorough.
+1.  Remember: testing **isn't** about proving it works. Testing is about trying to break your code! Then we fix the break, and our code is stronger and more thorough. 💪
 
 ### Testing error branches
 How can we effectively test the "error" branches of our code?
-+ For `INSERT`s, try `INSERT`ing bad data: a FK that doesn't have a matching PK, or a duplicate PK, or a `NULL` in a required field, or something that violates a `CHECK` constraint.
-+ For `UPDATE`s: you could `UPDATE` the data to a FK without a matching PK, or change the PK to a value that already exists, or change the PK of a record that has child records, or change a required field to `NULL`, or violate some `CHECK` constraint.
-+ For `DELETE`s: you could try deleting a record that has a child record.
++ For `INSERT`s, try `INSERT`ing bad data: 
+	- a FK that doesn't have a matching PK, or 
+	- a duplicate PK, or 
+	- a `NULL` in a required field, or 
+	- something that violates a `CHECK` constraint.
++ For `UPDATE`s: 
+	- you could `UPDATE` the data to a FK without a matching PK, or 
+	- change the PK to a value that already exists, or 
+	- change the PK of a record that has child records, or 
+	- change a required field to `NULL`, or 
+	- violate some `CHECK` constraint.
++ For `DELETE`s: 
+	- you could try deleting a record that has a child record.
 
 
 ### Example pseudocode: creating a student 
+
+What is the minimum number of test I'd need to test this SP?
 ```sql
 IF (parameters are missing)
 	RAISERROR -- branch 1

@@ -9,10 +9,12 @@ nav_order: 2
 # Style Guide
 Adapted from [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html).
 
+These guidelines are expected to be followed in all submissions for Dana's sections of CPSC 1520. If you have another instructor, please confirm with them what style guide they expect you to use: just like companies may use different style guides in industry.
+
 ## Variables & Functions
 - Use `const` by default, or `let` when a variable needs to be reassigned.
-- One variable per declaration.
-- Variables are declared when needed.
+- Only one variable per declaration.
+- Variables are declared when needed (not all together at the start).
 - Arrow functions are preferred over the `function` keyword.
 
 ## Names
@@ -25,7 +27,7 @@ Adapted from [Google JavaScript Style Guide](https://google.github.io/styleguide
 # Punctuation
 - **Semicolons** are required for every statement.
 - **Braces** are used around structures even if they only contain a single statement. e.g. `if`, `do`, `for`, etc
-    - *Exception*: when the entire `if` statement fits on one line:
+    - *Except*: when the entire `if` statement fits on one line:
         ```js
         if(shortCondition()) doThing();
         ```

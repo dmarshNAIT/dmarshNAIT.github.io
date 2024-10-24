@@ -48,10 +48,10 @@ An `if-else` statement decides the execution path based on whether the condition
 The syntax is:
 ```csharp
 if (boolean-expression) {
-    // statement(s)-for-true-case
+    // what to do if the expression is true
 } // end if
 else {
-    // statement(s)-for-false-case
+    // what to do if the expression is false
 } // end else
 ```
 
@@ -77,12 +77,12 @@ if (isHungry) {
         // this code only runs if both conditions were true.
     } // end inner if
     else {
-        Console.WriteLine("no lunch for me");
+        Console.WriteLine("no lunch for me, I don't have enough money.");
     } // end inner else
 
 } // end outer if
 else {
-    Console.WriteLine("no lunch for me");
+    Console.WriteLine("no lunch for me, I'm not hungry.");
 } // end outer else
 ```
 
@@ -93,17 +93,17 @@ Switch statements execute based on the *value* of a variable or expression.
 ```csharp
 switch (variable or expression to check) {
     case value1:        // if (the expression we're checking == value1)
-        statements(s);  // then we execute these statements
+        DoThing();      // then we execute these statements
         break;          // then break out of the structure
 
     case value2:
-        statements(s);
+        ...
         break;
 
     ...                 // we can have many cases
 
     default:            // if none of the above cases matched
-        statement(s)-for-default;
+        DoDefaultThing();
         break;
 } // end switch
 ```

@@ -25,9 +25,11 @@ SELECT [ALL | DISTINCT] column_list
 [COMPUTE clause]
 ```
 
+However, we won't always need all those pieces. Let's look at each clause individually.
+
 ### WHERE Clause
 
-We can use a `WHERE` clause to return only certain records:
+We can use a `WHERE` clause to return only certain records. Think of it as a filter:
 ```sql
 SELECT 
     FirstName
@@ -38,6 +40,7 @@ WHERE City = 'Edmonton'
 ```
 
 #### Search Criteria Operators
+There are many useful keywords and symbols we can include in our `WHERE` clauses.
 
 Operator | Usage
 --- | ---
@@ -56,7 +59,7 @@ Operator | Usage
 
 ### UNION
 
-The union operation lets you **combine** the data retrieved by **multiple** `SELECT` statements. It's basically just gluing together the results of 2 or more queries, combining them into one output.
+The `UNION` operation lets you **combine** the data retrieved by **multiple** `SELECT` statements. It's basically just gluing together the results of 2 or more queries, combining them into one output.
 ```sql
 SELECT ...
 UNION [ALL]
@@ -64,8 +67,9 @@ SELECT ...
 ```
 
 ### Aggregate Functions
+Aggregate functions are functions that aggregate a bunch of individual values into a single value.
 
-Syntax: `aggregate_function_name([ ALL | DISTINCT] expression)`
+Generally, the syntax is: `aggregate_function_name([ ALL | DISTINCT] expression)`. For example:
 - `AVG` returns the **average** of numeric values (ignoring any `NULL` values)
 - `SUM` returns the **sum** of a column containing numeric values
 - `MIN` and `MAX` return the **minimum** and **maximum** values from a column of numeric, date, or character values
@@ -74,13 +78,14 @@ Syntax: `aggregate_function_name([ ALL | DISTINCT] expression)`
   - When `DISTINCT` is used with the `COUNT` function it only counts the **unique** values.
 
 The `GROUP BY` clause is used with **aggregate** functions to provide subtotals. For example:
-```sql
-SELECT CourseID, AVG(Mark) AS AverageMark
-FROM Registration
-GROUP BY CourseID
-```
+  ```sql
+  SELECT CourseID, AVG(Mark) AS AverageMark
+  FROM Registration
+  GROUP BY CourseID
+  -- what this means:
+  -- "for each course, select CourseID and the average mark"
+  ```
 
-This can be read as: *for each course ID, select courseID and the average mark*
 
 ### HAVING Clause
 
@@ -126,29 +131,29 @@ Some useful functions include:
 
 ### Date Functions
 - `GETDATE()` returns the **current system date**
-- `DATEADD(xx, n, date1)` **adds** `n` `xx` to `date1` (n may be negative)
-- `DATEDIFF(xx, date1, date2)` returns the number of `xx` from `date1` to `date2`
-- `DATENAME(xx, date1)` returns **string representation** of the `xx` of `date1`
-- `DATEPART(xx, date1)` returns **integer representation** of the `xx` of `date1`
-  - `YEAR(date1)` functions the same as `DATEPART(yy, date1)`
-  - `MONTH(date1)` functions the same as `DATEPART(mm, date1)`
-  - `DAY(date1)` functions the same as `DATEPART(dd, date1)`
+- `DATEADD(units, num, date)` **adds** `num` `units` to `date` (n may be negative)
+- `DATEDIFF(units, date1, date2)` returns the number of `units` from `date1` to `date2`
+- `DATENAME(units, date)` returns **string representation** of the `units` of `date`
+- `DATEPART(units, date)` returns **integer representation** of the `units` of `date`
+  - `YEAR(date)` functions the same as `DATEPART(yy, date)`
+  - `MONTH(date)` functions the same as `DATEPART(mm, date)`
+  - `DAY(date)` functions the same as `DATEPART(dd, date)`
 
-where `xx` represents some unit of time:
+where `units` represents some unit of time:
 
-Datepart | Abbreviation | Minimum | Maximum
---- | --- | --- | ---
-Year | `yy` | 1753 | 9999
-Quarter | `qq` | 1 | 4
-Month | `mm` | 1 | 12
-Week | `wk` | 1 | 53
-Day of year | `dy` | 1 | 366
-Weekday | `dw` | 1 (Sun) | 7 (Sat)
-Day | `dd` | 1 | 31
-Hour | `hh` | 0 | 23
-Minute | `mi` | 0 | 59
-Second | `ss` | 0 | 59
-Millisecond | `ms` | 0 | 999
+  Datepart | Abbreviation | Minimum | Maximum
+  --- | --- | --- | ---
+  Year | `yy` | 1753 | 9999
+  Quarter | `qq` | 1 | 4
+  Month | `mm` | 1 | 12
+  Week | `wk` | 1 | 53
+  Day of year | `dy` | 1 | 366
+  Weekday | `dw` | 1 (Sun) | 7 (Sat)
+  Day | `dd` | 1 | 31
+  Hour | `hh` | 0 | 23
+  Minute | `mi` | 0 | 59
+  Second | `ss` | 0 | 59
+  Millisecond | `ms` | 0 | 999
 
 ### JOINs
 

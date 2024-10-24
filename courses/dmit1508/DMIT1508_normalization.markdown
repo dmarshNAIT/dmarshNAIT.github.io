@@ -9,21 +9,22 @@ nav_order: 3
 ## What is normalization?
 
 The rules of normalization guide us to decide:
-- the number of tables in our database
-- the assignment of data items (attributes) to the various tables
+- the **number of tables** in our database, and 
+- which table each **attribute** belongs in.
 
-We evaluate database design by how well it minimizes data redundancy, and the occurrence of anomalies.
+We evaluate database design by how well it minimizes **data redundancy**, and the **occurrence of anomalies**.
 
 ### Step 0: Create initial table
-1. The initial table must have a **primary key** identified, *after considering all candidates*.
+1. The initial table must have a `PRIMARY KEY` identified, *after considering all candidates*.
     + When picking a PK, think of whether this will *always* be unique for every instance of your entity (in other words, for every row in your table).
     + If a single attribute doesn't work, you may need a combination of 2+ attributes.
 1. **Repeating groups** are listed in parentheses. Repeating groups are attributes that can have multiple values within the view.
-    + One way to think about repeating groups of attributes: are there attributes that, for a *single* instance of our entity, can have more than one value *at the same time*? e.g. a `Customer` entity can have more than one payment record on their account: `PaymentID` would be a repeating group for that PK.
+    + One way to think about repeating groups of attributes: are there attributes that, for a *single* instance of our entity, can have more than one value *at the same time*? e.g. a `Customer` entity can have more than one payment record on their account: if `CustomerID` is the PK for this table, then `PaymentID` would be a repeating group for that PK.
 
 ### Step 1: Apply the rules of 1NF
 1.  A table must contain **only *atomic*** attributes.
-    + That means, if we have any composite attributes, break 'em down! e.g. `Name` becomes `FirstName` and `LastName`, `Address` gets split up into `StreetAddress`, `City` `Province`, `PostalCode`, etc.
+    + That means, if we have any composite attributes, break 'em down! 
+    - e.g. `Name` becomes `FirstName` and `LastName`, `Address` gets split up into `StreetAddress`, `City` `Province`, `PostalCode`, etc.
 1.  A table cannot contain any **repeating groups of attributes**.
 
     | If a repeating group of attributes exists:

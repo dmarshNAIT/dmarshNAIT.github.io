@@ -76,3 +76,7 @@ mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "9.1.3"
+
+kramdown: 
+  toc_levels: "2..6"
+  # hide h1 from in-page TOCs

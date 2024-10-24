@@ -12,21 +12,21 @@ nav_order: 3
 
 They're a set of rules that we write to help with **layout** and **style**.
 
-**Cascading** means that if there are multiple styles applied to an element, the **last rule applied** will be the one that's used.
+The word **cascading** means that if there are multiple styles applied to an element, the **last rule applied** will be the one that's used.
 
-Here's what a bit of CSS can look like:
+Here's what a snippet of CSS can look like:
 ```css
 p {
     color: red;
 }
 ``` 
-This means: *in each paragraph, set the color to red (i.e. change the colour of the font).*
+This means: *in each paragraph, change the colour of the font to red.*
 
 + `p` is an example of a **selector**: the thing we want to change.
 + `color` is an example of a **property**: the type of style we want to change.
 + `red` is an example of a **value**: what we want to set that property to.
 + The combination of `property: value;` is called a **declaration**.
-+ We can have multiple declarations per selector, or in regular English: can apply many rules to the same HTML element.
++ We can have multiple declarations per selector. In regular English: we can apply many rules to the same HTML element.
 
 We can leave **comments** in CSS like this:
 ```css
@@ -40,7 +40,7 @@ We have 3 options: linking, embedding, or inline styles.
     ```html
     <link rel="stylesheet" href="css/styles.css">
     ```
-    where `styles.css` contains the CSS for our site.
+    where `styles.css` is a file which contains the CSS for our site.
 1. **Embedding** is the next-best way. That's when we add something like this to the `<head>` of our HTML document:
     ```html
     <style>
@@ -49,23 +49,34 @@ We have 3 options: linking, embedding, or inline styles.
         }
     </style>
     ```
+    A downside of this approach is we then have to style every page separately, rather than having one file style all the pages on our website.
 1. **In-line styles** is the worst way and we won't do it. If we did, it would look like:
     ```html
     <p style="color:red;">Don’t do this.</p>
     ```
+    This approach leads to a mish-mash of HTML & CSS, and a lot of repeated declarations, meaning it's a LOT harder to read and maintain.
 
 ## Types of Selectors
-+ **Element selectors**. That's when we target `<p>` or `<body>` or any of the other HTML elements we've learned.
++ **Element selectors**: That's when we target an element by name, like `<p>` or `<body>` or any of the other HTML elements we've learned.
+    + For example, this turns the text in every `<p>` red:
+        ```css
+        p {
+            color: red;
+        }
+        ``` 
 
-+ A **multiple element selector** is when we target multiple elements with the same declaration(s). 
-    + For example, this will make both my 1st and 2nd level headings blue, by listing all the elements I want to select, separated by commas:
++ A **multiple element selector** is when we target multiple elements so that we can give them all the same declaration(s). Elements must be separated by commas.
+    + For example, this will make both my 1st and 2nd level headings blue:
         ```css
         h1, 
         h2 {
             color: blue;
         }
         ```
-+ **IDs**. We won't be using them for CSS in this class, but they look like this: `#jumbotron`
++ **IDs**: We won't be using them for CSS in this class, but they look like this: `#jumbotron`. 
+    + The # symbol (called a number or pound or hash* symbol) is how CSS knows the text that follows is an ID.
+        
+        \* This is why social media tags are called hashtags: they're the combination of the hash symbol and a category tag.
 
 + **Class selectors** are selectors we make up. In CSS, they'll have a dot in their name:
     ```css
@@ -121,14 +132,14 @@ We have 3 options: linking, embedding, or inline styles.
     + `a:visited` targets links that have **already been visited**.
     + `a:active` targets links ***while*** you are clicking them.
     + `a:link` targets links that have **not yet been visited**.
-    + `:nth-child()` targets an element based on its **position** within its group of siblings.
+    + `:nth-child()` targets an element based on its **position** within its group of siblings. Some examples:
         + `nth-child(7)` targets the 7th element
         + `li:nth-child(2)` targets the 2nd `<li>` in a list
         + `:nth-child(4n)` targets every 4th element
         + `tr:nth-child(odd)` targets odd rows of a `<table>`
             + *Learn more on the [:nth-child() page](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child).*
 
-+ The **universal selector** selects *everything*. It's also the weakest selector with a specificity value of 0.
++ The **universal selector** (`*`) selects *everything*. It's also the weakest selector with a specificity value of 0.
 
 ## Specificity
 If rules applied to different elements contradict each other, which one wins?
@@ -158,7 +169,7 @@ Everything on our page is rendered as a box, with 4 parts:
 In COMP 1017, we are making fixed-width pages, so will need to make sure that the total width of all the **content**, `border`, `padding`, and `margin`s within our page add up to a total width of *exactly* 960px.
 
 ### Border
-By default, all items have a border with a `width` of 0. In addition to `width` we can also control its `style` and `color`.
+By default, all items have a border with a `width` of 0. In addition to `width` we can also control the border's `style` and `color`.
 ```css
 border-width: 2px;
 border-style: dashed;
@@ -217,11 +228,58 @@ flex-wrap: wrap;
 ```
 Just like turning on word-wrap in a text editor means that lines will `wrap` onto the next line if there isn't room for them, adding `flex-wrap: wrap;` to a container lets items in that `flex` container `wrap` onto the next line.
 
-In other words: **we'll only use `flex-wrap` on elements that are flex boxes.**
+**We'll only use `flex-wrap` on elements that are flex boxes.**
 
 Some "bonus" content:
-+ Adding `justify-content: center;` to a flex-container **centers** items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit.
-+ Adding `align-items: center;` to a flex-container will **center** items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom.
++ Adding `justify-content: center;` to a flex-container **centers** items along the *main* axis of the container. If your container contains items that are side-by-side, this means it *horizontally* centers them, rather than the left where they'd "normally" sit. For example:
+    + Here's a `flex`-box containing 3 children. It isn't using `justify-content`:
+        <html>
+            <style>
+                div.flex-demo { border: 1px solid black; padding: 0.25rem; }
+            </style>
+            <div style="display: flex;" class="flex-demo">
+                <div class="flex-demo">child 1</div>
+                <div class="flex-demo">child 2</div>
+                <div class="flex-demo">child 3</div>
+            </div>
+        </html>
+    + And here's the exact same example but with `justify-content: center;` applied to the parent:
+        <html>
+            <style>
+                div.flex-demo { border: 1px solid black; padding: 0.25rem; }
+            </style>
+            <div style="display: flex; justify-content: center;" class="flex-demo">
+                <div class="flex-demo">child 1</div>
+                <div class="flex-demo">child 2</div>
+                <div class="flex-demo">child 3</div>
+            </div>
+        </html>
+
++ Adding `align-items: center;` to a flex-container will **center** items along the *cross* axis of the container. If your items are side-by-side, this means it'll *vertically* center them, rather than putting them at the the top or bottom or stretching the full height. Let's add a bit of height to the previous example to see the difference:
+    + Here's a `flex`-box containing 3 children. It isn't using `align-items` so by default each child stretches to fill the full height of the parent:
+        <html>
+            <style>
+                div.flex-demo { border: 1px solid black; padding: 0.25rem;}
+            </style>
+            <div style="display: flex; height: 4rem;" class="flex-demo">
+                <div class="flex-demo">child 1</div>
+                <div class="flex-demo">child 2</div>
+                <div class="flex-demo">child 3</div>
+            </div>
+        </html>
+    + And then with `align-items: center;` applied to the parent:
+        <html>
+            <style>
+                div.flex-demo { border: 1px solid black; padding: 0.25rem; }
+            </style>
+            <div style="display: flex; align-items: center; height: 4rem;" class="flex-demo">
+                <div class="flex-demo">child 1</div>
+                <div class="flex-demo">child 2</div>
+                <div class="flex-demo">child 3</div>
+            </div>
+        </html>
+
+
 + There are helpful examples of both in this [complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 # Module 3
@@ -233,19 +291,17 @@ Some properties we'll use to style our text include:
 + `font` combines: `font-style font-variant font-weight font-size/line-height font-family`. For example:
     ```css
     h1 {
-        font: normal 
-        small-caps 700 48px/1 
-        'Lato', sans-serif;
+        font: normal small-caps 700 48px/1 'Lato', sans-serif;
     }
     ```
-+ `font-family` defines the **font** being applied to an element. We list multiple fonts separated by commas, so if the first font isn't available it uses the next, and so on.
-+ `font-size` is the **height** of a font.
+    + `font-family` defines the **font** being applied to an element. We list multiple fonts separated by commas, so if the first font isn't available it uses the next, and so on.
+    + `font-size` is the **height** of a font.
+    + `font-style` can be `normal`, `italic` or `oblique`.
+    + `font-variant` can be `normal` or `small-caps`.
+    + `font-weight` sets the weight: `100`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `bold`, etc.
+    + `line-height` defines the **amount of space** above and below inline elements. This creates space that we need to account for when we measure our margins and padding: we need to more than just `font-size` to know how much space our text takes up! In Photoshop, *leading* measures the distance from the baseline of one line of text to the baseline of the next, and that translates to our `line-height` in CSS, which is the `font-size` *plus* a bit of space above and below the text. More about that [on this site.](https://dev.to/lampewebdev/css-line-height-jjp)
 + `font-stretch` can be `condensed`, `normal`, `expanded`, etc.
-+ `font-style` can be `normal`, `italic` or `oblique`.
-+ `font-variant` can be `normal` or `small-caps`.
-+ `font-weight` sets the weight: `100`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `bold`, etc.
 + `letter-spacing` defines the **spacing** between each character.
-+ `line-height` defines the **amount of space** above and below inline elements. This creates space that we need to account for when we measure our margins and padding: we need to more than just `font-size` to know how much space our text takes up! In Photoshop, *leading* measures the distance from the baseline of one line of text to the baseline of the next, and that translates to our `line-height` in CSS, which is the `font-size` *plus* a bit of space above and below the text. More about that [on this site.](https://dev.to/lampewebdev/css-line-height-jjp)
 + `list-style-type` can be set to `none` to remove **bullets**.
 + `text-align` defines whether the text is **aligned** to the `left` or `right` or `center`, etc.
 + `text-decoration` can have a value of `underline` or `none`, among [other options](https://www.w3schools.com/cssref/pr_text_text-decoration.asp).
@@ -255,7 +311,7 @@ Some properties we'll use to style our text include:
 ## Images ##
 + `background-image` lets us use an image as our background.
     - e.g. `background-image: url("../img/name-icon.gif");`
-+ `background-repeat` lets us repeat the background by setting a value of `repeat-x` or `repeat-y`, or not at all with `no-repeat`.
++ `background-repeat` lets us repeat the background image by setting a value of `repeat-x` or `repeat-y`, or not at all with `no-repeat`.
 
 ## Styling nav ##
 + We can set the `display` property to `none` to make the element invisible.
@@ -275,7 +331,7 @@ input[type=text] {
 }
 ```
 
-This is how we define the size of a `textarea`:
+Another useful trick is to define the size of a `textarea`:
 ```css
 textarea {
     min-height: 200px;

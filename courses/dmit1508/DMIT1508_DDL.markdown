@@ -8,22 +8,23 @@ nav_order: 4
 
 # Creating Tables
 
-Data are stored in tables, which are 2D arrays where 
-- each column records one attribute, and 
-- each row records the attributes for an instance.
+Data are stored in tables, which are 2-dimensional arrays where 
+- each **column** records one **attribute**, and 
+- each **row** records the **attributes for an instance**.
 
-We use a `CREATE TABLE` statement to create a table object, which includes:
+We use a `CREATE TABLE` statement to create a table object. The statement includes:
 - the **name** of the **table**
 - the **name** of each **column**
 - the **data type** of each column
 - whether `NULL` is an acceptable value for the column
 - any other **constraints** that must hold true
 
+Here's what it looks like:
 ```sql
-CREATE TABLE tablename (
-    column1Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
-  , column2Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
-  , column3Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+CREATE TABLE TableName (
+    Column1Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+  , Column2Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
+  , Column3Name datatype [IDENTITY [(seed, increment)] | [NULL | NOT NULL] [<column constraints>]
     ...  
     [<table constraints>]
 ) 
@@ -32,7 +33,7 @@ CREATE TABLE tablename (
 A lot of that is optional, so here's what it looks like with just some of the required fields:
 
 ```sql
-CREATE TABLE tablename (
+CREATE TABLE TableName (
     Column1Name datatype
   , Column2Name datatype
   , Column3Name datatype
@@ -68,6 +69,9 @@ DROP TABLE Items
 or 
 ```sql
 DROP TABLE dbo.Items
+-- dbo is the name of the schema the table is in.
+-- think of a schema as kind of like a folder to organize your tables.
+-- unless you do something special, dbo is the default schema.
 ```
 
 ### What if the table doesn't exist?
@@ -80,7 +84,8 @@ That way, if the table doesn't exist, we won't see an error.
 An example of what this would look like for a table called `dbo.Activity` follows:
 
 ```sql
-IF OBJECT_ID('dbo.Activity', 'U') IS NOT NULL -- if a table called dbo.Activity exists
+IF OBJECT_ID('dbo.Activity', 'U') IS NOT NULL 
+-- if a table called dbo.Activity exists
   DROP TABLE dbo.Activity; 
 ```
 
@@ -278,10 +283,10 @@ The `ALTER TABLE` statement is used to:
 - **Disable** or **enable** an existing **constraint** (foreign key or check only: you cannot disable/enable a default or primary key constraint)
 - **Disable** or **enable** an existing database **trigger**
 
-> A note on adding **new columns** to an **existing table with data**: your new column **must** accept `NULL` or have a `default` constraint.
+> 💡 A note on adding **new columns** to an **existing table with data**: your new column **must** accept `NULL` or have a `default` constraint.
 If the table is empty, you can add a column that is `NOT NULL`.
 
-## Syntax:
+Here's the syntax for `ALTER TABLE`:
 ```sql
 [ WITH { CHECK | NOCHECK } ]
 {
@@ -296,6 +301,7 @@ If the table is empty, you can add a column that is `NOT NULL`.
 | [ {ENABLE | DISABLE } TRIGGER TriggerName ]
 }
 ```
+However, we will seldom have a statement that complex! Let's look at some simpler examples.
 
 ### Examples:
 1. To **add** a **Semester** column to the **Marks** table:
@@ -356,9 +362,9 @@ An index is an object stored in the db that helps the DBMS look up data more qui
 It's associated with 1 or more columns, in a specific table, that act as the key for the index.
 
 For example:
-- We could create an index for the Employee table, using the EmployeeID column as the key.
-- Each row in the Employee table would have an entry in the index, with EmployeeID defining the order in which the entries are maintained in the index.
-- Each entry in the index contains info (pointers) to where the associated row in the Employee table is located. The DBMS uses this info to speed up its retrieval of data.
+- We could create an index for the `Employee` table, using the `EmployeeID` column as the key.
+- Each row in the `Employee` table would have an entry in the index, with `EmployeeID` defining the order in which the entries are maintained in the index.
+- Each entry in the index contains info (pointers) to where the associated row in the `Employee` table is located. The DBMS uses this info to speed up its retrieval of data.
 
 There are 2 types of indices:
 - **Clustered**:
@@ -366,7 +372,7 @@ There are 2 types of indices:
   - The PK is often the key.
 - **Non-clustered**:
   - Provides a method to use a 2nd-hand criteria for quickly finding/retrieving rows.
-  - For example: we could define a non-clustered index for the Employee table that ses the DepartmentNumber as the key. The DBMS uses this to quickly retrieve the rows of employees who work for a specific department. 
+  - For example: we could define a non-clustered index for the `Employee` table that ses the `DepartmentNumber` as the key. The DBMS uses this to quickly retrieve the rows of employees who work for a specific department. 
   - We can have a max of 249 non-clustered indexes per table.
 
 Indexes speed up data retrieval, but slow down operations to modify data in a table.
@@ -379,7 +385,7 @@ Since we can only have one clustered index, how do we choose?
 By default, the clustered index is created using the PK of the table. In many instances, this is the best choice. If another column is frequently used in the `ORDER BY` clause, or passed to the `COUNT`, `MIN`, or `MAX` aggregate functions, it’s also a good candidate.
 Some designers create a non-clustered index for each FK. This increased overhead needs to be weighed against the improved performance of retrieving data.
 
-## Syntax:
+Here's the syntax:
 ```sql
 CREATE NONCLUSTERED INDEX IX_Name
 ON TableName ( ColumnName )
@@ -387,14 +393,13 @@ ON TableName ( ColumnName )
 
 The column name is the key for the index (one or more columns may act as the key). All indexes must have a unique name. We normally use the prefix `IX` when naming an index.
 
-## Example:
-To create a nonclustered index associated with the `Marks` table using `CourseID` (a FK referencing the `Course` table) as the index key:
+For example, to create a nonclustered index associated with the `Marks` table using `CourseID` (a FK referencing the `Course` table) as the index key:
 ```sql
 CREATE NONCLUSTERED INDEX IX_CourseId
 		ON Marks (CourseId)
 ```
 
-## To drop a nonclustered index:
+And finally, to drop a nonclustered index:
 ```sql
 DROP INDEX IX_CourseID ON Marks
 ```
