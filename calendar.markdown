@@ -235,6 +235,14 @@ This is subject to change.
         <td class="appointment">available by appointment</td>
         <td class="appointment">available by appointment</td>
       </tr>
+      <tr>
+        <th style="text-align: center;">4pm</th>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+      </tr>
     </tbody>
   </table>
 </html>
