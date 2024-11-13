@@ -149,7 +149,7 @@ This is subject to change.
     .cpsc1520-a03 { background-color: #ed6495; } /* pink */
     .cpsc1520-a04 { background-color: #bc64ed; } /* purple */
     .cpsc1012 { background-color: #95ed64; } /* green */
-    .xyz { background-color: #6495ed; } /* blue */
+    .cpsc1012-evening { background-color: #6495ed; } /* blue */
   </style>
   <table style="width: 100%">
     <thead>
@@ -163,11 +163,11 @@ This is subject to change.
       </tr>
       <tr>
         <th class="row-header"></th>
-        <th class="col-header highlight">HYBRID</th>
-        <th class="col-header">on-campus</th>
+        <th class="col-header ">HYBRID</th>
+        <th class="col-header ">HYBRID</th>
         <th class="col-header highlight">REMOTE</th>
-        <th class="col-header">on-campus</th>
-        <th class="col-header highlight">HYBRID</th>
+        <th class="col-header ">HYBRID</th>
+        <th class="col-header ">HYBRID</th>
       </tr>
     </thead>
     <tbody>
@@ -237,6 +237,46 @@ This is subject to change.
       </tr>
       <tr>
         <th style="text-align: center;">4pm</th>
+        <td>n/a</td>
+        <!-- skip -->
+        <td>n/a</td>
+        <!-- skip -->
+        <td>n/a</td>
+      </tr>
+            <tr>
+        <th style="text-align: center;">5pm</th>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+            <tr>
+        <th style="text-align: center;">6pm</th>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">7pm</th>
+        <td>n/a</td>
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) 🛜</td>
+        <td>n/a</td>
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) 🛜</td>
+        <td>n/a</td>
+      </tr>
+            <tr>
+        <th style="text-align: center;">8pm</th>
+        <td>n/a</td>
+        <!-- skip -->
+        <td>n/a</td>
+        <!-- skip -->
+        <td>n/a</td>
+      </tr>
+            <tr>
+        <th style="text-align: center;">9pm</th>
         <td>n/a</td>
         <!-- skip -->
         <td>n/a</td>
