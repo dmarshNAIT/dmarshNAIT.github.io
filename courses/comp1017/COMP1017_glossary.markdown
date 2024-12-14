@@ -45,16 +45,16 @@ nav_order: 1
 + A **parent**, also called a **parent container** or **parent element**, is an element which contains another element. 
 	- For example, in the following snippet, `<body>` is the parent container for all the content, and has **children** `<header>`, `<main>`, and `<footer>`. 
 	- Another parent element in this example is `<main>`, which contains its own children, `<h2>` and `<p>`.
-	```html
-	<body>
-		<header>...</header>
-		<main>
-			<h2>This is a heading.</h2>
-			<p>And here’s a paragraph.</p>
-		</main>
-		<footer>...</footer>
-	</body>
-	```
+		```html
+		<body>
+			<header>...</header>
+			<main>
+				<h2>This is a heading.</h2>
+				<p>And here’s a paragraph.</p>
+			</main>
+			<footer>...</footer>
+		</body>
+		```
 
 ## R
 + **Reset code** is code meant to reduce inconsistencies between different browsers. We link to it *before* our site-specific CSS.
