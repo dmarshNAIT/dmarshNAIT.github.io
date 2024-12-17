@@ -75,16 +75,16 @@ nav_order: 1
 + **Siblings** are elements which share a direct parent. 
 	- In this snippet, `<header>`, `<main>`, and `<footer>` are **siblings**, as they are all children of `<body>`. 
 	- `<h2>` and `<p>` are another set of siblings, as they share the parent `<main>`:
-	```html
-	<body>
-		<header>...</header>
-		<main>
-			<h2>This is a heading.</h2>
-			<p>And here’s a paragraph.</p>
-		</main>
-		<footer>...</footer>
-	</body>
-	```
+		```html
+		<body>
+			<header>...</header>
+			<main>
+				<h2>This is a heading.</h2>
+				<p>And here’s a paragraph.</p>
+			</main>
+			<footer>...</footer>
+		</body>
+		```
 + **Static pages** are changes that do not change unless we go in and change the code. They look the same every time we view them.
 
 ## W

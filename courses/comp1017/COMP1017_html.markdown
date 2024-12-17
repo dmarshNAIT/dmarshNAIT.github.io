@@ -194,7 +194,7 @@ Here are some block-level elements we'll be using in COMP 1017:
 	+ The `<figure>` tag is how we mark up content that needs a **caption**, like diagrams, and will contain an `<img>` and a `<figcaption>` attribute. It will look like:
 		```html
 		<figure>
-			<img src="img/aioli.jpg" alt="a picture of a grey kitten">
+			<img src="../img/aioli.jpg" alt="a picture of a grey kitten">
 			<figcaption>
 				fig. 1: Aïoli the kitten
 			</figcaption>
