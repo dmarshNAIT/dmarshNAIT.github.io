@@ -1,0 +1,11 @@
+---
+layout: page
+title: CPSC1520
+permalink: /cpsc1520/
+has_children: true
+has_toc: true
+---
+# CPSC 1520 Resources
+
+> This page is actively being built out: please [send me](mailto:dmarsh@nait.ca) any requests or suggestions!
+

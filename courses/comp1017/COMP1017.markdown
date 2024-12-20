@@ -1,0 +1,20 @@
+---
+layout: default
+title: COMP1017
+permalink: /comp1017/
+has_children: true
+has_toc: false
+---
+
+
+
+
+## Main Topics
+- [Glossary](./glossary): get familiar with the language of web development.
+- Learn about [HTML](./html): the language we use to structure the content on our page.
+- Learn about [CSS](./css): how we style the look and feel of our pages.
+- Learn more about [web image formats](./web-image-formats).
+- Finally, some [common errors](./errors) you may face when working on your assignments.
+
+## Bonus Content
+- [Pseudo-classes](./pseudo-classes) let us be even more specific in how we target specific elements on a webpage.

@@ -1,0 +1,66 @@
+---
+layout: page
+title: CPSC1012
+permalink: /cpsc1012/
+has_children: true
+has_toc: false
+---
+
+# CPSC 1012
+Welcome to Programming Fundamentals!
+
+The following links are an overview of the entire course:
+
+- [Glossary](./glossary): important terms used in CPSC 1012
+- [Cheatsheet](./cheatsheet): speed-run of the entire course!
+- [Coding Standards](./standards): some best practices for organizing and writing your code
+
+***
+
+## Topics
+If you want to dig into a specific topic further, check out these pages:
+
+- [Decision Structures](./decisionstructures)
+  - `if` statements
+  - `switch` statements
+- [Formatting](./formatting)
+  - adjusting precision of numbers
+  - formatting currency
+  - formatting as columns
+  - adding colour
+- [Loops](./loops)
+  - operator shorthand (`i++`)
+  - `while`
+  - `for`
+  - `do while`
+- [File i/o](./fileIO) 
+  - how to read from and write to an external file
+- [Exceptions](./exceptions)
+  - how to deal with unexpected situations
+- [Methods](./methods)
+  - the building blocks of our program
+- Collections
+  - [Arrays](./arrays)
+  - [Lists](./lists)
+- [Objects & Classes](./objects)
+  - how to define your own class
+  - how to construct an object
+- [Testing](./testing)
+  - *Bonus content!*
+
+***
+
+## Miscellanea
+
+### To compile & run a C# program w/o Visual Studio
+
+1. Open up a **Command Prompt**.
+2. Use the `cd` command to navigate to the location of the `.cs` file.
+3. Run the command ```csc MyFile.cs``` (where _MyFile.cs_ is the name of your .cs file) to compile the file. This will create an executable file called _MyFile.exe_, which we can run by typing ```MyFile.exe```.
+
+### Code Samples from class
+
+Looking for the examples we did live in class? These are available in my [other repo](https://github.com/dmarshNAIT/cpsc1012).
+
+
+
