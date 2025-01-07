@@ -10,7 +10,7 @@ nav_enabled: false
 
 To meet outside of scheduled classtime, please  **[book an appointment](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)**.
 
-> ⚠️ Scroll down to see a workaround if you have issues with this tool.
+> 🆘 Scroll down to see a workaround if you have issues with this tool.
 
 ## Dana's Winter 2025 Schedule
 
