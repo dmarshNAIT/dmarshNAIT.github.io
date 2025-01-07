@@ -14,9 +14,9 @@ To meet outside of scheduled classtime, please  **[book an appointment](https://
 
 ## Dana's Winter 2025 Schedule
 
-All times are Edmonton local time (i.e. MDT in the summer, MST in the winter).
+All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](https://www.timeanddate.com/time/zone/canada)).
 
-> Classes marked with the :snowflake: emoji are delivered remotely.
+> Classes marked with the ❄️ emoji are delivered remotely.
 
 <html>
   <style>
@@ -177,7 +177,7 @@ If you have issues using [my booking tool](https://calendar.google.com/calendar/
 Please include:
 
 - your name
-- your class section (e.g. A04)
+- your course name & section (e.g. CPSC 1012 section A04)
 - what you'd like to discuss in our office hour (e.g. specific concepts, an assessment, feedback you received, etc)
 - whether you'd like to meet in-person, online, or have no preference
 
