@@ -28,9 +28,9 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
     .highlight { background-color: #ffffd3; /* pale yellow */ }  
     .cpsc1520-a03 { background-color: #ed6495; } /* pink */
     .cpsc1520-a04 { background-color: #bc64ed; } /* purple */
+    .cpsc1520-evening {background-color: #edbc64; } /*orange */
     .cpsc1012 { background-color: #95ed64; } /* green */
     .cpsc1012-evening { background-color: #6495ed; } /* blue */
-    .orange { background-color: #edbc64; } /* orange */
   </style>
   <table style="width: 100%">
     <thead>
@@ -142,25 +142,25 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th style="text-align: center;">7pm</th>
-        <td>n/a</td>
+        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ❄️</td>
         <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ❄️</td>
-        <td>n/a</td>
+        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ❄️</td>
         <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ❄️</td>
         <td>n/a</td>
       </tr>
-            <tr>
+      <tr>
         <th style="text-align: center;">8pm</th>
-        <td>n/a</td>
         <!-- skip -->
-        <td>n/a</td>
+        <!-- skip -->
+        <!-- skip -->
         <!-- skip -->
         <td>n/a</td>
       </tr>
             <tr>
         <th style="text-align: center;">9pm</th>
-        <td>n/a</td>
         <!-- skip -->
-        <td>n/a</td>
+        <!-- skip -->
+        <!-- skip -->
         <!-- skip -->
         <td>n/a</td>
       </tr>
