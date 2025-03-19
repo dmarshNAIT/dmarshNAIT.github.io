@@ -16,7 +16,7 @@ To meet outside of scheduled classtime, please  **[book an appointment](https://
 
 All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](https://www.timeanddate.com/time/zone/canada)).
 
-> Classes marked with the ❄️ emoji are delivered remotely.
+> Classes marked with the ☀️ emoji are delivered remotely.
 
 <html>
   <style>
@@ -56,9 +56,9 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <th style="text-align: center;">8am</th>
         <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript)</td>
         <td>n/a</td>
-        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ❄️</td>
+        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
         <td>n/a</td>
-        <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript) ❄️</td>
+        <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
       </tr>
       <tr>
         <th style="text-align: center;">9am</th>
@@ -74,7 +74,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <!-- skip -->
         <td class="appointment" rowspan="3">available by appointment</td>
         <!-- skip -->
-        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ❄️</td>
+        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ☀️</td>
       </tr>
       <tr>
         <th style="text-align: center;">11am</th>
@@ -94,9 +94,9 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th style="text-align: center;">1pm</th>
-        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ❄️</td>
+        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
         <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
-        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ❄️</td>
+        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ☀️</td>
         <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript)</td>
         <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript)</td>
       </tr>
@@ -142,10 +142,10 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th style="text-align: center;">7pm</th>
-        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ❄️</td>
-        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ❄️</td>
-        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ❄️</td>
-        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ❄️</td>
+        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ☀️</td>
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
+        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ☀️</td>
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
         <td>n/a</td>
       </tr>
       <tr>
@@ -168,6 +168,156 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
   </table>
 </html>
 
+## Dana's (Tentative) Summer 2025 Schedule
+<html>
+  <style>
+    table { font-size: 12.4px; text-align: center; }
+    .row-header { width: 80px; width: 10%; text-align: center; }
+    .col-header { width: 18%; }
+    /* cell-formatting */
+    .appointment { color: black; background-color: #d3d3d3; /* grey */  }
+    .highlight { background-color: #ffffd3; /* pale yellow */ }  
+    .cpsc1520-a03 { background-color: #ed6495; } /* pink */
+    .cpsc1520-a04 { background-color: #bc64ed; } /* purple */
+    .cpsc1520-evening {background-color: #edbc64; } /*orange */
+    .cpsc1012 { background-color: #95ed64; } /* green */
+    .cpsc1012-evening { background-color: #6495ed; } /* blue */
+  </style>
+  <table style="width: 100%">
+    <thead>
+      <tr>
+        <th class="row-header"></th>
+        <th class="col-header">Monday</th>
+        <th class="col-header">Tuesday</th>
+        <th class="col-header">Wednesday</th>
+        <th class="col-header">Thursday</th>
+        <th class="col-header">Friday</th>
+      </tr>
+      <tr>
+        <th class="row-header"></th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th style="text-align: center;">8am</th>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">9am</th>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">10am</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">11am</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">noon</th>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">1pm</th>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">2pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">3pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">4pm</th>
+        <td rowspan="6">n/a</td>
+        <td rowspan="3">n/a</td>
+        <td rowspan="6">n/a</td>
+        <td rowspan="3">n/a</td>
+        <td rowspan="6">n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">5pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">6pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">7pm</th>
+        <!-- skip -->
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
+        <!-- skip -->
+        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">8pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+            <tr>
+        <th style="text-align: center;">9pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+    </tbody>
+  </table>
+</html>
 
 
 ## Manual bookings
