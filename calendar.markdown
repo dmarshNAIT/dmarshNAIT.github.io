@@ -12,7 +12,7 @@ To meet outside of scheduled classtime, please  **[book an appointment](https://
 
 > 🆘 Scroll down to see a workaround if you have issues with this tool.
 
-## Dana's Winter 2025 Schedule
+## Dana's Summer 2025 Schedule
 
 All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](https://www.timeanddate.com/time/zone/canada)).
 
@@ -44,37 +44,37 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th class="row-header"></th>
-        <th class="col-header ">on campus</th>
-        <th class="col-header ">on campus</th>
         <th class="col-header highlight">remote</th>
-        <th class="col-header ">on campus</th>
-        <th class="col-header ">on campus</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
+        <th class="col-header highlight">remote</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th style="text-align: center;">8am</th>
-        <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript)</td>
         <td>n/a</td>
-        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
         <td>n/a</td>
-        <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
       </tr>
       <tr>
         <th style="text-align: center;">9am</th>
-        <!-- skip -->
-        <td class="appointment" rowspan="4">available by appointment</td>
-        <!-- skip -->
-        <td class="appointment" rowspan="4">available by appointment</td>
-        <!-- skip -->
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <td class="appointment" rowspan="7">available by appointment</td>
       </tr>
       <tr>
         <th style="text-align: center;">10am</th>
-        <td class="appointment" rowspan="3">available by appointment</td>
         <!-- skip -->
-        <td class="appointment" rowspan="3">available by appointment</td>
         <!-- skip -->
-        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ☀️</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">11am</th>
@@ -90,15 +90,15 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <!-- skip -->
         <!-- skip -->
         <!-- skip -->
-        <td>n/a</td>
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">1pm</th>
-        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript) ☀️</td>
-        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals)</td>
-        <td class="cpsc1012" rowspan="2">CPSC 1012 (Programming Fundamentals) ☀️</td>
-        <td class="cpsc1520-a04" rowspan="2">CPSC 1520 (JavaScript)</td>
-        <td class="cpsc1520-a03" rowspan="2">CPSC 1520 (JavaScript)</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">2pm</th>
@@ -110,43 +110,43 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th style="text-align: center;">3pm</th>
-        <td class="appointment" >available by appointment</td>
-        <td class="appointment" rowspan="2">available by appointment</td>
-        <td class="appointment" >available by appointment</td>
-        <td class="appointment" rowspan="2">available by appointment</td>
-        <td class="appointment" >available by appointment</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">4pm</th>
-        <td>n/a</td>
-        <!-- skip -->
-        <td>n/a</td>
-        <!-- skip -->
-        <td>n/a</td>
+        <td rowspan="6">n/a</td>
+        <td rowspan="3">n/a</td>
+        <td rowspan="6">n/a</td>
+        <td rowspan="3">n/a</td>
+        <td rowspan="6">n/a</td>
       </tr>
-            <tr>
+      <tr>
         <th style="text-align: center;">5pm</th>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
-            <tr>
+      <tr>
         <th style="text-align: center;">6pm</th>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">7pm</th>
-        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ☀️</td>
+        <!-- skip -->
         <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
-        <td class="cpsc1520-evening" rowspan="3">CPSC 1520 (JavaScript) ☀️</td>
+        <!-- skip -->
         <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
-        <td>n/a</td>
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">8pm</th>
@@ -154,7 +154,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <!-- skip -->
         <!-- skip -->
         <!-- skip -->
-        <td>n/a</td>
+        <!-- skip -->
       </tr>
             <tr>
         <th style="text-align: center;">9pm</th>
@@ -162,13 +162,16 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <!-- skip -->
         <!-- skip -->
         <!-- skip -->
-        <td>n/a</td>
+        <!-- skip -->
       </tr>
     </tbody>
   </table>
 </html>
 
-## Dana's (Tentative) Summer 2025 Schedule
+> 🌴 Vacation alert: Dana will be working part-time and have limited availability from June 16-Aug 22 inclusive.
+
+## (Tentative) Fall 2025 Schedule
+
 <html>
   <style>
     table { font-size: 12.4px; text-align: center; }
@@ -177,11 +180,11 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
     /* cell-formatting */
     .appointment { color: black; background-color: #d3d3d3; /* grey */  }
     .highlight { background-color: #ffffd3; /* pale yellow */ }  
-    .cpsc1520-a03 { background-color: #ed6495; } /* pink */
-    .cpsc1520-a04 { background-color: #bc64ed; } /* purple */
-    .cpsc1520-evening {background-color: #edbc64; } /*orange */
-    .cpsc1012 { background-color: #95ed64; } /* green */
-    .cpsc1012-evening { background-color: #6495ed; } /* blue */
+    .abc { background-color: #ed6495; } /* pink */
+    .xyz {background-color: #edbc64; } /*orange */
+    .sdev1001 { background-color: #95ed64; } /* green */
+    .sdev1201 { background-color: #6495ed; } /* blue */
+    .sdev1150 { background-color: #bc64ed; } /* purple */
   </style>
   <table style="width: 100%">
     <thead>
@@ -196,10 +199,122 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       <tr>
         <th class="row-header"></th>
         <th class="col-header highlight">remote</th>
+        <th class="col-header ">on campus</th>
         <th class="col-header highlight">remote</th>
         <th class="col-header highlight">remote</th>
+        <th class="col-header ">on campus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th style="text-align: center;">8am</th>
+        <td>n/a</td>
+        <td class="sdev1001" rowspan="2">SDEV 1001 (Programming Fundamentals)</td>
+        <td class="sdev1001" rowspan="2">SDEV 1001 (Programming Fundamentals) 💻</td>
+        <td>n/a</td>
+        <td class="sdev1001" rowspan="2">SDEV 1001 (Programming Fundamentals)</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">9am</th>
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <!-- skip -->
+        <!-- skip -->
+        <td class="appointment" rowspan="7">available by appointment</td>
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">10am</th>
+        <!-- skip -->
+        <td class="sdev1201" rowspan="2">SDEV 1201 (Database Fundamentals)</td>
+        <td class="sdev1201" rowspan="2">SDEV 1201 (Database Fundamentals) 💻</td>
+        <!-- skip -->
+        <td class="sdev1201" rowspan="2">SDEV 1201 (Database Fundamentals)</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">11am</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">noon</th>
+        <!-- skip -->
+        <td>n/a</td>
+        <td class="appointment" rowspan="4">available by appointment</td>
+        <!-- skip -->
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">1pm</th>
+        <!-- skip -->
+        <td class="sdev1150" rowspan="2">SDEV 1150 (Front End Dev Fundamentals)</td>
+        <!-- skip -->
+        <!-- skip -->
+        <td class="sdev1150" rowspan="2">SDEV 1150 (Front End Dev Fundamentals) 💻</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">2pm</th>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
+      </tr>
+      <tr>
+        <th style="text-align: center;">3pm</th>
+        <!-- skip -->
+        <td class="appointment">available by appointment</td>
+        <!-- skip -->
+        <!-- skip -->
+        <td class="appointment">available by appointment</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">4pm</th>
+        <td rowspan="1">n/a</td>
+        <td rowspan="1">n/a</td>
+        <td rowspan="1">n/a</td>
+        <td rowspan="1">n/a</td>
+        <td rowspan="1">n/a</td>
+      </tr>
+    </tbody>
+  </table>
+</html>
+
+## (Tentative) Winter 2026 Schedule
+
+<html>
+  <style>
+    table { font-size: 12.4px; text-align: center; }
+    .row-header { width: 80px; width: 10%; text-align: center; }
+    .col-header { width: 18%; }
+    /* cell-formatting */
+    .appointment { color: black; background-color: #d3d3d3; /* grey */  }
+    .highlight { background-color: #ffffd3; /* pale yellow */ }  
+    .sdev1000-a01 { background-color: #ed6495; } /* pink */
+    .sdev1000-a04 {background-color: #edbc64; } /*orange */
+    .itba1507-a01 { background-color: #95ed64; } /* green */
+    .itba1507-a02 { background-color: #6495ed; } /* blue */
+    .dmit2507 { background-color: #bc64ed; } /* purple */
+  </style>
+  <table style="width: 100%">
+    <thead>
+      <tr>
+        <th class="row-header"></th>
+        <th class="col-header">Monday</th>
+        <th class="col-header">Tuesday</th>
+        <th class="col-header">Wednesday</th>
+        <th class="col-header">Thursday</th>
+        <th class="col-header">Friday</th>
+      </tr>
+      <tr>
+        <th class="row-header"></th>
         <th class="col-header highlight">remote</th>
-        <th class="col-header highlight">remote</th>
+        <th class="col-header ">on campus</th>
+        <th class="col-header ">on campus</th>
+        <th class="col-header ">on campus</th>
+        <th class="col-header ">on campus</th>
       </tr>
     </thead>
     <tbody>
@@ -209,23 +324,23 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <td>n/a</td>
         <td>n/a</td>
         <td>n/a</td>
-        <td>n/a</td>
+        <td class="sdev1000-a04" rowspan="2">SDEV 1000 (Logic & Problem Solving)</td>
       </tr>
       <tr>
         <th style="text-align: center;">9am</th>
         <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <td class="appointment">available by appointment</td>
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">10am</th>
         <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
+        <td class="sdev1000-a04" rowspan="2">SDEV 1000 (Logic & Problem Solving) 💻</td>
+        <td class="sdev1000-a01" rowspan="2">SDEV 1000 (Logic & Problem Solving) 💻</td>
+        <td class="dmit2507" rowspan="2">DMIT 2507 (Business Intelligence) 💻</td>
+        <td class="appointment" rowspan="6">available by appointment</td>
       </tr>
       <tr>
         <th style="text-align: center;">11am</th>
@@ -239,17 +354,17 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <th style="text-align: center;">noon</th>
         <td>n/a</td>
         <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
-        <td>n/a</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="appointment" rowspan="3">available by appointment</td>
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">1pm</th>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
-        <td class="appointment" rowspan="3">available by appointment</td>
+        <td class="itba1507-a01" rowspan="2">ITBA 1507 (Evidence-Based Data Analysis) 💻</td>
+        <td class="dmit2507" rowspan="2">DMIT 2507 (Business Intelligence)</td>
+        <!-- skip -->
+        <!-- skip -->
+        <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">2pm</th>
@@ -261,65 +376,23 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       </tr>
       <tr>
         <th style="text-align: center;">3pm</th>
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
+        <td class="itba1507-a02" rowspan="2">ITBA 1507 (Evidence-Based Data Analysis) 💻</td>
+        <td class="sdev1000-a01" rowspan="2">SDEV 1000 (Logic & Problem Solving)</td>
+        <td class="itba1507-a02" rowspan="2">ITBA 1507 (Evidence-Based Data Analysis)</td>
+        <td class="itba1507-a01" rowspan="2">ITBA 1507 (Evidence-Based Data Analysis)</td>
         <!-- skip -->
       </tr>
       <tr>
         <th style="text-align: center;">4pm</th>
-        <td rowspan="6">n/a</td>
-        <td rowspan="3">n/a</td>
-        <td rowspan="6">n/a</td>
-        <td rowspan="3">n/a</td>
-        <td rowspan="6">n/a</td>
-      </tr>
-      <tr>
-        <th style="text-align: center;">5pm</th>
         <!-- skip -->
         <!-- skip -->
         <!-- skip -->
         <!-- skip -->
-        <!-- skip -->
-      </tr>
-      <tr>
-        <th style="text-align: center;">6pm</th>
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-      </tr>
-      <tr>
-        <th style="text-align: center;">7pm</th>
-        <!-- skip -->
-        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
-        <!-- skip -->
-        <td class="cpsc1012-evening" rowspan="3">CPSC 1012 (Programming Fundamentals) ☀️</td>
-        <!-- skip -->
-      </tr>
-      <tr>
-        <th style="text-align: center;">8pm</th>
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-      </tr>
-            <tr>
-        <th style="text-align: center;">9pm</th>
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
-        <!-- skip -->
+        <td>n/a</td>
       </tr>
     </tbody>
   </table>
 </html>
-
-> Vacation alert: Dana will be working part-time and have limited availability from June 16-Aug 22 inclusive.
 
 
 ## Manual bookings
