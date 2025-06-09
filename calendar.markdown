@@ -242,7 +242,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <th style="text-align: center;">noon</th>
         <!-- skip -->
         <td>n/a</td>
-        <td class="appointment" rowspan="4">available by appointment</td>
+        <td>n/a</td>
         <!-- skip -->
         <td>n/a</td>
       </tr>
@@ -250,7 +250,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
         <th style="text-align: center;">1pm</th>
         <!-- skip -->
         <td class="sdev1150" rowspan="2">SDEV 1150 (Front End Dev Fundamentals)</td>
-        <!-- skip -->
+        <td class="appointment" rowspan="3">available by appointment</td>
         <!-- skip -->
         <td class="sdev1150" rowspan="2">SDEV 1150 (Front End Dev Fundamentals) 💻</td>
       </tr>
