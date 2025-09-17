@@ -8,7 +8,7 @@ nav_enabled: false
 
 # Booking Time with Dana
 
-To meet outside of scheduled classtime, please  **[book an appointment](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=)**.
+To meet outside of scheduled classtime, please  **[book an appointment](https://outlook.office.com/bookwithme/me)**. If you were hoping to meet in-person or urgently, please reach out via email or Teams.
 
 > 🆘 Scroll down to see a workaround if you have issues with this tool.
 
@@ -246,7 +246,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
 
 
 ## Manual bookings
-If you have issues using [my booking tool](https://calendar.google.com/calendar/u/0/appointments/AcZssZ0nR04OIK095mwybdLW7PpjBRrZiELn_yoBZbI=) or have been invited to set up a meeting outside of my "usual" office hours, please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite).
+If you have issues using [my booking tool](https://outlook.office.com/bookwithme/me) or have been invited to set up a meeting outside of my "usual" office hours, please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite).
 
 
 Please include:
