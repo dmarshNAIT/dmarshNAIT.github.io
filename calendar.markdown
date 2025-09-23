@@ -135,7 +135,7 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
 
 
 ## Manual bookings
-If you have issues using [my booking tool](https://outlook.office.com/bookwithme/me) or have been invited to set up a meeting outside of my "usual" office hours, please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite).
+If you have issues using [my booking tool](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca?anonymous&ismsaljsauthenabled&ep=plink) or have been invited to set up a meeting outside of my "usual" office hours, please **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite).
 
 
 Please include:
