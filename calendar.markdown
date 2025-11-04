@@ -15,18 +15,18 @@ If you would like to book time with me:
 
     >⛔ Please don't book over tentative availability unless your matter is urgent and no other slots are available. Same-day meeting requests will only be accepted in **emergency situations**.
 
-2. For students and anyone else who can't see my NAIT calendar, please  **[use my meeting booker](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca/meetingtype/8F-nk4ydF0mlXF0YXDr-QQ2?anonymous&ep=mLinkFromTile)**. 
+2. **For students** and anyone else who can't see my NAIT calendar, please  **[use my meeting booker](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca/meetingtype/8F-nk4ydF0mlXF0YXDr-QQ2?anonymous&ep=mLinkFromTile)**. 
 > ℹ️ If you get an office license issue when clicking that link, please open in a private/incognito window and use the "guest" option, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for the time I appear to be available.
 
-> 📅 Outside of extenuating circumstances, student meetings are only held on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
+    > 📅 Outside of extenuating circumstances, student meetings are only held on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
 
-3. If you are interested in meeting in-person, outside of my standard work hours, or are unable to use one of the methods above, please send me an **email** including:
+3. If you are interested in meeting **in-person**, outside of my standard work hours, or are unable to use one of the methods above, please send me an **email** including:
     - your name
     - the goal or topic of the meeting, including course name & section if applicable
-    - specific date/times you are available
+    - specific dates/times you are available
     - whether you'd like to meet in-person, online, or have no preference
 
-> ⚠️ Outside of **emergency situations**, I generally do not honour same-day requests to meet, and I only hold office hours on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
+    > ⚠️ Outside of **emergency situations**, I generally do not honour same-day requests to meet, and I only hold office hours on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
 
 
 ## Dana's Fall 2025 Teaching Schedule
