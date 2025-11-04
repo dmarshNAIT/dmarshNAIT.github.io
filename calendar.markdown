@@ -134,18 +134,18 @@ All times are Edmonton local time (i.e. [MDT in the summer, MST in the winter](h
       <tr>
         <th style="text-align: center;">5pm</th>
         <td class="sdev1150" rowspan="2">SDEV1150 (Front End Development Fundamentals) 💻</td>
-        <td>n/a</td>
-        <td>n/a</td>
+        <td></td>
+        <td></td>
         <td class="sdev1150" rowspan="2">SDEV1150 (Front End Development Fundamentals) 💻</td>
-        <td>n/a</td>
+        <td></td>
       </tr>
        <tr>
         <th style="text-align: center;">6pm</th>
         <!-- skip -->
-        <td>n/a</td>
-        <td>n/a</td>
+        <td></td>
+        <td></td>
         <!-- skip -->
-        <td>n/a</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
