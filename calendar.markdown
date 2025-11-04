@@ -11,9 +11,9 @@ nav_enabled: false
 If you would like to book time with me:
 
 1) **For NAIT staff:** please send an Outlook calendar invite and check my availability with Scheduling Assistant.
-    >  ⭐ This has the added bonus of being able to see my up-to-date schedule and whether I'm working on-campus or remotely.
+>⭐ This has the added bonus of being able to see my up-to-date schedule and whether I'm working on-campus or remotely.
 
-    > ⛔ Please don't book over tentative availability unless your matter is urgent and no other slots are available. Same-day meeting requests will only be accepted in **emergency situations**.
+> ⛔ Please don't book over tentative availability unless your matter is urgent and no other slots are available. Same-day meeting requests will only be accepted in **emergency situations**.
 
 2) For students and anyone else who can't see my NAIT calendar, please  **[use my meeting booker](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca/meetingtype/8F-nk4ydF0mlXF0YXDr-QQ2?anonymous&ep=mLinkFromTile)**. 
     > ℹ️ If you get an office license issue when clicking that link, please open in a private/incognito window and use the "guest" option, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for the time I appear to be available.
