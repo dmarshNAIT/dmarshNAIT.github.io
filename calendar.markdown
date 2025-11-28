@@ -18,7 +18,7 @@ If you would like to book time with me:
 2. **For students** and anyone else who can't see my NAIT calendar, please  **[use my meeting booker](https://outlook.office.com/bookwithme/user/8b9412eb8c4241f3839769114dee8cc5@nait.ca/meetingtype/8F-nk4ydF0mlXF0YXDr-QQ2?anonymous&ep=mLinkFromTile)**. 
 > ℹ️ If you get an office license issue when clicking that link, please open in a private/incognito window and use the "guest" option, or **send me a calendar invite** from [Teams](https://support.microsoft.com/en-us/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5), [Google Calendar](https://support.google.com/calendar/answer/37161), or [your calendar app of choice](https://www.google.com/search?q=how+to+send+a+calendar+invite) for the time I appear to be available.
 
-    > 📊** ITBA & DAA students** can book a meeting by sending an email to the program email (itba@nait.ca or daa@nait.ca and make sure to include your student ID along with your availability).
+    > 📊 **ITBA & DAA students** can book a meeting by sending an email to the program email (itba@nait.ca or daa@nait.ca and make sure to include your student ID along with your availability).
     
     > 📅 Outside of extenuating circumstances, student meetings are only held on school days [during the semester](https://www.nait.ca/nait/admissions/academic-schedule).
 
