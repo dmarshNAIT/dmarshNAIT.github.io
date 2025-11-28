@@ -5,7 +5,7 @@ permalink: /about/
 nav_order: 1
 ---
 
-Dana Marsh [(they/she)](https://www.them.us/story/gender-neutral-pronouns-101-they-them-xe-xem) is an instructor within the [Digital Media and IT](https://www.nait.ca/dmit) program.
+Dana Marsh [(they/them)](https://www.them.us/story/gender-neutral-pronouns-101-they-them-xe-xem) is an instructor within the School of Media and IT.
 
 They teach topics including:
 
@@ -14,15 +14,16 @@ They teach topics including:
 - ANAP 1525 (Systems Analysis & Design I)
 - DMIT 2028 (Systems Analysis & Design II)
 
-### <ins>Data Management</ins>
+### <ins>Data</ins>
 - DMIT 1508 (Database Fundamentals)
 - DMIT 2507 (Business Intelligence)
+- ITBA 1507 (Evidence-Based Data Analysis)
 
 ### <ins>Web Development</ins>
 - COMP 1017 (Web Design Fundamentals I)
 - DMIT 1530 (Web Design Fundamentals II)
 - CPSC 1520 (Client-Side Scripting with JavaScript)
-
+- SDEV 1150 (Front End Development Fundamentals)
 
 
 Prior to NAIT, Dana worked in software design, testing, technical consulting, and data analytics. They have also taught at SAIT, the University of Alberta, and the University of Calgary.
